@@ -11676,7 +11676,25 @@
 										}
 									}
 								},
-								"url": "{{BASEURL}}/appointment"
+								"url": {
+									"raw": "{{BASEURL}}/appointment?sort=date|ASC&sort=date|DESC",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "date|ASC"
+										},
+										{
+											"key": "sort",
+											"value": "date|DESC"
+										}
+									]
+								}
 							},
 							"response": [
 								{
