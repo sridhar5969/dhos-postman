@@ -15090,7 +15090,26 @@
 								}
 							}
 						},
-						"url": "{{BASEURL}}/transactions"
+						"url": {
+							"raw": "{{BASEURL}}/transactions?sort=created_at|DESC&filters",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "created_at|DESC",
+									"description": " fieldName|ASC OR fieldName|DESC"
+								},
+								{
+									"key": "filters",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				}
