@@ -11942,7 +11942,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-04-27\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"6603defb97190289313bbed3\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}"
+							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"6603e1d597190289313c060a\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}"
 						},
 						"url": "{{BASEURL}}/appointment"
 					},
@@ -12638,7 +12638,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "6603f17bebbcb30370367f2b"
+									"value": "6606406559f393e09ae90b3e"
 								},
 								{
 									"key": "doctorId",
