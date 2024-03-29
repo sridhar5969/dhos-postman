@@ -15091,7 +15091,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/transactions?sort=created_at|DESC&filters=created_at|2024-03-12T12:00:00Z",
+							"raw": "{{BASEURL}}/transactions?sort=created_at|DESC&filters=created_at|2024-03-29T00:00:00Z,category|appointment",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -15106,8 +15106,20 @@
 								},
 								{
 									"key": "filters",
-									"value": "created_at|2024-03-12T12:00:00Z",
-									"description": "category|appointment or category|plan"
+									"value": "created_at|2024-03-29T00:00:00Z",
+									"description": "category|appointment or category|plan",
+									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "category|appointment",
+									"description": "single filter",
+									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "created_at|2024-03-29T00:00:00Z,category|appointment",
+									"description": "multiple filter"
 								}
 							]
 						}
