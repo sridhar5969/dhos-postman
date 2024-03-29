@@ -15091,7 +15091,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/transactions?sort=created_at|DESC&filters",
+							"raw": "{{BASEURL}}/transactions?sort=created_at|DESC&filters=category|plan,created_at|2024-03-18",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -15106,7 +15106,8 @@
 								},
 								{
 									"key": "filters",
-									"value": null
+									"value": "category|plan,created_at|2024-03-18",
+									"description": "category|appointment or category|plan"
 								}
 							]
 						}
