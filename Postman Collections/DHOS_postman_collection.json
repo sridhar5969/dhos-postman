@@ -12285,7 +12285,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"660564fb97190289315b5f94\"\r\n}"
+							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"6603e1d597190289313c060a\"\r\n}"
 						},
 						"url": {
 							"raw": "{{BASEURL}}/appointment/:id",
@@ -12299,7 +12299,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "660548358e1da9e03d1b764f"
+									"value": "66068495c995445a18deccd9"
 								}
 							]
 						}
@@ -15631,22 +15631,22 @@
 							"body": "{\n    \"message\": \"Invalid/Expired token\",\n    \"error\": \"Not Found\",\n    \"statusCode\": 404\n}"
 						}
 					]
+				},
+				{
+					"name": "Logout API",
+					"id": "944d48f2-270e-4796-8040-e7ee96e07099",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASEURL}}/user/logout"
+					},
+					"response": []
 				}
 			],
 			"id": "af8528f6-1c07-4856-b67f-6b752e10d54d"
-		},
-		{
-			"name": "Logout API",
-			"id": "944d48f2-270e-4796-8040-e7ee96e07099",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "{{BASEURL}}/user/logout"
-			},
-			"response": []
 		},
 		{
 			"name": "SMS",
