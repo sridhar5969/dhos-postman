@@ -11446,10 +11446,7 @@
 								{
 									"key": "files",
 									"type": "file",
-									"src": [
-										"/C:/Users/stoic/Pictures/Screenshots/after-password-local-policies-configurations.png",
-										"/C:/Users/stoic/Pictures/Screenshots/before-password-policy-changes.png"
-									]
+									"src": "/C:/Users/stoic/Pictures/Screenshots/Screenshot 2024-01-16 162644.png"
 								}
 							]
 						},
@@ -11535,7 +11532,11 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/Lenovo/Downloads/unnamed (5).png"
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"filesNotInWorkingDirectory": [
+										"/C:/Users/Lenovo/Downloads/unnamed (5).png"
+									],
+									"value": ""
 								}
 							]
 						},
@@ -11618,7 +11619,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "/C:/Users/Lenovo/Downloads/regicon/breath.png"
+									"src": "/C:/Users/stoic/Pictures/Screenshots/after-password-local-policies-configurations.png"
 								}
 							]
 						},
@@ -11645,7 +11646,7 @@
 								}
 							]
 						},
-						"url": "{{BASEURL}}/file/download/c4d3a22c-a8ea-42d8-ab3a-8fb1af62f244unnamed (4).png"
+						"url": "{{BASEURL}}/file/download/efb50aa0-1dcc-4160-bc65-51ae650b4115Screenshot 2024-01-16 162644.png"
 					},
 					"response": []
 				}
