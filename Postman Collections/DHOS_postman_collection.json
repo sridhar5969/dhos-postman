@@ -8051,7 +8051,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-03-31T01:00:00.000Z\",\r\n    \"to_time\": \"2024-03-31T18:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-03-30T01:00:00.000Z\",\r\n    \"to_time\": \"2024-03-30T23:00:00.000Z\"\r\n}"
 								},
 								"url": "{{BASEURL}}/doctor/set-availability"
 							},
