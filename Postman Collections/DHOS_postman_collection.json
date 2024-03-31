@@ -11123,7 +11123,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/appointment/patients-summary/:id",
+									"raw": "{{BASEURL}}/appointment/patients-summary/:id?sort=date:DESC",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -11132,10 +11132,16 @@
 										"patients-summary",
 										":id"
 									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "date:DESC"
+										}
+									],
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "65f6ffd81d2e853e66e5f944"
 										}
 									]
 								}
