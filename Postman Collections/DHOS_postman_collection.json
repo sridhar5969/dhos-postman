@@ -10845,7 +10845,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/patient?sort=created_at|DESC",
+									"raw": "{{BASEURL}}/patient?sort=created_at|DESC&limit=10000",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -10861,6 +10861,11 @@
 											"key": "textSearch",
 											"value": "789456123",
 											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10000",
+											"type": "text"
 										}
 									]
 								}
@@ -11107,6 +11112,35 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Patient detail\",\n    \"data\": {\n        \"_id\": \"65e1701c033f730816b0f9c6\",\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"email\": \"exampled2dsdssfgvfsss1@gmail.com\",\n        \"mobilephone\": \"19131447899\",\n        \"insurance\": [\n            {\n                \"expire\": \"2030-01-01\",\n                \"insurance_id\": \"3747D7YD37ND\",\n                \"name\": \"Bajaj Allianz\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"state\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\",\n                    \"value\": \"Chenah\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": \"65e16e7a033f730816b0f9ac\",\n        \"education\": [],\n        \"specialty\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"createdAt\": \"2024-03-01T06:05:16.223Z\",\n        \"updatedAt\": \"2024-03-01T06:05:16.223Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Get Patients Summary List",
+							"id": "5fd28a81-9488-4897-8b39-857effba2aa7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/appointment/patients-summary/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"patients-summary",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3ef89978-7253-4659-bbf6-7551cd009003"
