@@ -13707,6 +13707,19 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e213d948926552543c123b\",\n                \"name\": \"America\",\n                \"code\": \"+1\",\n                \"nationality\": \"American\",\n                \"currency\": \"\",\n                \"flag_ico\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Add country",
+							"id": "d29bd0f7-5700-49f6-9339-4a1fcb7b3871",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general-public/country"
+							},
+							"response": []
 						}
 					],
 					"id": "d7deda1a-0fc0-431c-90f5-7bcda28c1619"
