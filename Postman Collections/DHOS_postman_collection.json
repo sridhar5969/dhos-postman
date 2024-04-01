@@ -11461,6 +11461,35 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "View Consultation Summary",
+							"id": "b3866212-2911-4c94-aeab-952e99ae0bcc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/patient/appointment-summary/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"patient",
+										"appointment-summary",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660ab0f1bc36fe92856a1a80"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3ef89978-7253-4659-bbf6-7551cd009003"
