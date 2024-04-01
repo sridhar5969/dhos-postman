@@ -11440,24 +11440,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"status\":\"delete\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
-									"raw": "{{BASEURL}}/admin/:id",
+									"raw": "{{BASEURL}}/admin/user/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"admin",
+										"user",
 										":id"
 									],
 									"variable": [
