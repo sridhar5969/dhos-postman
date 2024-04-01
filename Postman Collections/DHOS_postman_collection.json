@@ -13675,7 +13675,7 @@
 					"name": "Country",
 					"item": [
 						{
-							"name": "country list",
+							"name": "country list-public",
 							"id": "86e11cf8-136d-4f8f-9499-92059b6bb14f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -13906,7 +13906,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -13919,7 +13919,66 @@
 								},
 								"url": "{{BASEURL}}/general/country/660ad5144d33860d1c708282"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49b84516-c0b1-49d7-a97b-74dbe2b9a340",
+									"name": "Delete country",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/country/660ad5144d33860d1c708282"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "79"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4f-gRx1wZeDLSLi5bZu18kLj4qAsGg\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 01 Apr 2024 15:52:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country deleted successfully.\"\n}"
+								}
+							]
 						}
 					],
 					"id": "d7deda1a-0fc0-431c-90f5-7bcda28c1619"
