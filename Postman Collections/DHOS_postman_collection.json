@@ -13817,6 +13817,87 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country added successfully.\",\n    \"data\": {\n        \"name\": \"American Samoa12\",\n        \"symbol\": \"$\",\n        \"currency_prefix\": \"UT12\",\n        \"flag_ico\": \"\",\n        \"code\": \"AS\",\n        \"status\": \"active\",\n        \"_id\": \"660ac601dd8a8912d62ca9f2\",\n        \"created_at\": \"2024-04-01T14:34:41.159Z\",\n        \"updated_at\": \"2024-04-01T14:34:41.159Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Edit country",
+							"id": "a74222bd-2bd8-4c07-9784-f8f796db153d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/country/660ad5144d33860d1c708282"
+							},
+							"response": [
+								{
+									"id": "cfe803b0-61e7-4aeb-8319-fddc7d875fe9",
+									"name": "Edit country",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/country/660ad5144d33860d1c708282"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "480"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1e0-eDEVhV3uNHsej1DA+AUc4bTHMZk\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 01 Apr 2024 15:40:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country updated successfully.\",\n    \"data\": {\n        \"_id\": \"660ad5144d33860d1c708282\",\n        \"name\": \"American Samoa12\",\n        \"symbol\": \"$\",\n        \"currency_prefix\": \"UT12\",\n        \"flag_ico\": \"\",\n        \"code\": \"AS\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-01T15:39:00.600Z\",\n        \"updated_at\": \"2024-04-01T15:40:57.140Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "d7deda1a-0fc0-431c-90f5-7bcda28c1619"
