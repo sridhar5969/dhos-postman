@@ -8205,7 +8205,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-03-30T10:30:59.999Z\",\r\n    \"to_time\": \"2024-03-30T20:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-01T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-01T20:00:00.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
@@ -12002,25 +12002,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "{{BASEURL}}/appointment?sort=date|ASC&sort=date|DESC",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"appointment"
-									],
-									"query": [
-										{
-											"key": "sort",
-											"value": "date|ASC"
-										},
-										{
-											"key": "sort",
-											"value": "date|DESC"
-										}
-									]
-								}
+								"url": "{{BASEURL}}/appointment"
 							},
 							"response": [
 								{
@@ -12356,7 +12338,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"65f7e71d94b88c2fff7ab80c\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"6603e2826441d84d1cbeda1c\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
+							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"65f7e71d94b88c2fff7ab80c\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"66055c1c97190289315a9a79\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
 						},
 						"url": "{{BASEURL}}/appointment"
 					},
