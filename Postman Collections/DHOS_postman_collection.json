@@ -11219,6 +11219,219 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65fd721e0c1796625bb19be7\",\n                \"doctor\": {\n                    \"_id\": \"65f57093180f9f5575876406\",\n                    \"name\": {\n                        \"first\": \"Harini\",\n                        \"middle\": \"\",\n                        \"last\": \"Doc\"\n                    }\n                },\n                \"date\": \"2024-03-22T17:30:00.076Z\",\n                \"slot_time\": \"17:30\",\n                \"status\": \"open\",\n                \"payment_status\": \"paid\"\n            },\n            {\n                \"_id\": \"6601b11a351fe5829f73fa9b\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-26T00:00:00.000Z\",\n                \"slot_time\": \"6601a792461a223c413e01ac\",\n                \"status\": \"cancelled\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fc283e068267d94be4175f\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-19T11:07:00.000Z\",\n                \"slot_time\": \"16:37\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fd511b05ed6e36f8bdc928\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T10:00:03.100Z\",\n                \"slot_time\": \"15:30\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fc53cafcb7b3100461adaa\",\n                \"doctor\": {\n                    \"_id\": \"65faa7f4ffac2da4f26cbb96\",\n                    \"name\": {\n                        \"first\": \"kathik\",\n                        \"last\": \"Raj\",\n                        \"suffix\": \"Dr.\"\n                    }\n                },\n                \"date\": \"2024-03-21T19:37:00.000Z\",\n                \"slot_time\": \"19:37\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fc25a91ec60e888bf598a1\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-23T18:00:00.000Z\",\n                \"slot_time\": \"18:00\",\n                \"status\": \"cancelled\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fda7d5d3adc8ad192505b1\",\n                \"doctor\": {\n                    \"_id\": \"65fd7ce069a7f9d3b6e41d65\",\n                    \"name\": {\n                        \"first\": \"Sridhar\",\n                        \"last\": \"Ajith\"\n                    }\n                },\n                \"date\": \"2024-03-22T19:49:12.111Z\",\n                \"slot_time\": \"19:49\",\n                \"status\": \"open\",\n                \"payment_status\": \"paid\"\n            },\n            {\n                \"_id\": \"65fc081929aa0529bc2daf82\",\n                \"doctor\": {\n                    \"_id\": \"65faa8912613a80259f51694\",\n                    \"name\": {\n                        \"first\": \"Shalini\",\n                        \"last\": \"S\",\n                        \"suffix\": \"Dr.\"\n                    }\n                },\n                \"date\": \"2024-03-21T15:46:26.561Z\",\n                \"slot_time\": \"15:46\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"6601bd0c9c43b96bde54bdc3\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-26T00:00:00.000Z\",\n                \"slot_time\": \"6601a792461a223c413e01ac\",\n                \"status\": \"cancelled\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fc2220f9547779b465b6fa\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-21T17:40:28.635Z\",\n                \"slot_time\": \"17:40\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fd510a05ed6e36f8bdc91d\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T10:15:03.100Z\",\n                \"slot_time\": \"15:45\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fcfebfe2725dfb9e83cadf\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T09:20:42.951Z\",\n                \"slot_time\": \"09:20\",\n                \"status\": \"completed\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fc23b9f9547779b465b740\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T17:45:00.000Z\",\n                \"slot_time\": \"17:45\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fd71c81e302b9bb2dfa211\",\n                \"doctor\": {\n                    \"_id\": \"65f407f942ae30615cd5d27f\",\n                    \"name\": {\n                        \"first\": \"Sudhir\",\n                        \"middle\": \"\",\n                        \"last\": \"Chowdary\"\n                    }\n                },\n                \"date\": \"2024-03-22T15:56:36.979Z\",\n                \"slot_time\": \"15:56\",\n                \"status\": \"on-going\",\n                \"payment_status\": \"paid\"\n            },\n            {\n                \"_id\": \"65fc073cb0bdfee277327d57\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-21T15:40:44.747Z\",\n                \"slot_time\": \"15:40\",\n                \"status\": \"completed\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fd72ce3e043dee4b58e2ae\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T17:50:30.208Z\",\n                \"slot_time\": \"17:50\",\n                \"status\": \"open\",\n                \"payment_status\": \"paid\"\n            },\n            {\n                \"_id\": \"65fc2817068267d94be41754\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-19T11:02:00.000Z\",\n                \"slot_time\": \"16:32\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"6601ad80b41bec241986c602\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-26T00:00:00.000Z\",\n                \"slot_time\": \"6601a792461a223c413e01ac\",\n                \"status\": \"cancelled\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65fbff01f8c6475fd9b55a61\",\n                \"doctor\": {\n                    \"_id\": \"65faa8912613a80259f51694\",\n                    \"name\": {\n                        \"first\": \"Shalini\",\n                        \"last\": \"S\",\n                        \"suffix\": \"Dr.\"\n                    }\n                },\n                \"date\": \"2024-03-21T13:01:10.217Z\",\n                \"slot_time\": \"15:10\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fc29a17e9ae7a603e516a1\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-04-19T11:08:00.000Z\",\n                \"slot_time\": \"16:38\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            },\n            {\n                \"_id\": \"65f73004b9684068c3098d1d\",\n                \"doctor\": {\n                    \"_id\": \"65f407f942ae30615cd5d27f\",\n                    \"name\": {\n                        \"first\": \"Sudhir\",\n                        \"middle\": \"\",\n                        \"last\": \"Chowdary\"\n                    }\n                },\n                \"date\": \"2024-03-17T18:19:04.494Z\",\n                \"slot_time\": \"10:06\",\n                \"status\": \"open\",\n                \"payment_status\": \"completed\"\n            },\n            {\n                \"_id\": \"65fc0068f8c6475fd9b55a9f\",\n                \"doctor\": {\n                    \"_id\": \"65faa8912613a80259f51694\",\n                    \"name\": {\n                        \"first\": \"Shalini\",\n                        \"last\": \"S\",\n                        \"suffix\": \"Dr.\"\n                    }\n                },\n                \"date\": \"2024-03-21T15:11:24.930Z\",\n                \"slot_time\": \"15:11\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fc22e3f9547779b465b726\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-21T18:00:00.000Z\",\n                \"slot_time\": \"18:00\",\n                \"status\": \"open\",\n                \"payment_status\": \"success\"\n            },\n            {\n                \"_id\": \"65fd50d305ed6e36f8bdc910\",\n                \"doctor\": {\n                    \"_id\": \"65e97e6da1a23763b9894835\",\n                    \"name\": {\n                        \"first\": \"Ajith\",\n                        \"middle\": \"\",\n                        \"last\": \"Kumar\"\n                    }\n                },\n                \"date\": \"2024-03-22T09:27:03.100Z\",\n                \"slot_time\": \"14:57\",\n                \"status\": \"open\",\n                \"payment_status\": \"pending\"\n            }\n        ],\n        \"totalCount\": 37\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Update User By Id",
+							"id": "1c95eec5-3835-4e9b-b663-9142bf7192a3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{ACCESSTOKEN}}"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": {\n        \"first\": \"Family\",\n        \"middle\": \"\",\n        \"last\": \"Member\"\n    },\n    \"email\": \"test-fam-mem@gmail.com\",\n    \"stripe_cus_id\": \"cus_PoXXGchqzwVyga\",\n    \"mobilephone\": \"2111141114\",\n    \"insurance\": [\n        {\n            \"expire\": \"2030-01-01\",\n            \"insurance_id\": \"3747D7YD37ND\",\n            \"name\": \"Bajaj Allianz\"\n        }\n    ],\n    \"country_code\": 91,\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n    \"status\": \"active\",\n    \"addresses\": [\n        {\n            \"type\": \"primary\",\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65fad97a8cda209967aa13db\",\n                \"value\": \"Vijayawada\"\n            },\n            \"state\": {\n                \"_id\": \"65fb0fa88cda209967abbd9c\",\n                \"value\": \"Andhra Pradesh\"\n            },\n            \"country\": {\n                \"_id\": \"65fac2468cda209967a95110\",\n                \"value\": \"India\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/admin/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"admin",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "userObjectId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "5ccaa027-afc3-4b2a-90e1-48d10bb657ba",
+									"name": "FORBIDDEN",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"mobilephone\": \"9159041421\",\n    \"country_code\": 91,\n    \"role\": \"65d34539abbec727dc70d30c\",\n    \"user_type\": \"patient\",\n    \"status\": \"active\",\n    \"addresses\": [\n        {\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"state\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"country\": {\n                \"_id\": \"country-id\",\n                \"value\": \"Chenah\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ],\n    \"createdAt\": \"2024-02-26T07:07:33.213Z\",\n    \"updatedAt\": \"2024-02-26T07:28:00.095Z\",\n    \"__v\": 0,\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"email\": \"example@gmail.com\",\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"name\": {\n        \"first\": \"John\",\n        \"middle\": \"\",\n        \"last\": \"Cena\"\n    },\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/patient/family-member/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"patient",
+												"family-member",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "65dc38b5d23a655911af9b10"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "40"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"28-/A0r2gBi62UEXdaQT52VOJ1+hp4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 28 Feb 2024 05:30:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"message\": \"Forbidden\",\n    \"statusCode\": 403\n}"
+								},
+								{
+									"id": "8e266155-829f-4342-8eca-73b816d03aca",
+									"name": "Update Family Member Detail",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"addresses\": [\n        {\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"state\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"country\": {\n                \"_id\": \"country-id\",\n                \"value\": \"Chenah\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ],\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"name\": {\n        \"first\": \"John\",\n        \"middle\": \"\",\n        \"last\": \"Cena\"\n    },\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"relationship\": {\n        \"_id\": \"65e56434dcfe225fd6528f59\",\n        \"value\": \"Son\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/patient/family-member/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"patient",
+												"family-member",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "65e56793016b920e8ecd10fb"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "964"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3c4-gwsaLEWKMaZHWjgFhoS9TBDZ3Zc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Mar 2024 06:20:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Family member profile updated Successfully\",\n    \"data\": {\n        \"_id\": \"65e56793016b920e8ecd10fb\",\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"email\": \"hari2@gmail.com\",\n        \"mobilephone\": \"19231447897\",\n        \"insurance\": [\n            {\n                \"expire\": \"2030-01-01\",\n                \"insurance_id\": \"3747D7YD37ND\",\n                \"name\": \"Bajaj Allianz\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"state\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\",\n                    \"value\": \"Chenah\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": \"65dee9d63bf98c47e49e3435\",\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"immunizations\": [],\n        \"createdAt\": \"2024-03-04T06:17:55.145Z\",\n        \"updatedAt\": \"2024-03-04T06:20:27.253Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "3ef89978-7253-4659-bbf6-7551cd009003"
