@@ -14343,7 +14343,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"comments\": \"I was really stressed about the procedure, but you made me feel better.\",\r\n    \"feedbacks\": [\r\n        {\r\n            \"type\": \"text\",\r\n            \"qn\": \"Are you satisified?\", \r\n            \"ans\": \"Yes.You are such an outstanding physician and have the respect of all your peers.\"\r\n        },\r\n        {\r\n            \"type\": \"5-star\",\r\n            \"qn\": \"Ratings\",\r\n            \"ans\": \"5\"\r\n        }\r\n    ]\r\n}",
+											"raw": "{\r\n    \"comments\": \"I was really stressed about the procedure, but you made me feel better.\",\r\n    \"feedbacks\": [\r\n        {\r\n            \"type\": \"text\",\r\n            \"qn\": \"Are you satisified?\", \r\n            \"ans\": \"Yes.You are such an outstanding physician and have the respect of all your peers.\"\r\n        },\r\n        {\r\n            \"type\": \"5-star\",\r\n            \"qn\": \"Professionalism\",\r\n            \"ans\": \"5\"\r\n        },\r\n        {\r\n            \"type\": \"5-star\",\r\n            \"qn\": \"Communication\",\r\n            \"ans\": \"5\"\r\n        },\r\n        {\r\n            \"type\": \"5-star\",\r\n            \"qn\": \"Overall satisfaction\",\r\n            \"ans\": \"5\"\r\n        }\r\n    ]\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -14364,7 +14364,7 @@
 											"variable": [
 												{
 													"key": "appointmentId",
-													"value": "65ed973b13519c9544791e12"
+													"value": "660a46caf890640e139aec74"
 												}
 											]
 										}
