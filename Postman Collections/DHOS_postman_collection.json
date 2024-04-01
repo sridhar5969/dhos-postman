@@ -10744,7 +10744,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Akil\",\r\n        \"last\": \"T\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"f\",\r\n        \"system\": \"female\",\r\n        \"display\": \"Female\"\r\n    },\r\n    \"mobilephone\": \"9009090909\",\r\n    \"email\": \"kjjj@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"9/09\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96b01\",\r\n                \"value\": \"Baghramyan\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb827\",\r\n                \"value\": \"Armavir Region\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"899889\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2023-09-09\",\r\n            \"insurance_id\": \"hhj\",\r\n            \"name\": \"hjh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"9090900909\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"kjnkj\"\r\n    },\r\n    \"husband_or_father\": \"hjh\",\r\n    \"status\":\"active\"\r\n}",
+									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Akil\",\r\n        \"last\": \"T\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"f\",\r\n        \"system\": \"female\",\r\n        \"display\": \"Female\"\r\n    },\r\n    \"mobilephone\": \"9009090409\",\r\n    \"email\": \"kjjjs@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"9/09\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96b01\",\r\n                \"value\": \"Baghramyan\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb827\",\r\n                \"value\": \"Armavir Region\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"899889\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2023-09-09\",\r\n            \"insurance_id\": \"hhj\",\r\n            \"name\": \"hjh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"9090900909\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"kjnkj\"\r\n    },\r\n    \"husband_or_father\": \"hjh\",\r\n    \"status\":\"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -11432,6 +11432,43 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Family member profile updated Successfully\",\n    \"data\": {\n        \"_id\": \"65e56793016b920e8ecd10fb\",\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"email\": \"hari2@gmail.com\",\n        \"mobilephone\": \"19231447897\",\n        \"insurance\": [\n            {\n                \"expire\": \"2030-01-01\",\n                \"insurance_id\": \"3747D7YD37ND\",\n                \"name\": \"Bajaj Allianz\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"state\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\",\n                    \"value\": \"Chenah\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": \"65dee9d63bf98c47e49e3435\",\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"immunizations\": [],\n        \"createdAt\": \"2024-03-04T06:17:55.145Z\",\n        \"updatedAt\": \"2024-03-04T06:20:27.253Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Delete Patient",
+							"id": "9ea05a6d-3e65-4bc2-b994-73f950fd99f4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"delete\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/admin/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"admin",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660ab0f1bc36fe92856a1a80"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3ef89978-7253-4659-bbf6-7551cd009003"
