@@ -14042,6 +14042,28 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country deleted successfully.\"\n}"
 								}
 							]
+						},
+						{
+							"name": "Country Detail",
+							"id": "77750474-c601-4343-8d7b-b0017376a789",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/country/660ad5144d33860d1c708282"
+							},
+							"response": []
 						}
 					],
 					"id": "d7deda1a-0fc0-431c-90f5-7bcda28c1619"
