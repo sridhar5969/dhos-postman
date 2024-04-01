@@ -13744,11 +13744,79 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/general-public/country"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/country"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "257a8465-a665-4db5-bbaf-f512ba350635",
+									"name": "country list Copy",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/country"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "315"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"13b-TMUTWQx+YH+lOY2mxFq7mR+jY/E\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 01 Apr 2024 14:34:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country added successfully.\",\n    \"data\": {\n        \"name\": \"American Samoa12\",\n        \"symbol\": \"$\",\n        \"currency_prefix\": \"UT12\",\n        \"flag_ico\": \"\",\n        \"code\": \"AS\",\n        \"status\": \"active\",\n        \"_id\": \"660ac601dd8a8912d62ca9f2\",\n        \"created_at\": \"2024-04-01T14:34:41.159Z\",\n        \"updated_at\": \"2024-04-01T14:34:41.159Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "d7deda1a-0fc0-431c-90f5-7bcda28c1619"
