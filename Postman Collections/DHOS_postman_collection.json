@@ -12739,7 +12739,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"6603e1d597190289313c060a\"\r\n}"
+							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"660baceadb547833cb7a3635\"\r\n}"
 						},
 						"url": {
 							"raw": "{{BASEURL}}/appointment/:id",
@@ -12753,7 +12753,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "66068495c995445a18deccd9"
+									"value": "660ba14dbc48726d082219d0"
 								}
 							]
 						}
