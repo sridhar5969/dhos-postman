@@ -14145,7 +14145,7 @@
 					"name": "State",
 					"item": [
 						{
-							"name": "Add country Copy",
+							"name": "Add State",
 							"id": "0414549f-3137-422d-a56b-48b5d1e30726",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -14155,32 +14155,32 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa123\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/country"
+								"url": "{{BASEURL}}/general/state"
 							},
 							"response": [
 								{
-									"id": "8c138690-e6fe-4b35-af80-71618479b6f6",
-									"name": "Add Country",
+									"id": "71d8a3d0-636e-4560-ac4a-dd570efd9eb2",
+									"name": "Add State",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/country"
+										"url": "{{BASEURL}}/general/state"
 									},
 									"status": "Created",
 									"code": 201,
@@ -14200,15 +14200,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "315"
+											"value": "456"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"13b-TMUTWQx+YH+lOY2mxFq7mR+jY/E\""
+											"value": "W/\"1c8-Bgx9JrSxvkN0JisXAKS4f6zRQ7w\""
 										},
 										{
 											"key": "Date",
-											"value": "Mon, 01 Apr 2024 14:34:41 GMT"
+											"value": "Tue, 02 Apr 2024 11:38:52 GMT"
 										},
 										{
 											"key": "Connection",
@@ -14221,7 +14221,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country added successfully.\",\n    \"data\": {\n        \"name\": \"American Samoa12\",\n        \"symbol\": \"$\",\n        \"currency_prefix\": \"UT12\",\n        \"flag_ico\": \"\",\n        \"code\": \"AS\",\n        \"status\": \"active\",\n        \"_id\": \"660ac601dd8a8912d62ca9f2\",\n        \"created_at\": \"2024-04-01T14:34:41.159Z\",\n        \"updated_at\": \"2024-04-01T14:34:41.159Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660bee4c5108b58e0f4a1600\",\n        \"created_at\": \"2024-04-02T11:38:52.466Z\",\n        \"updated_at\": \"2024-04-02T11:38:52.466Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
