@@ -14339,17 +14339,17 @@
 							]
 						},
 						{
-							"name": "Edit State Copy",
+							"name": "Delete State",
 							"id": "0df9959a-4323-4c30-8499-c32ec3fff8b7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14377,14 +14377,14 @@
 							},
 							"response": [
 								{
-									"id": "04978689-e631-43ca-b6b3-b04d57c87773",
-									"name": "Edit State",
+									"id": "854e3b96-53c5-4569-bebd-d39a05a86491",
+									"name": "Delete State",
 									"originalRequest": {
-										"method": "PUT",
+										"method": "DELETE",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"American12\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -14403,6 +14403,7 @@
 											],
 											"variable": [
 												{
+													"id": "3562ae10-a5a5-4aac-8bde-29fa71431fd9",
 													"key": "id",
 													"value": "660c4a691c05908e9354b496"
 												}
@@ -14427,15 +14428,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "460"
+											"value": "77"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1cc-zptSA8s6Agi0cIJCjbrs3zo6QgA\""
+											"value": "W/\"4d-eea7xE8WXaKqSQ+9j4bKcqBNoxc\""
 										},
 										{
 											"key": "Date",
-											"value": "Tue, 02 Apr 2024 18:12:13 GMT"
+											"value": "Tue, 02 Apr 2024 18:17:01 GMT"
 										},
 										{
 											"key": "Connection",
@@ -14448,7 +14449,122 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State updated successfully.\",\n    \"data\": {\n        \"_id\": \"660c4a691c05908e9354b496\",\n        \"name\": \"American12\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-02T18:11:53.902Z\",\n        \"updated_at\": \"2024-04-02T18:12:13.069Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get State detail",
+							"id": "7d91c128-b25c-4985-97a8-72785a104a9d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/state/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"state",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "3562ae10-a5a5-4aac-8bde-29fa71431fd9",
+											"key": "id",
+											"value": "660c4a691c05908e9354b496"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a02716fb-cbe8-4529-9901-50488e33d66a",
+									"name": "Delete State",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/state/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"state",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "3562ae10-a5a5-4aac-8bde-29fa71431fd9",
+													"key": "id",
+													"value": "660c4a691c05908e9354b496"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "77"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4d-eea7xE8WXaKqSQ+9j4bKcqBNoxc\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 02 Apr 2024 18:17:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State deleted successfully.\"\n}"
 								}
 							]
 						},
