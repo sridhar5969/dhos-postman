@@ -8205,7 +8205,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-01T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-01T20:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-02T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-02T20:00:00.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
@@ -14224,6 +14224,28 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660bee4c5108b58e0f4a1600\",\n        \"created_at\": \"2024-04-02T11:38:52.466Z\",\n        \"updated_at\": \"2024-04-02T11:38:52.466Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Edit State",
+							"id": "3d37ed57-244f-4acc-915c-86f17dcf2c9f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/state"
+							},
+							"response": []
 						},
 						{
 							"name": "State list-public",
