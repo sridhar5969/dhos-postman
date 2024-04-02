@@ -15552,7 +15552,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
+							"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"vitals\": {\r\n        \"height\": \"1 cm\",\r\n        \"weight\": \"52 kg\",\r\n        \"bp\": \"100\",\r\n        \"heart_rate\": \"70\",\r\n        \"temperature\": \"35.6 c\",\r\n        \"updated_at\": \"2024-04-02T11:35:31.118Z\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
 						},
 						"url": {
 							"raw": "{{BASEURL}}/appointment/doctor/save-notes/:id",
@@ -15568,7 +15568,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "66055d224aa75dbdc0fe8160"
+									"value": "660c2289afc6dbc83e2dd85c"
 								}
 							]
 						}
