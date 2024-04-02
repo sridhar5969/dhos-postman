@@ -10744,7 +10744,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Akil\",\r\n        \"last\": \"T\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"f\",\r\n        \"system\": \"female\",\r\n        \"display\": \"Female\"\r\n    },\r\n    \"mobilephone\": \"9009090409\",\r\n    \"email\": \"kjjjs@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"9/09\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96b01\",\r\n                \"value\": \"Baghramyan\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb827\",\r\n                \"value\": \"Armavir Region\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"899889\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2023-09-09\",\r\n            \"insurance_id\": \"hhj\",\r\n            \"name\": \"hjh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"9090900909\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"kjnkj\"\r\n    },\r\n    \"husband_or_father\": \"hjh\",\r\n    \"status\":\"active\"\r\n}",
+									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Bharathi\",\r\n        \"last\": \"S\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"m\",\r\n        \"system\": \"male\",\r\n        \"display\": \"Male\"\r\n    },\r\n    \"mobilephone\": \"8989898989\",\r\n    \"email\": \"hhhg@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"87/98\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96bb3\",\r\n                \"value\": \"Shaghat\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb82c\",\r\n                \"value\": \"Syunik Province\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"898989\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2024-04-07\",\r\n            \"insurance_id\": \"gg\",\r\n            \"name\": \"ghgh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"676767676767\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"name\"\r\n    },\r\n    \"husband_or_father\": \"hgh\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12060,7 +12060,21 @@
 										}
 									}
 								},
-								"url": "{{BASEURL}}/appointment"
+								"url": {
+									"raw": "{{BASEURL}}/appointment?fromDate=2024-04-01T20:15:00.000Z",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "fromDate",
+											"value": "2024-04-01T20:15:00.000Z"
+										}
+									]
+								}
 							},
 							"response": [
 								{
@@ -12739,7 +12753,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"660baceadb547833cb7a3635\"\r\n}"
+							"raw": "{\r\n    \"date\": \"2024-03-27T12:51:39.949Z\",\r\n    \"slot_time\": \"66055d1097190289315aafb1\"\r\n}"
 						},
 						"url": {
 							"raw": "{{BASEURL}}/appointment/:id",
@@ -13811,7 +13825,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa123\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
