@@ -14460,7 +14460,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -14492,10 +14492,10 @@
 							},
 							"response": [
 								{
-									"id": "a02716fb-cbe8-4529-9901-50488e33d66a",
-									"name": "Delete State",
+									"id": "bebc07ad-23e5-4318-bcf8-63d182e1d9b8",
+									"name": "Get State detail",
 									"originalRequest": {
-										"method": "DELETE",
+										"method": "GET",
 										"header": [],
 										"body": {
 											"mode": "raw",
@@ -14543,15 +14543,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "77"
+											"value": "449"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"4d-eea7xE8WXaKqSQ+9j4bKcqBNoxc\""
+											"value": "W/\"1c1-JLdRIx3kjcUFV+oF/qqUDsuucyU\""
 										},
 										{
 											"key": "Date",
-											"value": "Tue, 02 Apr 2024 18:17:01 GMT"
+											"value": "Tue, 02 Apr 2024 18:22:05 GMT"
 										},
 										{
 											"key": "Connection",
@@ -14564,7 +14564,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State deleted successfully.\"\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get state detail\",\n    \"data\": {\n        \"_id\": \"660c4a691c05908e9354b496\",\n        \"name\": \"American12\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-02T18:11:53.902Z\",\n        \"updated_at\": \"2024-04-02T18:17:01.726Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
@@ -14602,6 +14602,90 @@
 							"response": [
 								{
 									"id": "bc32a9bc-c670-433f-8aa0-8bfca53666c9",
+									"name": "State list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/state"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "330"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"14a-iG54Far6YsbWlnFvcFlNusIpRmM\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 18:11:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e217b448926552543c123d\",\n                \"name\": \"Alabama\",\n                \"symbol\": \"$\",\n                \"country\": \"65e213d948926552543c123b\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "State list",
+							"id": "d8936176-a577-49f9-b8bb-4319ceac9dfe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/general-public/state/country/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general-public",
+										"state",
+										"country",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "7c4579ad-307b-475d-b0bd-0e28746f5795",
+											"key": "id",
+											"value": "65fac2468cda209967a95110"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "714efb5e-ce8a-42cd-94ed-ec3c9b0bb5cd",
 									"name": "State list",
 									"originalRequest": {
 										"method": "GET",
