@@ -14658,30 +14658,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{BASEURL}}/general-public/state/country/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"general-public",
-										"state",
-										"country",
-										":id"
-									],
-									"variable": [
-										{
-											"id": "7c4579ad-307b-475d-b0bd-0e28746f5795",
-											"key": "id",
-											"value": "65fac2468cda209967a95110"
-										}
-									]
-								}
+								"url": "{{BASEURL}}/general/state"
 							},
 							"response": [
 								{
