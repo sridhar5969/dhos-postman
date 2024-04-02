@@ -2348,7 +2348,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"medical_records\": {\n        \"vitals\": {\n            \"height\": \"1 cm\",\n            \"weight\": \"50 kg\",\n            \"bp\": \"100\",\n            \"heart_rate\": \"72\",\n            \"temperature\": \"35.6 c\"\n        }\n    }\n}",
+									"raw": "{\n    \"medical_records\": {\n        \"vitals\": {\n            \"height\": \"1 cm\",\n            \"weight\": \"50 kg\",\n            \"bp\": \"100\",\n            \"heart_rate\": \"72\",\n            \"temperature\": \"35.6 c\"\n        }\n    },\n    \"photo\":\"https://dhosblob.blob.core.windows.net/dhos-images/56ac2239-ef06-448d-be9b-63d25ae615d31000028265.jpg\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10744,7 +10744,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Akil\",\r\n        \"last\": \"T\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"f\",\r\n        \"system\": \"female\",\r\n        \"display\": \"Female\"\r\n    },\r\n    \"mobilephone\": \"9009090409\",\r\n    \"email\": \"kjjjs@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"9/09\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96b01\",\r\n                \"value\": \"Baghramyan\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb827\",\r\n                \"value\": \"Armavir Region\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"899889\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2023-09-09\",\r\n            \"insurance_id\": \"hhj\",\r\n            \"name\": \"hjh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"9090900909\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"kjnkj\"\r\n    },\r\n    \"husband_or_father\": \"hjh\",\r\n    \"status\":\"active\"\r\n}",
+									"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Bharathi\",\r\n        \"last\": \"S\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"m\",\r\n        \"system\": \"male\",\r\n        \"display\": \"Male\"\r\n    },\r\n    \"mobilephone\": \"8989898989\",\r\n    \"email\": \"hhhg@gmail.com\",\r\n    \"country_code\": 91,\r\n    \"addresses\": [\r\n        {\r\n            \"address1\": \"87/98\",\r\n            \"city\": {\r\n                \"_id\": \"65fad8ee8cda209967a96bb3\",\r\n                \"value\": \"Shaghat\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65fb0fa58cda209967abb82c\",\r\n                \"value\": \"Syunik Province\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65fac2468cda209967a950b2\",\r\n                \"value\": \"Armenia\"\r\n            },\r\n            \"pincode\": \"898989\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2024-04-07\",\r\n            \"insurance_id\": \"gg\",\r\n            \"name\": \"ghgh\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"676767676767\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"name\"\r\n    },\r\n    \"husband_or_father\": \"hgh\",\r\n    \"status\": \"others\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14145,7 +14145,88 @@
 					"name": "State",
 					"item": [
 						{
-							"name": "State list",
+							"name": "Add country Copy",
+							"id": "0414549f-3137-422d-a56b-48b5d1e30726",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa123\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/country"
+							},
+							"response": [
+								{
+									"id": "8c138690-e6fe-4b35-af80-71618479b6f6",
+									"name": "Add Country",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/country"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "315"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"13b-TMUTWQx+YH+lOY2mxFq7mR+jY/E\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 01 Apr 2024 14:34:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Country added successfully.\",\n    \"data\": {\n        \"name\": \"American Samoa12\",\n        \"symbol\": \"$\",\n        \"currency_prefix\": \"UT12\",\n        \"flag_ico\": \"\",\n        \"code\": \"AS\",\n        \"status\": \"active\",\n        \"_id\": \"660ac601dd8a8912d62ca9f2\",\n        \"created_at\": \"2024-04-01T14:34:41.159Z\",\n        \"updated_at\": \"2024-04-01T14:34:41.159Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "State list-public",
 							"id": "610f444f-d7fa-4fc1-8936-02528f2ac977",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
