@@ -15434,45 +15434,77 @@
 							]
 						},
 						{
-							"name": "Add City Copy",
+							"name": "Edit City",
 							"id": "2977d23d-44ac-4966-b737-ce31b5b9bea8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
+								"method": "PUT",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/city"
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
 							},
 							"response": [
 								{
-									"id": "a580b2a5-cc24-4309-80c7-dcf6e2468e2f",
-									"name": "Add City",
+									"id": "4f9361ff-7956-4db5-bba4-d06dd751dae5",
+									"name": "Edit City",
 									"originalRequest": {
-										"method": "POST",
+										"method": "PUT",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/city"
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
 									},
-									"status": "Created",
-									"code": 201,
+									"status": "OK",
+									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
@@ -15489,15 +15521,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "438"
+											"value": "442"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1b6-rajyl8eMvqneFdZHA4A7HYVlpw4\""
+											"value": "W/\"1ba-58MH1wX/t+3Hk5mYh0Rs8NAYWAI\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 09:01:54 GMT"
+											"value": "Wed, 03 Apr 2024 10:53:48 GMT"
 										},
 										{
 											"key": "Connection",
@@ -15510,7 +15542,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T09:01:54.002Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
