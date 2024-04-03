@@ -14953,6 +14953,87 @@
 					"name": "City",
 					"item": [
 						{
+							"name": "Add City",
+							"id": "c4406510-cd13-4e47-8f72-56c1a73aae57",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/state"
+							},
+							"response": [
+								{
+									"id": "4c1b69e0-a44d-4807-8222-d3b106a3447a",
+									"name": "Add State",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/state"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "456"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c8-Bgx9JrSxvkN0JisXAKS4f6zRQ7w\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 02 Apr 2024 11:38:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660bee4c5108b58e0f4a1600\",\n        \"created_at\": \"2024-04-02T11:38:52.466Z\",\n        \"updated_at\": \"2024-04-02T11:38:52.466Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "City list",
 							"id": "5d6c5d56-015e-4ccd-99db-2a566205e344",
 							"protocolProfileBehavior": {
@@ -16190,7 +16271,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"vitals\": {\r\n        \"height\": \"1 cm\",\r\n        \"weight\": \"52 kg\",\r\n        \"bp\": \"100\",\r\n        \"heart_rate\": \"70\",\r\n        \"temperature\": \"35.6 c\",\r\n        \"updated_at\": \"2024-04-02T11:35:31.118Z\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
+							"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"vitals\": {\r\n        \"height\": \"1 cm\",\r\n        \"weight\": \"52 kg\",\r\n        \"bp\": \"100\",\r\n        \"heart_rate\": \"60\",\r\n        \"temperature\": \"35.6 c\",\r\n        \"updated_at\": \"2024-04-02T11:35:31.118Z\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
 						},
 						"url": {
 							"raw": "{{BASEURL}}/appointment/doctor/save-notes/:id",
@@ -16206,7 +16287,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "660c2289afc6dbc83e2dd85c"
+									"value": "660cf7697e0f9b77312a085d"
 								}
 							]
 						}
