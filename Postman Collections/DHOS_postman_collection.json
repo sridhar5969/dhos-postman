@@ -17993,6 +17993,302 @@
 						}
 					],
 					"id": "3a4b6468-564c-49ca-88a8-b89a25973867"
+				},
+				{
+					"name": "Relationship Copy",
+					"item": [
+						{
+							"name": "Get Relationship list for drop down",
+							"id": "bd2a7a93-ca8e-4873-aac1-26530c3ab990",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general-public/relationship"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Relationship",
+							"id": "987d0acb-5442-42ce-a0c2-849a01ec0e60",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cousins\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/relationship"
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Relationship",
+							"id": "923bd357-bbf1-442a-915e-6840aa867f67",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cousins12\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/relationship/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"relationship",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "9526c513-3024-4a13-b7ce-db2ca87fd30c",
+											"key": "id",
+											"value": "660d8d2b54208730440dd41a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Relationship detail",
+							"id": "5678fb6e-b5c1-4c83-8582-ed20bebd4e30",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/relationship/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"relationship",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "548ff006-9544-4979-9e90-fffecf65c3ee",
+											"key": "id",
+											"value": "660d8d2b54208730440dd41a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete relationship",
+							"id": "9e14ea2f-5a8b-40b7-b7ae-075cb50fedcd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/relationship/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"relationship",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "32d5aa3f-df94-4374-9a12-425fc7670ded",
+											"key": "id",
+											"value": "660d8d2b54208730440dd41a"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "de1f1afb-42c0-4559-8d05-30091be5593e",
+									"name": "Delete relationship",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/relationship/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"relationship",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d8d2b54208730440dd41a"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "84"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"54-cpXPqfFor39FZZBYoIgAxL8Ur+o\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 17:14:00 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Relationship list",
+							"id": "a49f4c65-9da5-4ffb-a8b3-7c2ed9e4702e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/relationship"
+							},
+							"response": [
+								{
+									"id": "e2a5d20b-9ff8-4448-a2d9-05a57b782e20",
+									"name": "Relationship list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/relationship"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1773"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6ed-ANAN4CZpRp3uYvHZ5dr+/iZyHtE\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 17:14:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e56434dcfe225fd6528f65\",\n                \"name\": \"Niece\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f70\",\n                \"name\": \"Boss\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6a\",\n                \"name\": \"Fiance\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5e\",\n                \"name\": \"Daughter\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f71\",\n                \"name\": \"Employee\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f62\",\n                \"name\": \"Aunt\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6b\",\n                \"name\": \"Friend\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6d\",\n                \"name\": \"Neighbor\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f69\",\n                \"name\": \"Wife\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5d\",\n                \"name\": \"Brother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5b\",\n                \"name\": \"Sister\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f59\",\n                \"name\": \"Son\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f60\",\n                \"name\": \"Grandmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f61\",\n                \"name\": \"Uncle\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f68\",\n                \"name\": \"Husband\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f66\",\n                \"name\": \"Godfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f63\",\n                \"name\": \"Cousin\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6c\",\n                \"name\": \"Roommate\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5c\",\n                \"name\": \"Mother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6f\",\n                \"name\": \"Student\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f64\",\n                \"name\": \"Nephew\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f67\",\n                \"name\": \"Godmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5f\",\n                \"name\": \"Grandfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5a\",\n                \"name\": \"Father\",\n                \"status\": \"active\"\n            }\n        ],\n        \"totalCount\": 25\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "9ef3b53e-81b1-4d12-ad6c-2bbffd58b474"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
