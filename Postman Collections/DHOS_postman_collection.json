@@ -12165,7 +12165,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"email\":\"sridhar-be@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
+									"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12174,7 +12174,66 @@
 								},
 								"url": "{{BASEURL}}/admin/add-new"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "b95b383c-8023-4398-a9b2-7a25f5b71c93",
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/admin/add-new"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "948"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3b4-cmOtn17SUgA443NjU6xrW+BYcJM\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 11:19:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"User updated\",\n    \"data\": {\n        \"name\": {\n            \"first\": \"British\",\n            \"middle\": \"\",\n            \"last\": \"Empire\"\n        },\n        \"email\": \"sridhar-be2@gmail.com\",\n        \"mobilephone\": \"123456789\",\n        \"insurance\": [],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2000-01-01T00:00:00.000Z\",\n        \"photo\": \"\",\n        \"role\": \"6603929356676ece72465341\",\n        \"user_type\": \"admin\",\n        \"status\": \"active\",\n        \"addresses\": [],\n        \"cards\": [],\n        \"createdBy\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"immunizations\": [],\n        \"total_patient_attend\": 0,\n        \"biometric_ids\": [],\n        \"online_status\": \"offline\",\n        \"assistant\": false,\n        \"face\": false,\n        \"finger\": false,\n        \"assign_assitant\": false,\n        \"favDoctors\": [],\n        \"usageCount\": 0,\n        \"_id\": \"660d3b53bd6ed4e8789da502\",\n        \"created_at\": \"2024-04-03T11:19:47.146Z\",\n        \"updated_at\": \"2024-04-03T11:19:47.146Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "5c4d5335-93bf-4b62-b804-273dfee799a3"
