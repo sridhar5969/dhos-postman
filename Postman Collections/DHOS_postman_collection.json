@@ -11689,19 +11689,20 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/appointment/admin/-appointments?timezone=Asia/Kolkata",
+									"raw": "{{BASEURL}}/appointment/admin/appointments",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"appointment",
 										"admin",
-										"-appointments"
+										"appointments"
 									],
 									"query": [
 										{
 											"key": "timezone",
-											"value": "Asia/Kolkata"
+											"value": "Asia/Kolkata",
+											"disabled": true
 										}
 									]
 								}
