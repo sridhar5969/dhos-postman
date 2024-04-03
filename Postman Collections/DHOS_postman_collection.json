@@ -14963,32 +14963,32 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/state"
+								"url": "{{BASEURL}}/general/city"
 							},
 							"response": [
 								{
-									"id": "4c1b69e0-a44d-4807-8222-d3b106a3447a",
-									"name": "Add State",
+									"id": "5b146733-74af-4a6c-889d-aba86df71a94",
+									"name": "Add City",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"American\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/state"
+										"url": "{{BASEURL}}/general/city"
 									},
 									"status": "Created",
 									"code": 201,
@@ -15008,15 +15008,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "456"
+											"value": "438"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1c8-Bgx9JrSxvkN0JisXAKS4f6zRQ7w\""
+											"value": "W/\"1b6-rajyl8eMvqneFdZHA4A7HYVlpw4\""
 										},
 										{
 											"key": "Date",
-											"value": "Tue, 02 Apr 2024 11:38:52 GMT"
+											"value": "Wed, 03 Apr 2024 09:01:54 GMT"
 										},
 										{
 											"key": "Connection",
@@ -15029,7 +15029,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"symbol\": \"ALO\",\n        \"status\": \"active\",\n        \"country\": \"660be5794b2cbd8aeaf75db8\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660bee4c5108b58e0f4a1600\",\n        \"created_at\": \"2024-04-02T11:38:52.466Z\",\n        \"updated_at\": \"2024-04-02T11:38:52.466Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T09:01:54.002Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
