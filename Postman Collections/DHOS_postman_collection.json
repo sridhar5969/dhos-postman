@@ -11576,7 +11576,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/appointment/admin/todays-appointments",
+									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -11594,8 +11594,114 @@
 										},
 										{
 											"key": "timezone",
-											"value": "Asia/Kolkata",
-											"disabled": true
+											"value": "Asia/Kolkata"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7b9efc6b-8f04-4645-8ce4-9584d4f8cc27",
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"appointment",
+												"admin",
+												"todays-appointments"
+											],
+											"query": [
+												{
+													"key": "timezone",
+													"value": "America/New_York",
+													"description": "default time zone Asia/Kolkata",
+													"disabled": true
+												},
+												{
+													"key": "timezone",
+													"value": "Asia/Kolkata"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "881"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"371-LkbBgpew5vdkVkU+5zL7INYXCH8\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 05:52:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660ce6bb72fb933056568b20\",\n                \"patient\": {\n                    \"name\": {\n                        \"first\": \"Test\",\n                        \"middle\": \"M\",\n                        \"last\": \"Patient\"\n                    }\n                },\n                \"doctor\": {\n                    \"name\": {\n                        \"first\": \"Sudhir\",\n                        \"middle\": \"\",\n                        \"last\": \"Chowdary\"\n                    }\n                },\n                \"date\": \"2024-04-03T05:30:00.000Z\",\n                \"status\": \"open\",\n                \"payment_status\": \"paid\",\n                \"time\": \"6603063d062dffcc96c4a119\"\n            },\n            {\n                \"_id\": \"660a77fece54e05ab60743ce\",\n                \"patient\": {\n                    \"name\": {\n                        \"first\": \"Vishnu\",\n                        \"middle\": \"\",\n                        \"last\": \"S\"\n                    }\n                },\n                \"doctor\": {\n                    \"name\": {\n                        \"first\": \"Jashmin\",\n                        \"last\": \"S\"\n                    }\n                },\n                \"date\": \"2024-04-03T09:00:00.000Z\",\n                \"status\": \"open\",\n                \"payment_status\": \"subscription\",\n                \"time\": \"6602f5ef85d979f4964e0d13\"\n            },\n            {\n                \"_id\": \"660a33688ac8d43268b87413\",\n                \"patient\": {\n                    \"name\": {\n                        \"first\": \"Vishnu\",\n                        \"middle\": \"\",\n                        \"last\": \"S\"\n                    }\n                },\n                \"doctor\": {\n                    \"name\": {\n                        \"first\": \"Harini\",\n                        \"middle\": \"\",\n                        \"last\": \"Doc\"\n                    }\n                },\n                \"date\": \"2024-04-03T13:00:00.000Z\",\n                \"status\": \"open\",\n                \"payment_status\": \"subscription\",\n                \"time\": \"6602f5ec85d979f4964e0cf1\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "b2d09e73-3f86-4e4c-8402-d7704de750ad"
+				},
+				{
+					"name": "Consultations",
+					"item": [
+						{
+							"name": "Appointments List",
+							"id": "af82cbb2-9d6d-4cd6-bb6a-04d9c44a6466",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/appointment/admin/-appointments?timezone=Asia/Kolkata",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"admin",
+										"-appointments"
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "Asia/Kolkata"
 										}
 									]
 								}
@@ -11603,7 +11709,7 @@
 							"response": []
 						}
 					],
-					"id": "b2d09e73-3f86-4e4c-8402-d7704de750ad"
+					"id": "b329cd90-334d-4d4a-8d71-8ebd0449dfdd"
 				},
 				{
 					"name": "Create a Admin(Any User)",
