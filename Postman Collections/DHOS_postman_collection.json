@@ -16429,7 +16429,7 @@
 							"response": [
 								{
 									"id": "940be971-70f2-4aab-b820-a295f363ec47",
-									"name": "City list",
+									"name": "Drug list",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
