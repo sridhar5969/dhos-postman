@@ -17117,7 +17117,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"English\",\r\n    \"code\": \"ENG\",\r\n    \"description\": \"English\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -17125,34 +17125,33 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"raw": "{{BASEURL}}/general/language/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"icd-code",
+										"language",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "6f318633-7a2e-4029-907e-c9c2cdfbbf05",
 											"key": "id",
-											"value": "660d68bbb98500c05497dc08"
+											"value": "660d759e1bda166b3d45243b"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "6c73b11d-2b0c-4498-8b26-c7dd6af3ee75",
-									"name": "Edit ICD Code",
+									"id": "8e51b532-1de9-43ee-a38c-be183bc6ecbd",
+									"name": "Edit Language",
 									"originalRequest": {
 										"method": "PUT",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"English\",\r\n    \"code\": \"ENG\",\r\n    \"description\": \"English\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -17160,19 +17159,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"raw": "{{BASEURL}}/general/language/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"icd-code",
+												"language",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d68bbb98500c05497dc08"
+													"value": "660d759e1bda166b3d45243b"
 												}
 											]
 										}
@@ -17195,15 +17194,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "475"
+											"value": "445"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1db-VulEib4q6BGJvufSaTIqtG16674\""
+											"value": "W/\"1bd-bY0qcgxkSUyOEgYgnLL4MqRN3e0\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 14:35:19 GMT"
+											"value": "Wed, 03 Apr 2024 15:29:53 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17216,12 +17215,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Get ICD Code detail",
+							"name": "Get Language detail",
 							"id": "0dd11fa1-a3c0-494a-b9c2-39f4a342ff19",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17239,28 +17238,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"raw": "{{BASEURL}}/general/language/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"icd-code",
+										"language",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "f355e696-ae02-4d61-95a5-2e3d01382649",
 											"key": "id",
-											"value": "660d68bbb98500c05497dc08"
+											"value": "660d759e1bda166b3d45243b"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "2b618f0c-0770-4fa5-a075-aab02c669cf3",
-									"name": "Get ICD Code detail",
+									"id": "529e31e9-8a0c-45a6-b26f-e339c334978e",
+									"name": "Get Language detail",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -17274,19 +17272,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"raw": "{{BASEURL}}/general/language/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"icd-code",
+												"language",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d68bbb98500c05497dc08"
+													"value": "660d759e1bda166b3d45243b"
 												}
 											]
 										}
@@ -17309,15 +17307,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "464"
+											"value": "434"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1d0-47jYRFuc5yGafs7UxlBRKtdUBAY\""
+											"value": "W/\"1b2-1Su0Tb1lYkpcG7yGx7OqJU4tN1c\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 14:36:17 GMT"
+											"value": "Wed, 03 Apr 2024 15:31:43 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17330,12 +17328,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get ICD code detail\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get language detail\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Delete ICD Code",
+							"name": "Delete Language",
 							"id": "be0e4a27-d815-441b-991c-80a2e4ed1dc2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17353,28 +17351,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"raw": "{{BASEURL}}/general/language/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"icd-code",
+										"language",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "9ff949e9-2611-4aa9-a69a-f3a1e1485661",
 											"key": "id",
-											"value": "660d68bbb98500c05497dc08"
+											"value": "660d759e1bda166b3d45243b"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "efca1e62-492c-40d0-bf8c-66a5b9a9b5b8",
-									"name": "Delete ICD Code",
+									"id": "033b1726-3cbf-48c4-bfba-4eb5560b9764",
+									"name": "Delete Language",
 									"originalRequest": {
 										"method": "DELETE",
 										"header": [],
@@ -17388,19 +17385,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"raw": "{{BASEURL}}/general/language/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"icd-code",
+												"language",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d68bbb98500c05497dc08"
+													"value": "660d759e1bda166b3d45243b"
 												}
 											]
 										}
@@ -17427,11 +17424,11 @@
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"50-F2EO1JcioRf2x/GaV9Cg/Ky9K7I\""
+											"value": "W/\"50-MCZtnsqJjFNQBc6pDQpPfPY9iIU\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 14:36:59 GMT"
+											"value": "Wed, 03 Apr 2024 15:32:10 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17444,12 +17441,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code deleted successfully.\"\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language deleted successfully.\"\n}"
 								}
 							]
 						},
 						{
-							"name": "ICD Code list",
+							"name": "Language list",
 							"id": "c729f85c-b926-4bc2-9c2d-be83f98c4257",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17457,16 +17454,16 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/general/icd-code"
+								"url": "{{BASEURL}}/general/language"
 							},
 							"response": [
 								{
-									"id": "6c49a109-8806-4481-895d-68058680cb53",
-									"name": "ICD Code list",
+									"id": "23a15d84-5cf0-49d8-9070-fa860d87b213",
+									"name": "Language list",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "{{BASEURL}}/general/icd-code"
+										"url": "{{BASEURL}}/general/language"
 									},
 									"status": "OK",
 									"code": 200,
@@ -17486,15 +17483,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "484"
+											"value": "451"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1e4-PFko0CYtKMiYp5XwvHjgepDFvZk\""
+											"value": "W/\"1c3-+fxZUOsImQ7UHIN61MbAiq71Jkk\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 14:37:35 GMT"
+											"value": "Wed, 03 Apr 2024 15:33:25 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17507,7 +17504,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d69abb98500c05497dc10\",\n                \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n                \"code\": \"S42222B\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T14:37:31.550Z\",\n                \"updated_at\": \"2024-04-03T14:37:31.550Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d75851bda166b3d452438\",\n                \"name\": \"Arabic\",\n                \"code\": \"AR\",\n                \"description\": \"Arabic\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T15:28:05.491Z\",\n                \"updated_at\": \"2024-04-03T15:28:05.491Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
 								}
 							]
 						}
