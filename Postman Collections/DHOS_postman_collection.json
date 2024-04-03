@@ -11567,7 +11567,7 @@
 					"name": "DashBoard",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Todays Appointment",
 							"id": "c295b351-9465-4702-8f6d-e9812877df74",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -11576,7 +11576,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
+									"raw": "{{BASEURL}}/appointment/admin/todays-appointments",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -11589,11 +11589,13 @@
 										{
 											"key": "timezone",
 											"value": "America/New_York",
+											"description": "default time zone Asia/Kolkata",
 											"disabled": true
 										},
 										{
 											"key": "timezone",
-											"value": "Asia/Kolkata"
+											"value": "Asia/Kolkata",
+											"disabled": true
 										}
 									]
 								}
