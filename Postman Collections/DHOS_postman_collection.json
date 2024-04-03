@@ -12165,7 +12165,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"email\":\"sridhar-be@gmail.com\",\r\n    \r\n}",
+									"raw": "{\r\n    \"email\":\"sridhar-be@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -15860,36 +15860,15 @@
 							]
 						},
 						{
-							"name": "City list-public Copy",
+							"name": "City list",
 							"id": "501d9d0f-3d84-48cf-a4ff-f9d3b80787fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{BASEURL}}/general-public/city/state/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"general-public",
-										"city",
-										"state",
-										":id"
-									],
-									"variable": [
-										{
-											"id": "ae7e7409-e014-4733-95fd-3ac8dde6013e",
-											"key": "id",
-											"value": "65fb0fa88cda209967abbdb9"
-										}
-									]
-								}
+								"url": "{{BASEURL}}/general/city"
 							},
 							"response": [
 								{
