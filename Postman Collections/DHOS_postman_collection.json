@@ -17021,6 +17021,498 @@
 						}
 					],
 					"id": "c6139bf7-ee73-4a53-807a-53192951ad3a"
+				},
+				{
+					"name": "Language",
+					"item": [
+						{
+							"name": "Add ICD Code",
+							"id": "04135a67-eae2-488f-8ef3-1ab2e9c9388c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/icd-code"
+							},
+							"response": [
+								{
+									"id": "24a86ab4-edb5-4b25-b99b-46a9490ae595",
+									"name": "Add ICD Code",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/icd-code"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "473"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1d9-6tftKM0e3ws/jTa/KXSy1arkbsk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:33:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code added successfully.\",\n    \"data\": {\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:33:31.029Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit ICD Code",
+							"id": "44fc2db0-049a-4be2-b5b6-886719eab0ea",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"icd-code",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "6f318633-7a2e-4029-907e-c9c2cdfbbf05",
+											"key": "id",
+											"value": "660d68bbb98500c05497dc08"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "6c73b11d-2b0c-4498-8b26-c7dd6af3ee75",
+									"name": "Edit ICD Code",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"icd-code",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d68bbb98500c05497dc08"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "475"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1db-VulEib4q6BGJvufSaTIqtG16674\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:35:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get ICD Code detail",
+							"id": "0dd11fa1-a3c0-494a-b9c2-39f4a342ff19",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"icd-code",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "f355e696-ae02-4d61-95a5-2e3d01382649",
+											"key": "id",
+											"value": "660d68bbb98500c05497dc08"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "2b618f0c-0770-4fa5-a075-aab02c669cf3",
+									"name": "Get ICD Code detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"icd-code",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d68bbb98500c05497dc08"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "464"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1d0-47jYRFuc5yGafs7UxlBRKtdUBAY\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:36:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get ICD code detail\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete ICD Code",
+							"id": "be0e4a27-d815-441b-991c-80a2e4ed1dc2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/icd-code/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"icd-code",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "9ff949e9-2611-4aa9-a69a-f3a1e1485661",
+											"key": "id",
+											"value": "660d68bbb98500c05497dc08"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "efca1e62-492c-40d0-bf8c-66a5b9a9b5b8",
+									"name": "Delete ICD Code",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"icd-code",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d68bbb98500c05497dc08"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"50-F2EO1JcioRf2x/GaV9Cg/Ky9K7I\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:36:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "ICD Code list",
+							"id": "c729f85c-b926-4bc2-9c2d-be83f98c4257",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/icd-code"
+							},
+							"response": [
+								{
+									"id": "6c49a109-8806-4481-895d-68058680cb53",
+									"name": "ICD Code list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/icd-code"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "484"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1e4-PFko0CYtKMiYp5XwvHjgepDFvZk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:37:35 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d69abb98500c05497dc10\",\n                \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n                \"code\": \"S42222B\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T14:37:31.550Z\",\n                \"updated_at\": \"2024-04-03T14:37:31.550Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "5b46bb62-720d-419b-a1e8-8f8d54ca15b8"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
