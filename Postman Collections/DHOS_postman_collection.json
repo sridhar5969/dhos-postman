@@ -16537,7 +16537,7 @@
 							]
 						},
 						{
-							"name": "Add Drug",
+							"name": "Add ICD Code",
 							"id": "d39fc4f5-208d-412f-874f-583abd1931ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16547,32 +16547,32 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/drug"
+								"url": "{{BASEURL}}/general/icd-code"
 							},
 							"response": [
 								{
-									"id": "8a406397-688a-40e5-ae04-dba899d76de2",
-									"name": "Add Drug",
+									"id": "7a888eb8-e71c-407f-8980-e732d0d6c73d",
+									"name": "Add ICD Code",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/drug"
+										"url": "{{BASEURL}}/general/icd-code"
 									},
 									"status": "Created",
 									"code": 201,
@@ -16592,15 +16592,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "559"
+											"value": "473"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"22f-3NiPlLTDP8Wp0YrJWHStKteD8Pw\""
+											"value": "W/\"1d9-6tftKM0e3ws/jTa/KXSy1arkbsk\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 12:24:09 GMT"
+											"value": "Wed, 03 Apr 2024 14:33:31 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16613,12 +16613,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug added successfully.\",\n    \"data\": {\n        \"name\": \"ATIVAN TABLETS 1 MG\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MG\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:24:09.796Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code added successfully.\",\n    \"data\": {\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:33:31.029Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Edit Drug",
+							"name": "Edit ICD Code",
 							"id": "2cbfb34e-30c0-45a3-a5af-cf8cc1288e9f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16628,7 +16628,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -16636,100 +16636,24 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/drug/:id",
+									"raw": "{{BASEURL}}/general/icd-code/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"drug",
+										"icd-code",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "180b1a9b-0444-470f-9334-46fb000180de",
 											"key": "id",
-											"value": "660d4a6984f69b1f122c6d23"
+											"value": "660d68bbb98500c05497dc08"
 										}
 									]
 								}
 							},
-							"response": [
-								{
-									"id": "caa401cc-5f42-484b-9d2c-1f6f86b689d6",
-									"name": "Edit Drug",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{BASEURL}}/general/drug/:id",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"general",
-												"drug",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "660d4a6984f69b1f122c6d23"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "561"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"231-rAAMpWtztKpLRqcw4DhzLpcqcPs\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 03 Apr 2024 12:27:05 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"name\": \"ATIVAN TABLETS 1 MM\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MM\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:27:05.356Z\",\n        \"__v\": 0\n    }\n}"
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "Get drug detail",
