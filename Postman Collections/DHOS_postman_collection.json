@@ -11780,6 +11780,256 @@
 					"id": "b329cd90-334d-4d4a-8d71-8ebd0449dfdd"
 				},
 				{
+					"name": "Users Management",
+					"item": [
+						{
+							"name": "Delete Admin",
+							"id": "434f27a9-4ab6-4206-8a01-4a48d0e14095",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/admin/user/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"admin",
+										"user",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "9d90ef90-3857-4359-b658-d3ed72b29034",
+											"key": "id",
+											"value": "660ab0f1bc36fe92856a1a80"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Admin By Id",
+							"id": "74639720-2721-4c7f-a97b-d25d308644d4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{ACCESSTOKEN}}"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": {\n        \"first\": \"Family\",\n        \"middle\": \"\",\n        \"last\": \"Member\"\n    },\n    \"email\": \"test-fam-mem@gmail.com\",\n    \"stripe_cus_id\": \"cus_PoXXGchqzwVyga\",\n    \"mobilephone\": \"2111141114\",\n    \"insurance\": [\n        {\n            \"expire\": \"2030-01-01\",\n            \"insurance_id\": \"3747D7YD37ND\",\n            \"name\": \"Bajaj Allianz\"\n        }\n    ],\n    \"country_code\": 91,\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n    \"status\": \"active\",\n    \"addresses\": [\n        {\n            \"type\": \"primary\",\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65fad97a8cda209967aa13db\",\n                \"value\": \"Vijayawada\"\n            },\n            \"state\": {\n                \"_id\": \"65fb0fa88cda209967abbd9c\",\n                \"value\": \"Andhra Pradesh\"\n            },\n            \"country\": {\n                \"_id\": \"65fac2468cda209967a95110\",\n                \"value\": \"India\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/admin/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"admin",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "95aa05c3-b4a2-4fed-b138-819bf6f65210",
+											"key": "id",
+											"value": "userObjectId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "91c62041-0d69-40d0-b4d6-7b8e2a3baba3",
+									"name": "FORBIDDEN",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"mobilephone\": \"9159041421\",\n    \"country_code\": 91,\n    \"role\": \"65d34539abbec727dc70d30c\",\n    \"user_type\": \"patient\",\n    \"status\": \"active\",\n    \"addresses\": [\n        {\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"state\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"country\": {\n                \"_id\": \"country-id\",\n                \"value\": \"Chenah\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ],\n    \"createdAt\": \"2024-02-26T07:07:33.213Z\",\n    \"updatedAt\": \"2024-02-26T07:28:00.095Z\",\n    \"__v\": 0,\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"email\": \"example@gmail.com\",\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"name\": {\n        \"first\": \"John\",\n        \"middle\": \"\",\n        \"last\": \"Cena\"\n    },\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/patient/family-member/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"patient",
+												"family-member",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "65dc38b5d23a655911af9b10"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "40"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"28-/A0r2gBi62UEXdaQT52VOJ1+hp4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 28 Feb 2024 05:30:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"message\": \"Forbidden\",\n    \"statusCode\": 403\n}"
+								},
+								{
+									"id": "11841b28-8d21-4709-a40a-106d0d98b892",
+									"name": "Update Family Member Detail",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"addresses\": [\n        {\n            \"address1\": \"10th Cross street\",\n            \"city\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"state\": {\n                \"_id\": \"65d34539abbec727dc70d30c\",\n                \"value\": \"Chenah\"\n            },\n            \"country\": {\n                \"_id\": \"country-id\",\n                \"value\": \"Chenah\"\n            },\n            \"pincode\": \"622301\"\n        }\n    ],\n    \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n    \"gender\": {\n        \"code\": \"m\",\n        \"system\": \"male\",\n        \"display\": \"Male\"\n    },\n    \"name\": {\n        \"first\": \"John\",\n        \"middle\": \"\",\n        \"last\": \"Cena\"\n    },\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"relationship\": {\n        \"_id\": \"65e56434dcfe225fd6528f59\",\n        \"value\": \"Son\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/patient/family-member/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"patient",
+												"family-member",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "65e56793016b920e8ecd10fb"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "964"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3c4-gwsaLEWKMaZHWjgFhoS9TBDZ3Zc\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 04 Mar 2024 06:20:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Family member profile updated Successfully\",\n    \"data\": {\n        \"_id\": \"65e56793016b920e8ecd10fb\",\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"email\": \"hari2@gmail.com\",\n        \"mobilephone\": \"19231447897\",\n        \"insurance\": [\n            {\n                \"expire\": \"2030-01-01\",\n                \"insurance_id\": \"3747D7YD37ND\",\n                \"name\": \"Bajaj Allianz\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"state\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\",\n                    \"value\": \"Chenah\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": \"65dee9d63bf98c47e49e3435\",\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"immunizations\": [],\n        \"createdAt\": \"2024-03-04T06:17:55.145Z\",\n        \"updatedAt\": \"2024-03-04T06:20:27.253Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "5c4d5335-93bf-4b62-b804-273dfee799a3"
+				},
+				{
 					"name": "Create a Admin(Any User)",
 					"id": "725faa90-96a3-4817-9a7a-84eb676baafe",
 					"protocolProfileBehavior": {
