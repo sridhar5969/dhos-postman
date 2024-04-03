@@ -15434,6 +15434,87 @@
 							]
 						},
 						{
+							"name": "Add City Copy",
+							"id": "2977d23d-44ac-4966-b737-ce31b5b9bea8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/city"
+							},
+							"response": [
+								{
+									"id": "a580b2a5-cc24-4309-80c7-dcf6e2468e2f",
+									"name": "Add City",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/city"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "438"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1b6-rajyl8eMvqneFdZHA4A7HYVlpw4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 09:01:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T09:01:54.002Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "City list",
 							"id": "5d6c5d56-015e-4ccd-99db-2a566205e344",
 							"protocolProfileBehavior": {
