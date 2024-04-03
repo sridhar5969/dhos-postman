@@ -11575,7 +11575,28 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/appointment/admin/todays-appointments"
+								"url": {
+									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"admin",
+										"todays-appointments"
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "America/New_York",
+											"disabled": true
+										},
+										{
+											"key": "timezone",
+											"value": "Asia/Kolkata"
+										}
+									]
+								}
 							},
 							"response": []
 						}
