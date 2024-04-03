@@ -12165,7 +12165,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
+									"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":91,\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12183,7 +12183,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test@12345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":\"91\",\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
+											"raw": "{\r\n    \"email\":\"sridhar-be2@gmail.com\",\r\n    \"password\":\"Test345\",\r\n    \"user_type\":\"admin\",\r\n    \"name\":{\r\n        \"first\":\"British\",\r\n        \"middle\":\"\",\r\n        \"last\":\"Empire\"\r\n    },\r\n    \"gender\":{\r\n        \"code\":\"m\",\r\n        \"system\":\"male\",\r\n        \"display\":\"Male\"\r\n    },\r\n    \"birthdate\":\"2000-01-01\",\r\n    \"country_code\":91,\r\n    \"mobilephone\":\"123456789\",\r\n    \"status\":\"active\",\r\n    \"photo\":\"\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
