@@ -17998,7 +17998,7 @@
 					"name": "Relationship Copy",
 					"item": [
 						{
-							"name": "Get Relationship list for drop down",
+							"name": "Get Role list for drop down",
 							"id": "bd2a7a93-ca8e-4873-aac1-26530c3ab990",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -18006,9 +18006,59 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/general-public/relationship"
+								"url": "{{BASEURL}}/general/role/get/all"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "858e7b57-d812-4fb9-8e62-7df98a0b5221",
+									"name": "Get Relationship list for drop down",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/role/get/all"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "938"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3aa-Vsb50K0J93Gvk9AoYzJsx3Icua4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 18:10:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65da3a13039fb60eb4ffd4ec\",\n                \"name\": \"Patient\",\n                \"status\": \"active\",\n                \"key\": \"patient\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65da3aaf039fb60eb4ffd4ed\",\n                \"name\": \"Doctor\",\n                \"status\": \"active\",\n                \"key\": \"doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65db8d18039fb60eb4ffd502\",\n                \"name\": \"Asst. Doctor\",\n                \"status\": \"active\",\n                \"key\": \"asst-doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6603929356676ece72465341\",\n                \"name\": \"Admin\",\n                \"status\": \"active\",\n                \"key\": \"admin\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6604010456676ece72465345\",\n                \"name\": \"Family Member\",\n                \"status\": \"active\",\n                \"key\": \"family\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"totalCount\": 5\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "Add Relationship",
@@ -18147,82 +18197,7 @@
 									]
 								}
 							},
-							"response": [
-								{
-									"id": "de1f1afb-42c0-4559-8d05-30091be5593e",
-									"name": "Delete relationship",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{BASEURL}}/general/relationship/:id",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"general",
-												"relationship",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "660d8d2b54208730440dd41a"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "84"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"54-cpXPqfFor39FZZBYoIgAxL8Ur+o\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 03 Apr 2024 17:14:00 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship deleted successfully.\"\n}"
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "Relationship list",
@@ -18235,57 +18210,7 @@
 								"header": [],
 								"url": "{{BASEURL}}/general/relationship"
 							},
-							"response": [
-								{
-									"id": "e2a5d20b-9ff8-4448-a2d9-05a57b782e20",
-									"name": "Relationship list",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "{{BASEURL}}/general/relationship"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "1773"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"6ed-ANAN4CZpRp3uYvHZ5dr+/iZyHtE\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 03 Apr 2024 17:14:59 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e56434dcfe225fd6528f65\",\n                \"name\": \"Niece\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f70\",\n                \"name\": \"Boss\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6a\",\n                \"name\": \"Fiance\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5e\",\n                \"name\": \"Daughter\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f71\",\n                \"name\": \"Employee\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f62\",\n                \"name\": \"Aunt\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6b\",\n                \"name\": \"Friend\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6d\",\n                \"name\": \"Neighbor\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f69\",\n                \"name\": \"Wife\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5d\",\n                \"name\": \"Brother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5b\",\n                \"name\": \"Sister\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f59\",\n                \"name\": \"Son\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f60\",\n                \"name\": \"Grandmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f61\",\n                \"name\": \"Uncle\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f68\",\n                \"name\": \"Husband\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f66\",\n                \"name\": \"Godfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f63\",\n                \"name\": \"Cousin\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6c\",\n                \"name\": \"Roommate\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5c\",\n                \"name\": \"Mother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6f\",\n                \"name\": \"Student\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f64\",\n                \"name\": \"Nephew\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f67\",\n                \"name\": \"Godmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5f\",\n                \"name\": \"Grandfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5a\",\n                \"name\": \"Father\",\n                \"status\": \"active\"\n            }\n        ],\n        \"totalCount\": 25\n    }\n}"
-								}
-							]
+							"response": []
 						}
 					],
 					"id": "9ef3b53e-81b1-4d12-ad6c-2bbffd58b474"
