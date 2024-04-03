@@ -12153,6 +12153,28 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d30e76287a108bf2770c6\",\n                \"name\": {\n                    \"first\": \"kumar\",\n                    \"last\": \"new\"\n                },\n                \"email\": \"admin1@gmail.com\",\n                \"mobilephone\": \"7094715958\",\n                \"country_code\": 91,\n                \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n                \"status\": \"pending\"\n            },\n            {\n                \"_id\": \"660d30cb8ea9ab24be12a3c5\",\n                \"name\": {\n                    \"first\": \"kumar\",\n                    \"last\": \"new\"\n                },\n                \"email\": \"admin@gmail.com\",\n                \"mobilephone\": \"7094715959\",\n                \"country_code\": 91,\n                \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n                \"status\": \"pending\"\n            },\n            {\n                \"_id\": \"65f57093180f9f5575876409\",\n                \"mobilephone\": \"7094715969\",\n                \"country_code\": 91,\n                \"status\": \"active\",\n                \"email\": \"admin@yopmail.com\",\n                \"name\": {\n                    \"first\": \"Admin\",\n                    \"last\": \"Sridhar\"\n                }\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Add New User",
+							"id": "138ff4a9-00fb-47a8-a01c-8d51399b4ad0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"sridhar-be@gmail.com\",\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/admin/add-new"
+							},
+							"response": []
 						}
 					],
 					"id": "5c4d5335-93bf-4b62-b804-273dfee799a3"
