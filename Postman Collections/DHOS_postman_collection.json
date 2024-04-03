@@ -17026,7 +17026,7 @@
 					"name": "Language",
 					"item": [
 						{
-							"name": "Add ICD Code",
+							"name": "Add Language",
 							"id": "04135a67-eae2-488f-8ef3-1ab2e9c9388c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17036,32 +17036,32 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"English\",\r\n    \"code\": \"EN\",\r\n    \"description\": \"English\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/icd-code"
+								"url": "{{BASEURL}}/general/language"
 							},
 							"response": [
 								{
-									"id": "24a86ab4-edb5-4b25-b99b-46a9490ae595",
+									"id": "35b4bf13-1541-4da4-90ae-7506ef52dd21",
 									"name": "Add ICD Code",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"Arabic\",\r\n    \"code\": \"AR\",\r\n    \"description\": \"Arabic\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/icd-code"
+										"url": "{{BASEURL}}/general/language"
 									},
 									"status": "Created",
 									"code": 201,
@@ -17081,15 +17081,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "473"
+											"value": "440"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1d9-6tftKM0e3ws/jTa/KXSy1arkbsk\""
+											"value": "W/\"1b8-z7qWaj9Ho+cl9QXT7BYNMnQMMJ0\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 14:33:31 GMT"
+											"value": "Wed, 03 Apr 2024 15:28:05 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17102,12 +17102,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code added successfully.\",\n    \"data\": {\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:33:31.029Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language added successfully.\",\n    \"data\": {\n        \"name\": \"Arabic\",\n        \"code\": \"AR\",\n        \"description\": \"Arabic\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d75851bda166b3d452438\",\n        \"created_at\": \"2024-04-03T15:28:05.491Z\",\n        \"updated_at\": \"2024-04-03T15:28:05.491Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Edit ICD Code",
+							"name": "Edit Language",
 							"id": "44fc2db0-049a-4be2-b5b6-886719eab0ea",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
