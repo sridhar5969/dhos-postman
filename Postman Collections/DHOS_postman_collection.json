@@ -12035,7 +12035,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/admin/users"
+								"url": "{{BASEURL}}/admin/admin-users"
 							},
 							"response": []
 						}
@@ -12053,7 +12053,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9489468126,\n    \"country_code\" : 91,\n    \"user_type\" : \"patient\",\n    \"name\":{\n        \"first\" :\"kumar\",\n        \"last\" : \"new\"\n    },\n    \"email\" : \"kumar@gmail.com\",\n    \"password\" : \"kumar@12345\",\n    \"gender\": {\n        \"code\" : \"M\",\n        \"system\" : \"\",\n        \"display\" : \"Male\"\n    },\n    \"birthdate\" : \"06-03-1994\",\n    \"photo\" : \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\"\n}",
+							"raw": "{\n    \"mobilephone\" : 7094715959,\n    \"country_code\" : 91,\n    \"user_type\" : \"patient\",\n    \"name\":{\n        \"first\" :\"kumar\",\n        \"last\" : \"new\"\n    },\n    \"email\" : \"admin@gmail.com\",\n    \"password\" : \"kumar@12345\",\n    \"gender\": {\n        \"code\" : \"M\",\n        \"system\" : \"\",\n        \"display\" : \"Male\"\n    },\n    \"birthdate\" : \"06-03-1994\",\n    \"photo\" : \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
