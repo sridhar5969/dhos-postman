@@ -14000,71 +14000,7 @@
 				},
 				{
 					"name": "Drug/Medicine",
-					"item": [
-						{
-							"name": "Get All Medicines Without Pagenation",
-							"id": "ac90624d-a977-4d45-9f1e-6113263fdb36",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{BASEURL}}/general/medicines/all"
-							},
-							"response": [
-								{
-									"id": "6795840a-d6a5-4e64-a50e-fe56d28be610",
-									"name": "Get All Drug List For Doctor to Add Medications For Patient",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "{{BASEURL}}/general/medicines/all"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "462"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"1ce-rkYVZ5xtsymjlRJKpOQpP2Yg/tM\""
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 08 Mar 2024 08:28:36 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"65eaca8e87a3126e478a0866\",\n            \"name\": \"Paracetamol\",\n            \"dosage\": \"500mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0867\",\n            \"name\": \"Aspirin\",\n            \"dosage\": \"100mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0868\",\n            \"name\": \"Amoxicillin\",\n            \"dosage\": \"250mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0869\",\n            \"name\": \"Loratadine\",\n            \"dosage\": \"5mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a086a\",\n            \"name\": \"Ibuprofen\",\n            \"dosage\": \"200mg\",\n            \"unit\": \"mL\"\n        }\n    ]\n}"
-								}
-							]
-						}
-					],
+					"item": [],
 					"id": "7fc84a8e-cd00-4319-97d4-10717bff1adb"
 				},
 				{
@@ -15409,6 +15345,78 @@
 					"id": "006951b8-76ec-45af-851c-bb0ea9934234"
 				},
 				{
+					"name": "Symptoms",
+					"item": [
+						{
+							"name": "Symptoms list",
+							"id": "616267d9-c0e0-411e-afea-18fdfe77c110",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general-public/symptoms"
+							},
+							"response": [
+								{
+									"id": "2b0552b7-ae7a-4d8a-aeb6-3672c1d699f3",
+									"name": "Symptoms list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/symptoms"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1028"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"404-XSJNBJpzF2hVtFw8HVSwvNV2aZU\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 08:05:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Symptoms list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660276e9765799acdbc7d2ba\",\n                \"key\": \"#0OSH\",\n                \"code\": \"#0OSH\",\n                \"display_name\": \"Fever\",\n                \"value\": \"Fever\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"_id\": \"660276e9765799acdbc7d2bb\",\n                \"key\": \"#0OSS\",\n                \"code\": \"#0OSS\",\n                \"display_name\": \"Cough\",\n                \"value\": \"Cough\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"_id\": \"660276e9765799acdbc7d2bc\",\n                \"key\": \"#0OSA\",\n                \"code\": \"#0OSA\",\n                \"display_name\": \"Flu\",\n                \"value\": \"Flu\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "e86429d2-7c63-406f-aefa-4d170c2b04d3"
+				},
+				{
 					"name": "City",
 					"item": [
 						{
@@ -15985,30 +15993,159 @@
 					"id": "0b2afe85-c0c9-4cf6-8464-e1e6c40dada2"
 				},
 				{
-					"name": "Symptoms",
+					"name": "Drug",
 					"item": [
 						{
-							"name": "Symptoms list",
-							"id": "616267d9-c0e0-411e-afea-18fdfe77c110",
+							"name": "Add City",
+							"id": "71aaeb15-5719-439e-9e73-959d6a5adfb5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
-								"method": "GET",
+								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/general-public/symptoms"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/city"
 							},
 							"response": [
 								{
-									"id": "2b0552b7-ae7a-4d8a-aeb6-3672c1d699f3",
-									"name": "Symptoms list",
+									"id": "ee39db00-4be5-488b-9fa5-f04edbb23b5e",
+									"name": "Add City",
 									"originalRequest": {
-										"method": "GET",
+										"method": "POST",
 										"header": [],
-										"url": "{{BASEURL}}/general-public/symptoms"
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/city"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "438"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1b6-rajyl8eMvqneFdZHA4A7HYVlpw4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 09:01:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T09:01:54.002Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit City",
+							"id": "0fce0f58-062f-499d-9d7e-47e1b2b49b68",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "99e6e80f-9921-4309-b02a-64f696e690f0",
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "62be5b1a-16a9-4dbc-93a9-f82bbb60cfc6",
+									"name": "Edit City",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -16028,15 +16165,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "1028"
+											"value": "442"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"404-XSJNBJpzF2hVtFw8HVSwvNV2aZU\""
+											"value": "W/\"1ba-58MH1wX/t+3Hk5mYh0Rs8NAYWAI\""
 										},
 										{
 											"key": "Date",
-											"value": "Tue, 26 Mar 2024 08:05:08 GMT"
+											"value": "Wed, 03 Apr 2024 10:53:48 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16049,12 +16186,452 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Symptoms list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660276e9765799acdbc7d2ba\",\n                \"key\": \"#0OSH\",\n                \"code\": \"#0OSH\",\n                \"display_name\": \"Fever\",\n                \"value\": \"Fever\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"_id\": \"660276e9765799acdbc7d2bb\",\n                \"key\": \"#0OSS\",\n                \"code\": \"#0OSS\",\n                \"display_name\": \"Cough\",\n                \"value\": \"Cough\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"_id\": \"660276e9765799acdbc7d2bc\",\n                \"key\": \"#0OSA\",\n                \"code\": \"#0OSA\",\n                \"display_name\": \"Flu\",\n                \"value\": \"Flu\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"speciality\": \"65fd70c9255c1a56436d5da7\",\n                \"created_at\": \"2024-02-27T08:37:54.073Z\",\n                \"updated_at\": \"2024-02-27T08:37:54.073Z\",\n                \"created_by\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get city detail",
+							"id": "00dc1031-b9a5-4e98-beb2-3ed6639323f4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9f5a9ee0-d878-43b7-8627-825aae6ff2b1",
+									"name": "Get city detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "431"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1af-75NReEiBfsZJU0eVd+UaO2/+hDA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 11:00:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get city detail\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete city",
+							"id": "9a04f0ad-ba4a-41de-89e7-c35abbcbdc41",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "aa80acd1-20f6-4413-b769-6f0937d7fb53",
+									"name": "Delete city",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "76"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4c-VvWfyj4rAy8mnz+n4mPAWDQv0SQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 11:02:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "City list-public",
+							"id": "6d38073d-e163-4b21-bbc4-6b6acd6e354c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/general-public/city/state/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general-public",
+										"city",
+										"state",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "b259ea2e-45ba-4c53-9791-041dcc03cd52",
+											"key": "id",
+											"value": "65fb0fa88cda209967abbdb9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9fc30b7d-6f26-4daf-93a1-8cfb1f06c388",
+									"name": "City list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/city"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "314"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"13a-GwMtsw8vAwv9tsKbUdsvJfElCEs\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 18:10:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e21a1048926552543c123f\",\n                \"name\": \"Auburn\",\n                \"state\": \"65e217b448926552543c123d\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "City list",
+							"id": "3334d24a-f470-4509-a1b5-2cae2e9e4cc1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/city"
+							},
+							"response": [
+								{
+									"id": "8b643449-e308-4af2-97b3-36b58c35e74b",
+									"name": "City list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/city"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "314"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"13a-GwMtsw8vAwv9tsKbUdsvJfElCEs\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 18:10:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e21a1048926552543c123f\",\n                \"name\": \"Auburn\",\n                \"state\": \"65e217b448926552543c123d\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get All Medicines Without Pagenation",
+							"id": "ac90624d-a977-4d45-9f1e-6113263fdb36",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/medicines/all"
+							},
+							"response": [
+								{
+									"id": "6795840a-d6a5-4e64-a50e-fe56d28be610",
+									"name": "Get All Drug List For Doctor to Add Medications For Patient",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/medicines/all"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "462"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ce-rkYVZ5xtsymjlRJKpOQpP2Yg/tM\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 08 Mar 2024 08:28:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"65eaca8e87a3126e478a0866\",\n            \"name\": \"Paracetamol\",\n            \"dosage\": \"500mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0867\",\n            \"name\": \"Aspirin\",\n            \"dosage\": \"100mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0868\",\n            \"name\": \"Amoxicillin\",\n            \"dosage\": \"250mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a0869\",\n            \"name\": \"Loratadine\",\n            \"dosage\": \"5mg\",\n            \"unit\": \"mL\"\n        },\n        {\n            \"_id\": \"65eaca8e87a3126e478a086a\",\n            \"name\": \"Ibuprofen\",\n            \"dosage\": \"200mg\",\n            \"unit\": \"mL\"\n        }\n    ]\n}"
 								}
 							]
 						}
 					],
-					"id": "e86429d2-7c63-406f-aefa-4d170c2b04d3"
+					"id": "4ed7c418-9055-4684-8b1d-e1703f765cec"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
