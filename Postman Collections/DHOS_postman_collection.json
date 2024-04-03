@@ -11803,14 +11803,79 @@
 									],
 									"variable": [
 										{
-											"id": "9d90ef90-3857-4359-b658-d3ed72b29034",
 											"key": "id",
-											"value": "660ab0f1bc36fe92856a1a80"
+											"value": "660d30e76287a108bf2770c6"
 										}
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "938ab260-9e61-49e7-af50-6856ad6d4dee",
+									"name": "Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/admin/user/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"admin",
+												"user",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d30e76287a108bf2770c6"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "70"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"46-aw1FohytFeLjP7siKOqje3D5h/c\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 10:36:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Deleted Successfully\"\n}"
+								}
+							]
 						},
 						{
 							"name": "Update Admin By Id",
@@ -12037,7 +12102,57 @@
 								"header": [],
 								"url": "{{BASEURL}}/admin/admin-users"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "35f9b8ae-b9a3-4115-af69-c517a9baa9bb",
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/admin/admin-users"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "761"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2f9-QR5pjtyTNBsxBp4hhXBV6Dg6S+4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 10:35:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d30e76287a108bf2770c6\",\n                \"name\": {\n                    \"first\": \"kumar\",\n                    \"last\": \"new\"\n                },\n                \"email\": \"admin1@gmail.com\",\n                \"mobilephone\": \"7094715958\",\n                \"country_code\": 91,\n                \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n                \"status\": \"pending\"\n            },\n            {\n                \"_id\": \"660d30cb8ea9ab24be12a3c5\",\n                \"name\": {\n                    \"first\": \"kumar\",\n                    \"last\": \"new\"\n                },\n                \"email\": \"admin@gmail.com\",\n                \"mobilephone\": \"7094715959\",\n                \"country_code\": 91,\n                \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n                \"status\": \"pending\"\n            },\n            {\n                \"_id\": \"65f57093180f9f5575876409\",\n                \"mobilephone\": \"7094715969\",\n                \"country_code\": 91,\n                \"status\": \"active\",\n                \"email\": \"admin@yopmail.com\",\n                \"name\": {\n                    \"first\": \"Admin\",\n                    \"last\": \"Sridhar\"\n                }\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "5c4d5335-93bf-4b62-b804-273dfee799a3"
@@ -12053,7 +12168,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 7094715959,\n    \"country_code\" : 91,\n    \"user_type\" : \"patient\",\n    \"name\":{\n        \"first\" :\"kumar\",\n        \"last\" : \"new\"\n    },\n    \"email\" : \"admin@gmail.com\",\n    \"password\" : \"kumar@12345\",\n    \"gender\": {\n        \"code\" : \"M\",\n        \"system\" : \"\",\n        \"display\" : \"Male\"\n    },\n    \"birthdate\" : \"06-03-1994\",\n    \"photo\" : \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\"\n}",
+							"raw": "{\n    \"mobilephone\" : 7094715958,\n    \"country_code\" : 91,\n    \"name\":{\n        \"first\" :\"kumar\",\n        \"last\" : \"new\"\n    },\n    \"email\" : \"admin1@gmail.com\",\n    \"password\" : \"kumar@12345\",\n    \"gender\": {\n        \"code\" : \"M\",\n        \"system\" : \"\",\n        \"display\" : \"Male\"\n    },\n    \"birthdate\" : \"06-03-1994\",\n    \"user_type\":\"admin\",\n    \"photo\" : \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
