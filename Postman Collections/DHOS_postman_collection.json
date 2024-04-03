@@ -5301,7 +5301,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/patient/my/profile-status"
+								"url": {
+									"raw": "{{BASEURL}}/patient/my/profile?profile_percentage=1",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"patient",
+										"my",
+										"profile"
+									],
+									"query": [
+										{
+											"key": "profile_percentage",
+											"value": "1"
+										}
+									]
+								}
 							},
 							"response": [
 								{
