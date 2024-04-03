@@ -12025,6 +12025,19 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Family member profile updated Successfully\",\n    \"data\": {\n        \"_id\": \"65e56793016b920e8ecd10fb\",\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"email\": \"hari2@gmail.com\",\n        \"mobilephone\": \"19231447897\",\n        \"insurance\": [\n            {\n                \"expire\": \"2030-01-01\",\n                \"insurance_id\": \"3747D7YD37ND\",\n                \"name\": \"Bajaj Allianz\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"state\": {\n                    \"_id\": \"65d34539abbec727dc70d30c\",\n                    \"value\": \"Chenah\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\",\n                    \"value\": \"Chenah\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": \"65dee9d63bf98c47e49e3435\",\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [],\n        \"immunizations\": [],\n        \"createdAt\": \"2024-03-04T06:17:55.145Z\",\n        \"updatedAt\": \"2024-03-04T06:20:27.253Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Get All Users",
+							"id": "98dab26d-b031-4640-809e-4ee885b1c38a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/admin/users"
+							},
+							"response": []
 						}
 					],
 					"id": "5c4d5335-93bf-4b62-b804-273dfee799a3"
