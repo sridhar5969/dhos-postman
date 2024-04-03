@@ -15547,6 +15547,236 @@
 							]
 						},
 						{
+							"name": "Get city detail",
+							"id": "9d0d3b5b-64e9-48c5-b616-9e1fd2e7a4cf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "272188c7-6dbd-4f95-a3bd-53a4ef187d1a",
+									"name": "Get city detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "431"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1af-75NReEiBfsZJU0eVd+UaO2/+hDA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 11:00:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get city detail\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get city detail Copy",
+							"id": "67a34191-cee4-451d-af06-127d313c70ae",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/city/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"city",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+											"key": "id",
+											"value": "660d1b021dbd9c5c2a3f4770"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a19524d1-bc2d-47bf-afe3-36b40111dbed",
+									"name": "Get city detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/city/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"city",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "13665755-80ec-4339-9f1c-ad38dbae4695",
+													"key": "id",
+													"value": "660d1b021dbd9c5c2a3f4770"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "431"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1af-75NReEiBfsZJU0eVd+UaO2/+hDA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 11:00:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get city detail\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "City list",
 							"id": "5d6c5d56-015e-4ccd-99db-2a566205e344",
 							"protocolProfileBehavior": {
