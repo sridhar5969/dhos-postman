@@ -11564,6 +11564,25 @@
 					"id": "eeab3c36-51ac-469e-81fb-d7fa8aec8bf8"
 				},
 				{
+					"name": "DashBoard",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "c295b351-9465-4702-8f6d-e9812877df74",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/appointment/admin/todays-appointments"
+							},
+							"response": []
+						}
+					],
+					"id": "b2d09e73-3f86-4e4c-8402-d7704de750ad"
+				},
+				{
 					"name": "Create a Admin(Any User)",
 					"id": "725faa90-96a3-4817-9a7a-84eb676baafe",
 					"protocolProfileBehavior": {
