@@ -17600,7 +17600,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"English\",\r\n    \"code\": \"ENG\",\r\n    \"description\": \"English\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Cousins12\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -17608,34 +17608,33 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/language/:id",
+									"raw": "{{BASEURL}}/general/relationship/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"language",
+										"relationship",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "d54d157f-c41b-4b7c-9506-db8c27f47631",
 											"key": "id",
-											"value": "660d759e1bda166b3d45243b"
+											"value": "660d8d2b54208730440dd41a"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "35837caa-2c6d-4593-a5c5-dd273331c9fc",
-									"name": "Edit Language",
+									"id": "bde5715b-5ce0-4c32-b854-0b5ac4eb2dd1",
+									"name": "Edit Relationship",
 									"originalRequest": {
 										"method": "PUT",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"English\",\r\n    \"code\": \"ENG\",\r\n    \"description\": \"English\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"Cousins12\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -17643,19 +17642,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/language/:id",
+											"raw": "{{BASEURL}}/general/relationship/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"language",
+												"relationship",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d759e1bda166b3d45243b"
+													"value": "660d8d2b54208730440dd41a"
 												}
 											]
 										}
@@ -17678,15 +17677,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "445"
+											"value": "414"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1bd-bY0qcgxkSUyOEgYgnLL4MqRN3e0\""
+											"value": "W/\"19e-FLFD+EWDYL8x28kY341KEcNSo8Y\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 15:29:53 GMT"
+											"value": "Wed, 03 Apr 2024 17:11:43 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17699,12 +17698,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d8d2b54208730440dd41a\",\n        \"name\": \"Cousins12\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T17:08:59.364Z\",\n        \"updated_at\": \"2024-04-03T17:11:43.653Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Get Language detail",
+							"name": "Get Relationship detail",
 							"id": "1657a6a3-e997-48db-913c-c4f612d9999a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17722,28 +17721,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/language/:id",
+									"raw": "{{BASEURL}}/general/relationship/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"language",
+										"relationship",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "05860b3f-bd24-4c4f-9b4a-65ea91efed51",
 											"key": "id",
-											"value": "660d759e1bda166b3d45243b"
+											"value": "660d8d2b54208730440dd41a"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "f4fcaf0b-68fe-4433-9d29-f3e8c0c07837",
-									"name": "Get Language detail",
+									"id": "4d267a79-1a03-4676-a344-6c03989d827a",
+									"name": "Get relationship detail",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -17757,19 +17755,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/language/:id",
+											"raw": "{{BASEURL}}/general/relationship/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"language",
+												"relationship",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d759e1bda166b3d45243b"
+													"value": "660d8d2b54208730440dd41a"
 												}
 											]
 										}
@@ -17792,15 +17790,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "434"
+											"value": "403"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1b2-1Su0Tb1lYkpcG7yGx7OqJU4tN1c\""
+											"value": "W/\"193-PALXdOBFg5eC2KLwZNC/ILClQI0\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 15:31:43 GMT"
+											"value": "Wed, 03 Apr 2024 17:12:44 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17813,12 +17811,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get language detail\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get relationship detail\",\n    \"data\": {\n        \"_id\": \"660d8d2b54208730440dd41a\",\n        \"name\": \"Cousins12\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T17:08:59.364Z\",\n        \"updated_at\": \"2024-04-03T17:11:43.653Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Delete Language",
+							"name": "Delete relationship",
 							"id": "23df4217-6368-4e34-83f1-8665512d4238",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17836,28 +17834,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/language/:id",
+									"raw": "{{BASEURL}}/general/relationship/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"language",
+										"relationship",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "6ca65eb2-c8fc-4a61-a65b-71f5204eadb1",
 											"key": "id",
-											"value": "660d759e1bda166b3d45243b"
+											"value": "660d8d2b54208730440dd41a"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "2ce5c71e-02f5-465c-8749-00c39a676cd6",
-									"name": "Delete Language",
+									"id": "4b5c1159-fb2e-4037-9d62-9a89dade1a93",
+									"name": "Delete relationship",
 									"originalRequest": {
 										"method": "DELETE",
 										"header": [],
@@ -17871,19 +17868,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/language/:id",
+											"raw": "{{BASEURL}}/general/relationship/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"language",
+												"relationship",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d759e1bda166b3d45243b"
+													"value": "660d8d2b54208730440dd41a"
 												}
 											]
 										}
@@ -17906,15 +17903,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "80"
+											"value": "84"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"50-MCZtnsqJjFNQBc6pDQpPfPY9iIU\""
+											"value": "W/\"54-cpXPqfFor39FZZBYoIgAxL8Ur+o\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 15:32:10 GMT"
+											"value": "Wed, 03 Apr 2024 17:14:00 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17927,12 +17924,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language deleted successfully.\"\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship deleted successfully.\"\n}"
 								}
 							]
 						},
 						{
-							"name": "Language list",
+							"name": "Relationship list",
 							"id": "144cd352-8d8a-4738-9cef-fcb6901626a5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -17940,16 +17937,16 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/general/language"
+								"url": "{{BASEURL}}/general/relationship"
 							},
 							"response": [
 								{
-									"id": "27b72983-f693-4bae-bbad-52960d549c93",
-									"name": "Language list",
+									"id": "c143a882-f6e3-40cb-af9d-501eb5f75457",
+									"name": "Relationship list",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "{{BASEURL}}/general/language"
+										"url": "{{BASEURL}}/general/relationship"
 									},
 									"status": "OK",
 									"code": 200,
@@ -17969,15 +17966,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "451"
+											"value": "1773"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1c3-+fxZUOsImQ7UHIN61MbAiq71Jkk\""
+											"value": "W/\"6ed-ANAN4CZpRp3uYvHZ5dr+/iZyHtE\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 15:33:25 GMT"
+											"value": "Wed, 03 Apr 2024 17:14:59 GMT"
 										},
 										{
 											"key": "Connection",
@@ -17990,7 +17987,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d75851bda166b3d452438\",\n                \"name\": \"Arabic\",\n                \"code\": \"AR\",\n                \"description\": \"Arabic\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T15:28:05.491Z\",\n                \"updated_at\": \"2024-04-03T15:28:05.491Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Relationship list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e56434dcfe225fd6528f65\",\n                \"name\": \"Niece\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f70\",\n                \"name\": \"Boss\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6a\",\n                \"name\": \"Fiance\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5e\",\n                \"name\": \"Daughter\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f71\",\n                \"name\": \"Employee\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f62\",\n                \"name\": \"Aunt\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6b\",\n                \"name\": \"Friend\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6d\",\n                \"name\": \"Neighbor\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f69\",\n                \"name\": \"Wife\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5d\",\n                \"name\": \"Brother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5b\",\n                \"name\": \"Sister\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f59\",\n                \"name\": \"Son\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f60\",\n                \"name\": \"Grandmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f61\",\n                \"name\": \"Uncle\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f68\",\n                \"name\": \"Husband\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f66\",\n                \"name\": \"Godfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f63\",\n                \"name\": \"Cousin\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6c\",\n                \"name\": \"Roommate\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5c\",\n                \"name\": \"Mother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f6f\",\n                \"name\": \"Student\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f64\",\n                \"name\": \"Nephew\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f67\",\n                \"name\": \"Godmother\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5f\",\n                \"name\": \"Grandfather\",\n                \"status\": \"active\"\n            },\n            {\n                \"_id\": \"65e56434dcfe225fd6528f5a\",\n                \"name\": \"Father\",\n                \"status\": \"active\"\n            }\n        ],\n        \"totalCount\": 25\n    }\n}"
 								}
 							]
 						}
