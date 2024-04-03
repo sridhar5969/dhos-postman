@@ -15996,7 +15996,7 @@
 					"name": "Drug",
 					"item": [
 						{
-							"name": "Add City",
+							"name": "Add Drug",
 							"id": "71aaeb15-5719-439e-9e73-959d6a5adfb5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16006,7 +16006,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"reg_num\": \"215-186-04\",\r\n    \"name\": \"LANFAST 30MG CAPSULE\",\r\n    \"concentration\": \"30 mg\",\r\n    \"form\": \"Capsule\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"LANFAST 30MG CAPSULE\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -16017,21 +16017,21 @@
 							},
 							"response": [
 								{
-									"id": "ee39db00-4be5-488b-9fa5-f04edbb23b5e",
-									"name": "Add City",
+									"id": "ec69ee6a-511a-40e3-b7b8-67fa4cea126e",
+									"name": "Add Drug",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "{{BASEURL}}/general/city"
+										"url": "{{BASEURL}}/general/drug"
 									},
 									"status": "Created",
 									"code": 201,
@@ -16051,15 +16051,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "438"
+											"value": "559"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1b6-rajyl8eMvqneFdZHA4A7HYVlpw4\""
+											"value": "W/\"22f-3NiPlLTDP8Wp0YrJWHStKteD8Pw\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 09:01:54 GMT"
+											"value": "Wed, 03 Apr 2024 12:24:09 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16072,12 +16072,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City added successfully.\",\n    \"data\": {\n        \"name\": \"American\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T09:01:54.002Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug added successfully.\",\n    \"data\": {\n        \"name\": \"ATIVAN TABLETS 1 MG\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MG\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:24:09.796Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Edit City",
+							"name": "Edit Drug",
 							"id": "0fce0f58-062f-499d-9d7e-47e1b2b49b68",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16087,7 +16087,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -16095,34 +16095,33 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/city/:id",
+									"raw": "{{BASEURL}}/general/drug/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"city",
+										"drug",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "99e6e80f-9921-4309-b02a-64f696e690f0",
 											"key": "id",
-											"value": "660d1b021dbd9c5c2a3f4770"
+											"value": "660d4a6984f69b1f122c6d23"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "62be5b1a-16a9-4dbc-93a9-f82bbb60cfc6",
-									"name": "Edit City",
+									"id": "e917380d-d593-49b6-b517-d6737d88bdd1",
+									"name": "Edit Drug",
 									"originalRequest": {
 										"method": "PUT",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -16130,19 +16129,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/city/:id",
+											"raw": "{{BASEURL}}/general/drug/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"city",
+												"drug",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d1b021dbd9c5c2a3f4770"
+													"value": "660d4a6984f69b1f122c6d23"
 												}
 											]
 										}
@@ -16165,15 +16164,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "442"
+											"value": "561"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"1ba-58MH1wX/t+3Hk5mYh0Rs8NAYWAI\""
+											"value": "W/\"231-rAAMpWtztKpLRqcw4DhzLpcqcPs\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 10:53:48 GMT"
+											"value": "Wed, 03 Apr 2024 12:27:05 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16186,7 +16185,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"City updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d1b021dbd9c5c2a3f4770\",\n        \"name\": \"American12\",\n        \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T09:01:54.002Z\",\n        \"updated_at\": \"2024-04-03T10:53:48.004Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"name\": \"ATIVAN TABLETS 1 MM\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MM\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:27:05.356Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
