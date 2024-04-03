@@ -16653,10 +16653,85 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "6bdf437a-e987-4339-a735-d714dd8669f2",
+									"name": "Edit ICD Code",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"code\": \"S42222B\",\r\n    \"description\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/icd-code/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"icd-code",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d68bbb98500c05497dc08"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "475"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1db-VulEib4q6BGJvufSaTIqtG16674\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 14:35:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						},
 						{
-							"name": "Get drug detail",
+							"name": "Get ICD Code detail",
 							"id": "48cde13b-ed0b-45bb-aaa6-b04a27a933f9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16674,28 +16749,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/drug/:id",
+									"raw": "{{BASEURL}}/general/icd-code/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"drug",
+										"icd-code",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "2f6e5b1a-327f-4067-a573-2379c95063ac",
 											"key": "id",
-											"value": "660d4a6984f69b1f122c6d23"
+											"value": "660d68bbb98500c05497dc08"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "e6d3afd8-3929-4f12-88c8-a0e3693cc8f3",
-									"name": "Get drug detail",
+									"id": "84b0134e-e3e7-4af4-bb34-9e7f9a6950ae",
+									"name": "Get ICD Code detail",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -16709,19 +16783,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/drug/:id",
+											"raw": "{{BASEURL}}/general/icd-code/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"drug",
+												"icd-code",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d4a6984f69b1f122c6d23"
+													"value": "660d68bbb98500c05497dc08"
 												}
 											]
 										}
@@ -16744,15 +16818,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "550"
+											"value": "464"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"226-11krExsjmMMig+v5P/D4LsAHqOM\""
+											"value": "W/\"1d0-47jYRFuc5yGafs7UxlBRKtdUBAY\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 12:31:15 GMT"
+											"value": "Wed, 03 Apr 2024 14:36:17 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16765,12 +16839,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get drug detail\",\n    \"data\": {\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"name\": \"ATIVAN TABLETS 1 MM\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MM\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:27:05.356Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get ICD code detail\",\n    \"data\": {\n        \"_id\": \"660d68bbb98500c05497dc08\",\n        \"name\": \"2-part disp fx of surg neck of l humerus, init for opn ff\",\n        \"code\": \"S42222B\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T14:33:31.029Z\",\n        \"updated_at\": \"2024-04-03T14:35:19.561Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Delete drug",
+							"name": "Delete ICD Code",
 							"id": "aa1bc01b-99ec-4f76-9139-691adb0e3c58",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16788,28 +16862,27 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/drug/:id",
+									"raw": "{{BASEURL}}/general/icd-code/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"drug",
+										"icd-code",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "e8dd2ae7-95c2-4cc8-909d-cb94499f8c95",
 											"key": "id",
-											"value": "660d4a6984f69b1f122c6d23"
+											"value": "660d68bbb98500c05497dc08"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "c97456b8-38f8-4cd3-bbe5-62c60b930b64",
-									"name": "Delete drug",
+									"id": "b60664bc-a2d3-49d5-8083-3317633a24b0",
+									"name": "Delete ICD Code",
 									"originalRequest": {
 										"method": "DELETE",
 										"header": [],
@@ -16823,19 +16896,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/drug/:id",
+											"raw": "{{BASEURL}}/general/icd-code/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"drug",
+												"icd-code",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660d4a6984f69b1f122c6d23"
+													"value": "660d68bbb98500c05497dc08"
 												}
 											]
 										}
@@ -16858,15 +16931,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "76"
+											"value": "80"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"4c-sIlIweFcBwLqEWnkyi51Zcz6l1Q\""
+											"value": "W/\"50-F2EO1JcioRf2x/GaV9Cg/Ky9K7I\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 12:32:14 GMT"
+											"value": "Wed, 03 Apr 2024 14:36:59 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16879,12 +16952,12 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug deleted successfully.\"\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code deleted successfully.\"\n}"
 								}
 							]
 						},
 						{
-							"name": "Drug list",
+							"name": "ICD Code list",
 							"id": "5b0aa05d-67f0-4712-9994-8f9b46246964",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16892,16 +16965,16 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{BASEURL}}/general/drug"
+								"url": "{{BASEURL}}/general/icd-code"
 							},
 							"response": [
 								{
-									"id": "7e965d08-3246-4a7c-8c59-020207b9cc40",
-									"name": "Drug list",
+									"id": "9ffb2b4f-a356-4b7d-a5bd-60e72c4e9b2e",
+									"name": "ICD Code list",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "{{BASEURL}}/general/drug"
+										"url": "{{BASEURL}}/general/icd-code"
 									},
 									"status": "OK",
 									"code": 200,
@@ -16921,15 +16994,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "2403"
+											"value": "484"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"963-kfK9so8YnyGnF7Z5BxSsI4V3ifA\""
+											"value": "W/\"1e4-PFko0CYtKMiYp5XwvHjgepDFvZk\""
 										},
 										{
 											"key": "Date",
-											"value": "Wed, 03 Apr 2024 12:34:47 GMT"
+											"value": "Wed, 03 Apr 2024 14:37:35 GMT"
 										},
 										{
 											"key": "Connection",
@@ -16942,7 +17015,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d4a22c84cdccbbb65c40e\",\n                \"name\": \"LANFAST 30MG CAPSULE\",\n                \"reg_num\": \"215-186-04\",\n                \"concentration\": \"30 mg\",\n                \"form\": \"Capsule\",\n                \"size\": \"5\",\n                \"volume_unit\": \"10\",\n                \"package_size\": \"15\",\n                \"description\": \"LANFAST 30MG CAPSULE\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T12:22:58.915Z\",\n                \"updated_at\": \"2024-04-03T12:22:58.915Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0866\",\n                \"name\": \"Paracetamol\",\n                \"reg_num\": \"AB123456\",\n                \"concentration\": \"500mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"10\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 strip\",\n                \"description\": \"For pain relief and reducing fever\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-17T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"John\",\n                        \"last\": \"Doe\"\n                    },\n                    \"email\": \"johndoe@example.com\",\n                    \"mobilephone\": \"1234567890\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-17T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0867\",\n                \"name\": \"Aspirin\",\n                \"reg_num\": \"CD789012\",\n                \"concentration\": \"100mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"20\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 strip\",\n                \"description\": \"For pain relief and anti-inflammatory purposes\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-16T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Jane\",\n                        \"last\": \"Smith\"\n                    },\n                    \"email\": \"janesmith@example.com\",\n                    \"mobilephone\": \"9876543210\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-16T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0869\",\n                \"name\": \"Loratadine\",\n                \"reg_num\": \"GH567890\",\n                \"concentration\": \"5mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"50\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 box\",\n                \"description\": \"An antihistamine used to treat allergies\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-14T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Robert\",\n                        \"last\": \"Brown\"\n                    },\n                    \"email\": \"robertbrown@example.com\",\n                    \"mobilephone\": \"2468135790\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-14T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a086a\",\n                \"name\": \"Ibuprofen\",\n                \"reg_num\": \"IJ678901\",\n                \"concentration\": \"200mg\",\n                \"form\": \"Capsule\",\n                \"size\": \"40\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 bottle\",\n                \"description\": \"For pain relief and reducing inflammation\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-13T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Emily\",\n                        \"last\": \"Jones\"\n                    },\n                    \"email\": \"emilyjones@example.com\",\n                    \"mobilephone\": \"3698521470\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-13T08:00:00.000Z\"\n            }\n        ],\n        \"totalCount\": 5\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"ICD Code list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d69abb98500c05497dc10\",\n                \"name\": \"2-part disp fx of surg neck of l humerus, init for opn fx\",\n                \"code\": \"S42222B\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T14:37:31.550Z\",\n                \"updated_at\": \"2024-04-03T14:37:31.550Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
 								}
 							]
 						}
