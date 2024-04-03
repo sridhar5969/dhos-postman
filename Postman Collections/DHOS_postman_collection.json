@@ -13999,80 +13999,6 @@
 					"id": "a81845ae-eb22-4ce3-976d-5a94ebe987b5"
 				},
 				{
-					"name": "Drug/Medicine",
-					"item": [],
-					"id": "7fc84a8e-cd00-4319-97d4-10717bff1adb"
-				},
-				{
-					"name": "ICD Codes",
-					"item": [
-						{
-							"name": "Get All ICD Codes Without Pagenations",
-							"id": "272959c3-9e2b-43eb-82f2-e3da02962455",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{BASEURL}}/general/icd-codes/all"
-							},
-							"response": [
-								{
-									"id": "a5eba14f-4944-469d-8b76-b12b7fd81717",
-									"name": "Example",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "{{BASEURL}}/general/icd-codes/all"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "2042"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"7fa-GfuHhFV7VkYc6s2ILN6wp1EunKc\""
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 08 Mar 2024 10:28:46 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"65eae84887a3126e478a086b\",\n            \"name\": \"Acute upper respiratory infection\",\n            \"code\": \"J00\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086c\",\n            \"name\": \"Bronchitis, not specified as acute or chronic\",\n            \"code\": \"J40\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086d\",\n            \"name\": \"Chronic obstructive pulmonary disease with acute exacerbation, unspecified\",\n            \"code\": \"J44.1\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086e\",\n            \"name\": \"Pneumonia, organism unspecified\",\n            \"code\": \"J18.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086f\",\n            \"name\": \"Primary fibromyalgia\",\n            \"code\": \"M79.7\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0870\",\n            \"name\": \"Essential (primary) hypertension\",\n            \"code\": \"I10\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0871\",\n            \"name\": \"Acute sinusitis\",\n            \"code\": \"J01\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0872\",\n            \"name\": \"Gastro-esophageal reflux disease with esophagitis\",\n            \"code\": \"K21.0\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0873\",\n            \"name\": \"Migraine without aura, not intractable\",\n            \"code\": \"G43.009\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0874\",\n            \"name\": \"Carcinoma in situ of breast\",\n            \"code\": \"D05.10\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0875\",\n            \"name\": \"Disorder of the temporomandibular joint, unspecified\",\n            \"code\": \"M26.60\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0876\",\n            \"name\": \"Major depressive disorder, recurrent, moderate\",\n            \"code\": \"F33.1\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0877\",\n            \"name\": \"Anxiety disorder, unspecified\",\n            \"code\": \"F41.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0878\",\n            \"name\": \"Nonallopathic lesion of left ankle and foot, not elsewhere classified\",\n            \"code\": \"M21.20\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0879\",\n            \"name\": \"Hemorrhage of unspecified vessel at ankle and foot level, left foot\",\n            \"code\": \"I96.30\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087a\",\n            \"name\": \"Chronic kidney disease, stage 3\",\n            \"code\": \"N18.3\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087b\",\n            \"name\": \"Other specified congenital malformations of heart\",\n            \"code\": \"Q24.8\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087c\",\n            \"name\": \"Malignant neoplasm of colon\",\n            \"code\": \"C18.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087d\",\n            \"name\": \"Benign neoplasm of skin of unspecified eyelid\",\n            \"code\": \"D23.30\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087e\",\n            \"name\": \"Myopia, bilateral\",\n            \"code\": \"H52.13\"\n        }\n    ]\n}"
-								}
-							]
-						}
-					],
-					"id": "d14bdbcf-d6a1-4849-97b1-22179d16c7f9"
-				},
-				{
 					"name": "Insurances",
 					"item": [
 						{
@@ -16543,6 +16469,561 @@
 						}
 					],
 					"id": "4ed7c418-9055-4684-8b1d-e1703f765cec"
+				},
+				{
+					"name": "ICD Code",
+					"item": [
+						{
+							"name": "Get All ICD Codes Without Pagenations",
+							"id": "272959c3-9e2b-43eb-82f2-e3da02962455",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/icd-codes/all"
+							},
+							"response": [
+								{
+									"id": "a5eba14f-4944-469d-8b76-b12b7fd81717",
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/icd-codes/all"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2042"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"7fa-GfuHhFV7VkYc6s2ILN6wp1EunKc\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 08 Mar 2024 10:28:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"65eae84887a3126e478a086b\",\n            \"name\": \"Acute upper respiratory infection\",\n            \"code\": \"J00\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086c\",\n            \"name\": \"Bronchitis, not specified as acute or chronic\",\n            \"code\": \"J40\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086d\",\n            \"name\": \"Chronic obstructive pulmonary disease with acute exacerbation, unspecified\",\n            \"code\": \"J44.1\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086e\",\n            \"name\": \"Pneumonia, organism unspecified\",\n            \"code\": \"J18.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a086f\",\n            \"name\": \"Primary fibromyalgia\",\n            \"code\": \"M79.7\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0870\",\n            \"name\": \"Essential (primary) hypertension\",\n            \"code\": \"I10\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0871\",\n            \"name\": \"Acute sinusitis\",\n            \"code\": \"J01\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0872\",\n            \"name\": \"Gastro-esophageal reflux disease with esophagitis\",\n            \"code\": \"K21.0\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0873\",\n            \"name\": \"Migraine without aura, not intractable\",\n            \"code\": \"G43.009\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0874\",\n            \"name\": \"Carcinoma in situ of breast\",\n            \"code\": \"D05.10\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0875\",\n            \"name\": \"Disorder of the temporomandibular joint, unspecified\",\n            \"code\": \"M26.60\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0876\",\n            \"name\": \"Major depressive disorder, recurrent, moderate\",\n            \"code\": \"F33.1\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0877\",\n            \"name\": \"Anxiety disorder, unspecified\",\n            \"code\": \"F41.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0878\",\n            \"name\": \"Nonallopathic lesion of left ankle and foot, not elsewhere classified\",\n            \"code\": \"M21.20\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a0879\",\n            \"name\": \"Hemorrhage of unspecified vessel at ankle and foot level, left foot\",\n            \"code\": \"I96.30\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087a\",\n            \"name\": \"Chronic kidney disease, stage 3\",\n            \"code\": \"N18.3\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087b\",\n            \"name\": \"Other specified congenital malformations of heart\",\n            \"code\": \"Q24.8\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087c\",\n            \"name\": \"Malignant neoplasm of colon\",\n            \"code\": \"C18.9\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087d\",\n            \"name\": \"Benign neoplasm of skin of unspecified eyelid\",\n            \"code\": \"D23.30\"\n        },\n        {\n            \"_id\": \"65eae84887a3126e478a087e\",\n            \"name\": \"Myopia, bilateral\",\n            \"code\": \"H52.13\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Add Drug",
+							"id": "d39fc4f5-208d-412f-874f-583abd1931ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/drug"
+							},
+							"response": [
+								{
+									"id": "8a406397-688a-40e5-ae04-dba899d76de2",
+									"name": "Add Drug",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MG\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MG\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/drug"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "559"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22f-3NiPlLTDP8Wp0YrJWHStKteD8Pw\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 12:24:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug added successfully.\",\n    \"data\": {\n        \"name\": \"ATIVAN TABLETS 1 MG\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MG\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:24:09.796Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit Drug",
+							"id": "2cbfb34e-30c0-45a3-a5af-cf8cc1288e9f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/drug/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"drug",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "180b1a9b-0444-470f-9334-46fb000180de",
+											"key": "id",
+											"value": "660d4a6984f69b1f122c6d23"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "caa401cc-5f42-484b-9d2c-1f6f86b689d6",
+									"name": "Edit Drug",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"reg_num\": \"1-41-84\",\r\n    \"name\": \"ATIVAN TABLETS 1 MM\",\r\n    \"concentration\": \"1 mg\",\r\n    \"form\": \"Tablet\",\r\n    \"size\": \"5\",\r\n    \"volume_unit\": \"10\",\r\n    \"package_size\": \"15\",\r\n    \"description\": \"ATIVAN TABLETS 1 MM\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/drug/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"drug",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d4a6984f69b1f122c6d23"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "561"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"231-rAAMpWtztKpLRqcw4DhzLpcqcPs\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 12:27:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug updated successfully.\",\n    \"data\": {\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"name\": \"ATIVAN TABLETS 1 MM\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MM\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:27:05.356Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get drug detail",
+							"id": "48cde13b-ed0b-45bb-aaa6-b04a27a933f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/drug/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"drug",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "2f6e5b1a-327f-4067-a573-2379c95063ac",
+											"key": "id",
+											"value": "660d4a6984f69b1f122c6d23"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e6d3afd8-3929-4f12-88c8-a0e3693cc8f3",
+									"name": "Get drug detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/drug/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"drug",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d4a6984f69b1f122c6d23"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "550"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"226-11krExsjmMMig+v5P/D4LsAHqOM\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 12:31:15 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get drug detail\",\n    \"data\": {\n        \"_id\": \"660d4a6984f69b1f122c6d23\",\n        \"name\": \"ATIVAN TABLETS 1 MM\",\n        \"reg_num\": \"1-41-84\",\n        \"concentration\": \"1 mg\",\n        \"form\": \"Tablet\",\n        \"size\": \"5\",\n        \"volume_unit\": \"10\",\n        \"package_size\": \"15\",\n        \"description\": \"ATIVAN TABLETS 1 MM\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T12:24:09.796Z\",\n        \"updated_at\": \"2024-04-03T12:27:05.356Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete drug",
+							"id": "aa1bc01b-99ec-4f76-9139-691adb0e3c58",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/drug/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"drug",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e8dd2ae7-95c2-4cc8-909d-cb94499f8c95",
+											"key": "id",
+											"value": "660d4a6984f69b1f122c6d23"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "c97456b8-38f8-4cd3-bbe5-62c60b930b64",
+									"name": "Delete drug",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/drug/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"drug",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d4a6984f69b1f122c6d23"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "76"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4c-sIlIweFcBwLqEWnkyi51Zcz6l1Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 12:32:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Drug list",
+							"id": "5b0aa05d-67f0-4712-9994-8f9b46246964",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/drug"
+							},
+							"response": [
+								{
+									"id": "7e965d08-3246-4a7c-8c59-020207b9cc40",
+									"name": "Drug list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/drug"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2403"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"963-kfK9so8YnyGnF7Z5BxSsI4V3ifA\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 12:34:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Drug list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d4a22c84cdccbbb65c40e\",\n                \"name\": \"LANFAST 30MG CAPSULE\",\n                \"reg_num\": \"215-186-04\",\n                \"concentration\": \"30 mg\",\n                \"form\": \"Capsule\",\n                \"size\": \"5\",\n                \"volume_unit\": \"10\",\n                \"package_size\": \"15\",\n                \"description\": \"LANFAST 30MG CAPSULE\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T12:22:58.915Z\",\n                \"updated_at\": \"2024-04-03T12:22:58.915Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0866\",\n                \"name\": \"Paracetamol\",\n                \"reg_num\": \"AB123456\",\n                \"concentration\": \"500mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"10\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 strip\",\n                \"description\": \"For pain relief and reducing fever\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-17T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"John\",\n                        \"last\": \"Doe\"\n                    },\n                    \"email\": \"johndoe@example.com\",\n                    \"mobilephone\": \"1234567890\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-17T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0867\",\n                \"name\": \"Aspirin\",\n                \"reg_num\": \"CD789012\",\n                \"concentration\": \"100mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"20\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 strip\",\n                \"description\": \"For pain relief and anti-inflammatory purposes\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-16T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Jane\",\n                        \"last\": \"Smith\"\n                    },\n                    \"email\": \"janesmith@example.com\",\n                    \"mobilephone\": \"9876543210\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-16T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a0869\",\n                \"name\": \"Loratadine\",\n                \"reg_num\": \"GH567890\",\n                \"concentration\": \"5mg\",\n                \"form\": \"Tablet\",\n                \"size\": \"50\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 box\",\n                \"description\": \"An antihistamine used to treat allergies\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-14T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Robert\",\n                        \"last\": \"Brown\"\n                    },\n                    \"email\": \"robertbrown@example.com\",\n                    \"mobilephone\": \"2468135790\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-14T08:00:00.000Z\"\n            },\n            {\n                \"_id\": \"65eaca8e87a3126e478a086a\",\n                \"name\": \"Ibuprofen\",\n                \"reg_num\": \"IJ678901\",\n                \"concentration\": \"200mg\",\n                \"form\": \"Capsule\",\n                \"size\": \"40\",\n                \"volume_unit\": \"mL\",\n                \"package_size\": \"1 bottle\",\n                \"description\": \"For pain relief and reducing inflammation\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-02-13T08:00:00.000Z\",\n                \"created_by\": {\n                    \"name\": {\n                        \"first\": \"Emily\",\n                        \"last\": \"Jones\"\n                    },\n                    \"email\": \"emilyjones@example.com\",\n                    \"mobilephone\": \"3698521470\",\n                    \"country_code\": 1\n                },\n                \"updated_at\": \"2024-02-13T08:00:00.000Z\"\n            }\n        ],\n        \"totalCount\": 5\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "c6139bf7-ee73-4a53-807a-53192951ad3a"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
