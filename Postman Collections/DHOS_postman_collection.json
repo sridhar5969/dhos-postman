@@ -11691,7 +11691,27 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{BASEURL}}/admin/doctor-names"
+										"url": {
+											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"admin",
+												"doctor-names"
+											],
+											"query": [
+												{
+													"key": "sort",
+													"value": "name.first|ASC"
+												},
+												{
+													"key": "speciality",
+													"value": "65fc2640cd67bc8688aeab82",
+													"disabled": true
+												}
+											]
+										}
 									},
 									"response": []
 								}
