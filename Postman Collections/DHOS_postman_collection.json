@@ -11692,7 +11692,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC",
+											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&speciality=65fc2640cd67bc8688aeab82",
 											"host": [
 												"{{BASEURL}}"
 											],
@@ -11707,8 +11707,7 @@
 												},
 												{
 													"key": "speciality",
-													"value": "65fc2640cd67bc8688aeab82",
-													"disabled": true
+													"value": "65fc2640cd67bc8688aeab82"
 												}
 											]
 										}
