@@ -19048,7 +19048,7 @@
 							]
 						},
 						{
-							"name": "Add Role",
+							"name": "Add Speciality",
 							"id": "f5ea2fc6-59d5-47c8-ab02-f707eb7345ac",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19058,75 +19058,16 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Test Role\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Oncologist\",\r\n    \"description\": \"Oncologist\",\r\n    \"web_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/role"
+								"url": "{{BASEURL}}/general/speciality"
 							},
-							"response": [
-								{
-									"id": "f9238558-d35e-4d5c-a946-a064e42e7646",
-									"name": "Add Role",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"Test Role\",\r\n    \"status\": \"active\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{BASEURL}}/general/role"
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "404"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"194-BerU2CHahWK8aNX+Eyjm2o6khRM\""
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 04 Apr 2024 08:09:14 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role added successfully.\",\n    \"data\": {\n        \"name\": \"Test Role\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660e602a38b6f1c7290b2fee\",\n        \"created_at\": \"2024-04-04T08:09:14.463Z\",\n        \"updated_at\": \"2024-04-04T08:09:14.463Z\",\n        \"__v\": 0\n    }\n}"
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "Edit Role",
