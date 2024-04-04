@@ -14483,75 +14483,6 @@
 			"name": "General",
 			"item": [
 				{
-					"name": "Insurances",
-					"item": [
-						{
-							"name": "GetAllInsurancesWithoutPagination",
-							"id": "c4ebd58d-3614-48df-805f-8c27d63c5c4e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{BASEURL}}/general-public/insurances"
-							},
-							"response": [
-								{
-									"id": "5615a7a8-3912-4828-aa98-de2a85a73d56",
-									"name": "Example",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "{{BASEURL}}/general-public/insurances"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "1438"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"59e-B+yjgJ08EpecO/Hdwgb0hU7n/yI\""
-										},
-										{
-											"key": "Date",
-											"value": "Tue, 26 Mar 2024 04:27:52 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617b\",\n            \"name\": \"Life Insurance Corporation of India\",\n            \"code\": \"LIC001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617c\",\n            \"name\": \"HDFC Life Insurance Company Limited\",\n            \"code\": \"HDFC001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617d\",\n            \"name\": \"ICICI Prudential Life Insurance Company Limited\",\n            \"code\": \"ICICI001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617e\",\n            \"name\": \"SBI Life Insurance Company Limited\",\n            \"code\": \"SBI001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617f\",\n            \"name\": \"Bajaj Allianz Life Insurance Company Limited\",\n            \"code\": \"Bajaj001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6180\",\n            \"name\": \"Max Life Insurance Company Limited\",\n            \"code\": \"MaxLife001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6181\",\n            \"name\": \"Reliance Nippon Life Insurance Company Limited\",\n            \"code\": \"RelianceNippon001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6182\",\n            \"name\": \"Aditya Birla Sun Life Insurance Company Limited\",\n            \"code\": \"AdityaBirlaSun001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6183\",\n            \"name\": \"Tata AIA Life Insurance Company Limited\",\n            \"code\": \"TataAIA001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6184\",\n            \"name\": \"PNB MetLife India Insurance Company Limited\",\n            \"code\": \"PNBMetLife001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6185\",\n            \"name\": \"Exide Life Insurance Company Limited\",\n            \"code\": \"Exide001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6186\",\n            \"name\": \"Kotak Mahindra Old Mutual Life Insurance Limited\",\n            \"code\": \"KotakMahindraOldMutual001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6187\",\n            \"name\": \"IndiaFirst Life Insurance Company Limited\",\n            \"code\": \"IndiaFirst001\"\n        }\n    ]\n}"
-								}
-							]
-						}
-					],
-					"id": "df81568d-28d4-455c-b3f2-f64e1d764cf0"
-				},
-				{
 					"name": "Country",
 					"item": [
 						{
@@ -20023,6 +19954,69 @@
 					"name": "Insurance",
 					"item": [
 						{
+							"name": "GetAllInsurancesWithoutPagination",
+							"id": "c4ebd58d-3614-48df-805f-8c27d63c5c4e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general-public/insurances"
+							},
+							"response": [
+								{
+									"id": "5615a7a8-3912-4828-aa98-de2a85a73d56",
+									"name": "Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/insurances"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1438"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"59e-B+yjgJ08EpecO/Hdwgb0hU7n/yI\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 26 Mar 2024 04:27:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": [\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617b\",\n            \"name\": \"Life Insurance Corporation of India\",\n            \"code\": \"LIC001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617c\",\n            \"name\": \"HDFC Life Insurance Company Limited\",\n            \"code\": \"HDFC001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617d\",\n            \"name\": \"ICICI Prudential Life Insurance Company Limited\",\n            \"code\": \"ICICI001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617e\",\n            \"name\": \"SBI Life Insurance Company Limited\",\n            \"code\": \"SBI001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec617f\",\n            \"name\": \"Bajaj Allianz Life Insurance Company Limited\",\n            \"code\": \"Bajaj001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6180\",\n            \"name\": \"Max Life Insurance Company Limited\",\n            \"code\": \"MaxLife001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6181\",\n            \"name\": \"Reliance Nippon Life Insurance Company Limited\",\n            \"code\": \"RelianceNippon001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6182\",\n            \"name\": \"Aditya Birla Sun Life Insurance Company Limited\",\n            \"code\": \"AdityaBirlaSun001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6183\",\n            \"name\": \"Tata AIA Life Insurance Company Limited\",\n            \"code\": \"TataAIA001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6184\",\n            \"name\": \"PNB MetLife India Insurance Company Limited\",\n            \"code\": \"PNBMetLife001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6185\",\n            \"name\": \"Exide Life Insurance Company Limited\",\n            \"code\": \"Exide001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6186\",\n            \"name\": \"Kotak Mahindra Old Mutual Life Insurance Limited\",\n            \"code\": \"KotakMahindraOldMutual001\"\n        },\n        {\n            \"_id\": \"66024e85779ad4b7c4ec6187\",\n            \"name\": \"IndiaFirst Life Insurance Company Limited\",\n            \"code\": \"IndiaFirst001\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
 							"name": "Add Insurance",
 							"id": "03b118f9-bad5-44e7-af37-e65363bbe4d3",
 							"protocolProfileBehavior": {
@@ -20217,7 +20211,7 @@
 							]
 						},
 						{
-							"name": "Get Speciality detail",
+							"name": "Get Insurance detail",
 							"id": "07e771e9-bb04-484f-9dd4-b31999b4c698",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -20235,69 +20229,29 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/speciality/:id",
+									"raw": "{{BASEURL}}/general/insurance/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"speciality",
+										"insurance",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "35ab8b8f-d036-4f4d-b8ec-8e149143696a",
 											"key": "id",
-											"value": "660e7fea676b82328898858c"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete speciality",
-							"id": "db13691a-e348-48e2-8419-177e4ac4ae16",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{BASEURL}}/general/speciality/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"general",
-										"speciality",
-										":id"
-									],
-									"variable": [
-										{
-											"id": "18717bac-be29-4a7b-a55b-e07f762da710",
-											"key": "id",
-											"value": "660e7fea676b82328898858c"
+											"value": "660ec0e5a45494d78ee96c8e"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "5b276b55-6777-4a6b-8241-1f730e45293a",
-									"name": "Delete speciality",
+									"id": "caaf1227-8e05-4c5f-9a4e-90ab6b54d128",
+									"name": "Get Insurance detail",
 									"originalRequest": {
-										"method": "DELETE",
+										"method": "GET",
 										"header": [],
 										"body": {
 											"mode": "raw",
@@ -20309,19 +20263,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/speciality/:id",
+											"raw": "{{BASEURL}}/general/insurance/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"speciality",
+												"insurance",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660e7fea676b82328898858c"
+													"value": "660ec0e5a45494d78ee96c8e"
 												}
 											]
 										}
@@ -20344,15 +20298,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "82"
+											"value": "430"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"52-voLzmSsiOa+ZFy7A+2HVc8B5eZQ\""
+											"value": "W/\"1ae-zcs2Gl8cb9SbW7KE0Yk/YVssa5w\""
 										},
 										{
 											"key": "Date",
-											"value": "Thu, 04 Apr 2024 10:26:47 GMT"
+											"value": "Thu, 04 Apr 2024 15:04:57 GMT"
 										},
 										{
 											"key": "Connection",
@@ -20365,29 +20319,79 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality deleted successfully.\"\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get insurance detail\",\n    \"data\": {\n        \"_id\": \"660ec0e5a45494d78ee96c8e\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T15:01:57.354Z\",\n        \"updated_at\": \"2024-04-04T15:02:51.068Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
 						{
-							"name": "Speciality list",
-							"id": "fe4a458a-175b-4b44-8bc6-02b3d43631f4",
+							"name": "Delete insurance",
+							"id": "db13691a-e348-48e2-8419-177e4ac4ae16",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "DELETE",
 								"header": [],
-								"url": "{{BASEURL}}/general/speciality"
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/insurance/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"insurance",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660ec0e5a45494d78ee96c8e"
+										}
+									]
+								}
 							},
 							"response": [
 								{
-									"id": "a779a9ff-be17-4c56-b50e-e00168f7acff",
-									"name": "Speciality list",
+									"id": "4788f0b5-9622-47f5-9e6b-e7a79df3c6f2",
+									"name": "Delete insurance",
 									"originalRequest": {
-										"method": "GET",
+										"method": "DELETE",
 										"header": [],
-										"url": "{{BASEURL}}/general/speciality"
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/insurance/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"insurance",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660ec0e5a45494d78ee96c8e"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -20407,15 +20411,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "11279"
+											"value": "441"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"2c0f-XLByfXQ91PmkAcOvufA1Ia3KuSw\""
+											"value": "W/\"1b9-bsSFDA8+6QulHfJtBppxRi6cS0w\""
 										},
 										{
 											"key": "Date",
-											"value": "Thu, 04 Apr 2024 10:27:23 GMT"
+											"value": "Thu, 04 Apr 2024 15:05:27 GMT"
 										},
 										{
 											"key": "Connection",
@@ -20428,7 +20432,70 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65def82a5621313415fa7206\",\n                \"name\": \"Family Medicine\",\n                \"description\": \"Family Medicines\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/0252d041-1702-4386-a0e8-f7063fbcbf8cFamily.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/0252d041-1702-4386-a0e8-f7063fbcbf8cFamily.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-04-04T09:15:22.351Z\",\n                \"usageCount\": 108\n            },\n            {\n                \"_id\": \"65fc2640cd67bc8688aeab81\",\n                \"name\": \"Cardiology\",\n                \"description\": \"Cardiology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/88fabb05-bc05-489d-b38c-5f2f1f3d91f9Cardiology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/88fabb05-bc05-489d-b38c-5f2f1f3d91f9Cardiology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-04-04T07:33:19.989Z\",\n                \"usageCount\": 27\n            },\n            {\n                \"_id\": \"65fc2640cd67bc8688aeab82\",\n                \"name\": \"Dentistry\",\n                \"description\": \"Dentistry\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/f2e1d57e-01d6-420b-b3b2-0e93eaec086cDentistry.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/f2e1d57e-01d6-420b-b3b2-0e93eaec086cDentistry.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-04-02T06:44:44.052Z\",\n                \"usageCount\": 25\n            },\n            {\n                \"_id\": \"65fc2640cd67bc8688aeab83\",\n                \"name\": \"Dermatology\",\n                \"description\": \"Dermatology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/340a4e8a-0374-4d98-80b2-fd2878a6536fDermatology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/340a4e8a-0374-4d98-80b2-fd2878a6536fDermatology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-04-04T07:11:49.188Z\",\n                \"usageCount\": 6\n            },\n            {\n                \"_id\": \"65fd70c9255c1a56436d5da7\",\n                \"name\": \"General Medicine\",\n                \"description\": \"General Medicine\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/27836c8f-6d1d-4591-aa31-e39bddae8517General Surgery.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/27836c8f-6d1d-4591-aa31-e39bddae8517General Surgery.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-28T02:13:11.116Z\",\n                \"usageCount\": 3\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c6\",\n                \"name\": \"Obstetrics & Gynecology\",\n                \"description\": \"Obstetrics & Gynecology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7614b85a-9b5e-40b2-b69d-788fe3cdecb1Obstetrics.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7614b85a-9b5e-40b2-b69d-788fe3cdecb1Obstetrics.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c0\",\n                \"name\": \"ENT\",\n                \"description\": \"ENT\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/56c5b9db-b880-4516-ba66-609b3c3fc4e4ENT.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/56c5b9db-b880-4516-ba66-609b3c3fc4e4ENT.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-29T03:45:29.162Z\",\n                \"usageCount\": 3\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c9\",\n                \"name\": \"Orthopedics\",\n                \"description\": \"Orthopedics\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/bc9ffdc0-2c5b-4af4-aa16-5776efa322deOrthopedics.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/bc9ffdc0-2c5b-4af4-aa16-5776efa322deOrthopedics.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2cd\",\n                \"name\": \"Pulmonology\",\n                \"description\": \"Pulmonology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/d019f89f-3f64-4ad3-b7b8-f642d2992e8dPulmonology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/d019f89f-3f64-4ad3-b7b8-f642d2992e8dPulmonology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c1\",\n                \"name\": \"Gastroenterology\",\n                \"description\": \"Gastroenterology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/03d7ae7c-c9f3-4cd3-9d79-d11888ca30e8Gastroenterology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/03d7ae7c-c9f3-4cd3-9d79-d11888ca30e8Gastroenterology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c8\",\n                \"name\": \"Ophthalmology\",\n                \"description\": \"Ophthalmology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7d8a43f2-f59d-4a90-82d3-7606d85214a5Ophthalmology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7d8a43f2-f59d-4a90-82d3-7606d85214a5Ophthalmology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2cb\",\n                \"name\": \"physiotherapy\",\n                \"description\": \"physiotherapy\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2cc\",\n                \"name\": \"Psychiatry\",\n                \"description\": \"Psychiatry\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/70b7f6bf-deff-460c-8e48-7787d4927a2cPsychiatry.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/70b7f6bf-deff-460c-8e48-7787d4927a2cPsychiatry.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2bf\",\n                \"name\": \"Endocrinology\",\n                \"description\": \"Endocrinology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/e528e1f0-c56f-452d-90de-379025a9e99bEndocrinology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/e528e1f0-c56f-452d-90de-379025a9e99bEndocrinology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c2\",\n                \"name\": \"Geriatrics\",\n                \"description\": \"Geriatrics\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/645ddfea-63ff-4794-9d63-609397d230dcGeriatrics.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/645ddfea-63ff-4794-9d63-609397d230dcGeriatrics.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c3\",\n                \"name\": \"Hematology\",\n                \"description\": \"Hematology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/de4ceff8-1ade-4e33-ac57-f39fa6be424aHematology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/de4ceff8-1ade-4e33-ac57-f39fa6be424aHematology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c4\",\n                \"name\": \"Immunology\",\n                \"description\": \"Immunology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/c6fca20a-b6ce-425f-b059-11c15097a444Immunology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/c6fca20a-b6ce-425f-b059-11c15097a444Immunology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c5\",\n                \"name\": \"Neurology\",\n                \"description\": \"Neurology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/6c69a09d-21b6-48d7-8776-e5a80d5a49dcNeurology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/6c69a09d-21b6-48d7-8776-e5a80d5a49dcNeurology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2c7\",\n                \"name\": \"Oncology\",\n                \"description\": \"Oncology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/22f1f7e2-c1cc-474f-a28d-0759d9fc7bc0Oncology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/22f1f7e2-c1cc-474f-a28d-0759d9fc7bc0Oncology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2ca\",\n                \"name\": \"Pediatrics\",\n                \"description\": \"Pediatrics\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/420fbd1b-1ae5-4586-9edc-10ef4acda78ePediatrics.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/420fbd1b-1ae5-4586-9edc-10ef4acda78ePediatrics.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"_id\": \"6602afe2765799acdbc7d2ce\",\n                \"name\": \"Urology\",\n                \"description\": \"Urology\",\n                \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7bcefae0-d569-47ae-adf2-97cabbe22f51Urology.png\",\n                \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/7bcefae0-d569-47ae-adf2-97cabbe22f51Urology.png\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-22T08:47:26.641Z\",\n                \"usageCount\": 2\n            }\n        ],\n        \"totalCount\": 21\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Insurance deleted successfully.\",\n    \"data\": {\n        \"_id\": \"660ec0e5a45494d78ee96c8e\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T15:01:57.354Z\",\n        \"updated_at\": \"2024-04-04T15:02:51.068Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Insurance list",
+							"id": "fe4a458a-175b-4b44-8bc6-02b3d43631f4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/insurance"
+							},
+							"response": [
+								{
+									"id": "2c87516a-199d-4bcb-9855-b010dbbcc77b",
+									"name": "Insurance list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/insurance"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "3672"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"e58-kVKIB810XOextEb+oICt1kqIkws\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 15:05:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Insurance list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"66024e85779ad4b7c4ec617d\",\n                \"name\": \"ICICI Prudential Life Insurance Company Limited\",\n                \"description\": \"Offering a range of insurance products and services\",\n                \"code\": \"ICICI001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6186\",\n                \"name\": \"Kotak Mahindra Old Mutual Life Insurance Limited\",\n                \"description\": \"Joint venture between Kotak Mahindra Bank and Old Mutual\",\n                \"code\": \"KotakMahindraOldMutual001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6183\",\n                \"name\": \"Tata AIA Life Insurance Company Limited\",\n                \"description\": \"Joint venture between Tata Sons and AIA Group Limited\",\n                \"code\": \"TataAIA001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6184\",\n                \"name\": \"PNB MetLife India Insurance Company Limited\",\n                \"description\": \"Offering a range of life insurance products and services\",\n                \"code\": \"PNBMetLife001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6187\",\n                \"name\": \"IndiaFirst Life Insurance Company Limited\",\n                \"description\": \"Offering a range of life insurance and pension products\",\n                \"code\": \"IndiaFirst001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec617b\",\n                \"name\": \"Life Insurance Corporation of India\",\n                \"description\": \"Provides life insurance products and services\",\n                \"code\": \"LIC001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec617c\",\n                \"name\": \"HDFC Life Insurance Company Limited\",\n                \"description\": \"Leading private life insurance provider in India\",\n                \"code\": \"HDFC001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec617f\",\n                \"name\": \"Bajaj Allianz Life Insurance Company Limited\",\n                \"description\": \"Offering a wide range of life insurance plans\",\n                \"code\": \"Bajaj001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec617e\",\n                \"name\": \"SBI Life Insurance Company Limited\",\n                \"description\": \"Joint venture between State Bank of India and BNP Paribas Cardif\",\n                \"code\": \"SBI001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6180\",\n                \"name\": \"Max Life Insurance Company Limited\",\n                \"description\": \"One of the leading life insurance providers in India\",\n                \"code\": \"MaxLife001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6181\",\n                \"name\": \"Reliance Nippon Life Insurance Company Limited\",\n                \"description\": \"Joint venture between Reliance Capital and Nippon Life Insurance\",\n                \"code\": \"RelianceNippon001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6182\",\n                \"name\": \"Aditya Birla Sun Life Insurance Company Limited\",\n                \"description\": \"Offering a range of insurance and investment solutions\",\n                \"code\": \"AdityaBirlaSun001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            },\n            {\n                \"_id\": \"66024e85779ad4b7c4ec6185\",\n                \"name\": \"Exide Life Insurance Company Limited\",\n                \"description\": \"Provides life insurance and wealth solutions\",\n                \"code\": \"Exide001\",\n                \"status\": \"active\",\n                \"created_at\": \"2024-03-24T00:00:00.000Z\",\n                \"updated_at\": \"2024-03-24T00:00:00.000Z\"\n            }\n        ],\n        \"totalCount\": 13\n    }\n}"
 								}
 							]
 						}
