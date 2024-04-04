@@ -15750,7 +15750,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American1\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -19371,6 +19371,171 @@
 					"name": "Speciality",
 					"item": [
 						{
+							"name": "speciality",
+							"id": "62a409db-b888-4922-b449-e49c1887d77c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/general-public/spcialty?sort=usageCount|DESC",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general-public",
+										"spcialty"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "usageCount|DESC",
+											"description": "top speciality"
+										},
+										{
+											"key": "sort",
+											"value": "name|ASC",
+											"description": "order by name",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "28ccc988-1946-489c-922b-ad7d70e79dc7",
+									"name": "speciality",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/spcialty"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "356"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"164-Of0b1/IpVa+9hjSfxQtVtO93y8Q\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 18:11:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65def82a5621313415fa7206\",\n                \"name\": \"Family Medicine\",\n                \"description\": \"Family Medicine\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								},
+								{
+									"id": "6113915a-9425-4307-8739-861158c23edd",
+									"name": "Top Speciality",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/general-public/spcialty?sort=usageCount|DESC&page=1&limit=24",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general-public",
+												"spcialty"
+											],
+											"query": [
+												{
+													"key": "sort",
+													"value": "usageCount|DESC",
+													"description": "top speciality"
+												},
+												{
+													"key": "sort",
+													"value": "name|ASC",
+													"description": "order by name",
+													"disabled": true
+												},
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "limit",
+													"value": "24",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1201"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4b1-lS0xPjG7Ej7kzYFn9ogD8ZPfRNU\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 21 Mar 2024 12:32:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65def82a5621313415fa7206\",\n                \"name\": \"Family Medicine\",\n                \"description\": \"Family Medicines\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-21T12:29:50.247Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab81\",\n                \"name\": \"Cardiology\",\n                \"description\": \"Cardiology\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab82\",\n                \"name\": \"Dentistry\",\n                \"description\": \"Dentistry\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab83\",\n                \"name\": \"Dermatology\",\n                \"description\": \"Dermatology\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 4\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "Add Speciality",
 							"id": "f5ea2fc6-59d5-47c8-ab02-f707eb7345ac",
 							"protocolProfileBehavior": {
@@ -19855,171 +20020,6 @@
 						}
 					],
 					"id": "ee478470-e306-41dc-8493-b35bafb45a17"
-				},
-				{
-					"name": "speciality",
-					"id": "62a409db-b888-4922-b449-e49c1887d77c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BASEURL}}/general-public/spcialty?sort=usageCount|DESC",
-							"host": [
-								"{{BASEURL}}"
-							],
-							"path": [
-								"general-public",
-								"spcialty"
-							],
-							"query": [
-								{
-									"key": "sort",
-									"value": "usageCount|DESC",
-									"description": "top speciality"
-								},
-								{
-									"key": "sort",
-									"value": "name|ASC",
-									"description": "order by name",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "28ccc988-1946-489c-922b-ad7d70e79dc7",
-							"name": "speciality",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": "{{BASEURL}}/general-public/spcialty"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "356"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"164-Of0b1/IpVa+9hjSfxQtVtO93y8Q\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 01 Mar 2024 18:11:29 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65def82a5621313415fa7206\",\n                \"name\": \"Family Medicine\",\n                \"description\": \"Family Medicine\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
-						},
-						{
-							"id": "6113915a-9425-4307-8739-861158c23edd",
-							"name": "Top Speciality",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASEURL}}/general-public/spcialty?sort=usageCount|DESC&page=1&limit=24",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"general-public",
-										"spcialty"
-									],
-									"query": [
-										{
-											"key": "sort",
-											"value": "usageCount|DESC",
-											"description": "top speciality"
-										},
-										{
-											"key": "sort",
-											"value": "name|ASC",
-											"description": "order by name",
-											"disabled": true
-										},
-										{
-											"key": "page",
-											"value": "1"
-										},
-										{
-											"key": "limit",
-											"value": "24",
-											"type": "text"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "1201"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"4b1-lS0xPjG7Ej7kzYFn9ogD8ZPfRNU\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 21 Mar 2024 12:32:24 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65def82a5621313415fa7206\",\n                \"name\": \"Family Medicine\",\n                \"description\": \"Family Medicines\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\",\n                \"updated_at\": \"2024-03-21T12:29:50.247Z\",\n                \"usageCount\": 2\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab81\",\n                \"name\": \"Cardiology\",\n                \"description\": \"Cardiology\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab82\",\n                \"name\": \"Dentistry\",\n                \"description\": \"Dentistry\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            },\n            {\n                \"usageCount\": 0,\n                \"_id\": \"65fc2640cd67bc8688aeab83\",\n                \"name\": \"Dermatology\",\n                \"description\": \"Dermatology\",\n                \"web_icon\": \"\",\n                \"mobile_icon\": \"\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 4\n    }\n}"
-						}
-					]
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
