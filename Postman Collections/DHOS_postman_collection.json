@@ -18430,7 +18430,7 @@
 					"id": "3a4b6468-564c-49ca-88a8-b89a25973867"
 				},
 				{
-					"name": "Relationship Copy",
+					"name": "Role",
 					"item": [
 						{
 							"name": "Get Role list for drop down",
@@ -18980,6 +18980,561 @@
 						}
 					],
 					"id": "9ef3b53e-81b1-4d12-ad6c-2bbffd58b474"
+				},
+				{
+					"name": "Role Copy",
+					"item": [
+						{
+							"name": "Get Role list for drop down",
+							"id": "24360873-170b-49a1-80d8-9094cdefe797",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/role/get/all"
+							},
+							"response": [
+								{
+									"id": "876b5096-8157-467a-9a1c-310e43d22624",
+									"name": "Get Role list for drop down",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/role/get/all"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "938"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3aa-Vsb50K0J93Gvk9AoYzJsx3Icua4\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 18:10:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65da3a13039fb60eb4ffd4ec\",\n                \"name\": \"Patient\",\n                \"status\": \"active\",\n                \"key\": \"patient\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65da3aaf039fb60eb4ffd4ed\",\n                \"name\": \"Doctor\",\n                \"status\": \"active\",\n                \"key\": \"doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65db8d18039fb60eb4ffd502\",\n                \"name\": \"Asst. Doctor\",\n                \"status\": \"active\",\n                \"key\": \"asst-doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6603929356676ece72465341\",\n                \"name\": \"Admin\",\n                \"status\": \"active\",\n                \"key\": \"admin\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6604010456676ece72465345\",\n                \"name\": \"Family Member\",\n                \"status\": \"active\",\n                \"key\": \"family\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"totalCount\": 5\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Add Role",
+							"id": "f5ea2fc6-59d5-47c8-ab02-f707eb7345ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Test Role\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/role"
+							},
+							"response": [
+								{
+									"id": "f9238558-d35e-4d5c-a946-a064e42e7646",
+									"name": "Add Role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Test Role\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/role"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "404"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"194-BerU2CHahWK8aNX+Eyjm2o6khRM\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 08:09:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role added successfully.\",\n    \"data\": {\n        \"name\": \"Test Role\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660e602a38b6f1c7290b2fee\",\n        \"created_at\": \"2024-04-04T08:09:14.463Z\",\n        \"updated_at\": \"2024-04-04T08:09:14.463Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit Role",
+							"id": "e938ffb2-fd6d-4433-9d5f-cd07b0951018",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Test Admin\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/role/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"role",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "6e31dbb3-e354-4f63-89b3-f22e491d7fa1",
+											"key": "id",
+											"value": "660e602a38b6f1c7290b2fee"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b53e108a-e0f2-40b1-b3ca-b7df1d7267bb",
+									"name": "Edit Role",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Test Admin\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/role/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"role",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660e602a38b6f1c7290b2fee"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "407"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"197-CtkOHeKC+5LpFBmfH7qJqk7F2io\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 08:10:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role updated successfully.\",\n    \"data\": {\n        \"_id\": \"660e602a38b6f1c7290b2fee\",\n        \"name\": \"Test Admin\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T08:09:14.463Z\",\n        \"updated_at\": \"2024-04-04T08:10:14.815Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Role detail",
+							"id": "0e1e9ca2-e8a3-4a7a-9506-8a85396b4316",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/role/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"role",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "c9c8462c-4af9-4986-b549-89204ad0748d",
+											"key": "id",
+											"value": "660e602a38b6f1c7290b2fee"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "54eb2bc1-915e-4842-b4a2-ab652c8b4632",
+									"name": "Get Role detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/role/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"role",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660e602a38b6f1c7290b2fee"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "396"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"18c-AGcEM3PtKsaGhNSONvSY2zhr1GI\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 08:10:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get role detail\",\n    \"data\": {\n        \"_id\": \"660e602a38b6f1c7290b2fee\",\n        \"name\": \"Test Admin\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T08:09:14.463Z\",\n        \"updated_at\": \"2024-04-04T08:10:14.815Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete role",
+							"id": "d40ee1fe-3c88-4c36-94ee-83e0f61cfc60",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/role/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"role",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "ffe01f85-4d1c-41fc-9370-201a3b70344f",
+											"key": "id",
+											"value": "660e602a38b6f1c7290b2fee"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e65a12c5-63ba-45b6-a339-7f67d6d1d29a",
+									"name": "Delete role",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/role/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"role",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660e602a38b6f1c7290b2fee"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "76"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4c-qUEzEKsG7Pj37rsKz1TMqgOgQKY\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 08:11:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Role list",
+							"id": "a6f21c99-ff7d-46b0-a2ae-d36eb91f976d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/role"
+							},
+							"response": [
+								{
+									"id": "1294e830-2594-43d5-a6a6-5e2dda91c120",
+									"name": "Role list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/role"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "938"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"3aa-Vsb50K0J93Gvk9AoYzJsx3Icua4\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 08:11:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65da3a13039fb60eb4ffd4ec\",\n                \"name\": \"Patient\",\n                \"status\": \"active\",\n                \"key\": \"patient\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65da3aaf039fb60eb4ffd4ed\",\n                \"name\": \"Doctor\",\n                \"status\": \"active\",\n                \"key\": \"doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"65db8d18039fb60eb4ffd502\",\n                \"name\": \"Asst. Doctor\",\n                \"status\": \"active\",\n                \"key\": \"asst-doctor\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6603929356676ece72465341\",\n                \"name\": \"Admin\",\n                \"status\": \"active\",\n                \"key\": \"admin\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"create\",\n                            \"list\",\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"_id\": \"6604010456676ece72465345\",\n                \"name\": \"Family Member\",\n                \"status\": \"active\",\n                \"key\": \"family\",\n                \"permissions\": [\n                    {\n                        \"feature\": \"patient\",\n                        \"permissions\": [\n                            \"update\",\n                            \"deatil\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"totalCount\": 5\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "ee478470-e306-41dc-8493-b35bafb45a17"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
