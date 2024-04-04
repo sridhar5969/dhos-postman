@@ -11692,7 +11692,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&speciality=65fc2640cd67bc8688aeab82",
+											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&textSearch=2342340",
 											"host": [
 												"{{BASEURL}}"
 											],
@@ -11706,13 +11706,207 @@
 													"value": "name.first|ASC"
 												},
 												{
-													"key": "speciality",
-													"value": "65fc2640cd67bc8688aeab82"
+													"key": "filters",
+													"value": "speciality|65fc2640cd67bc8688aeab82",
+													"disabled": true
+												},
+												{
+													"key": "textSearch",
+													"value": "2342340",
+													"description": "doctorid,name,speciality value,email,phone"
 												}
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "82450f1d-72c2-4762-8374-f2bf22cb6dbb",
+											"name": "Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&textSearch=2342340",
+													"host": [
+														"{{BASEURL}}"
+													],
+													"path": [
+														"admin",
+														"doctor-names"
+													],
+													"query": [
+														{
+															"key": "sort",
+															"value": "name.first|ASC"
+														},
+														{
+															"key": "filters",
+															"value": "speciality|65fc2640cd67bc8688aeab82",
+															"disabled": true
+														},
+														{
+															"key": "textSearch",
+															"value": "2342340",
+															"description": "doctorid,name,speciality value,email,phone"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1128"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"468-tNS+MSORl9qDDkFqeyQHJ4O7saE\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 04 Apr 2024 06:57:43 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"_id\": \"65e97e6da1a23763b9894835\",\n            \"name\": {\n                \"first\": \"Ajith\",\n                \"middle\": \"\",\n                \"last\": \"Kumar\"\n            },\n            \"email\": \"tharunkumar11@gem3s.in\",\n            \"mobilephone\": \"8888877777\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\",\n                    \"value\": \"Dentistry\"\n                }\n            ],\n            \"account_id\": 2342340\n        },\n        {\n            \"_id\": \"65faa8912613a80259f51694\",\n            \"account_id\": 2342340,\n            \"mobilephone\": \"6666688888\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\"\n                }\n            ],\n            \"email\": \"shalini@yopmail.com\",\n            \"name\": {\n                \"first\": \"Shalini\",\n                \"last\": \"S\",\n                \"suffix\": \"Dr.\"\n            }\n        },\n        {\n            \"_id\": \"65f407f942ae30615cd5d27f\",\n            \"mobilephone\": \"8888888888\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65def82a5621313415fa7206\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab81\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab83\"\n                }\n            ],\n            \"email\": \"test@gmail.com\",\n            \"name\": {\n                \"first\": \"Sudhir\",\n                \"middle\": \"\",\n                \"last\": \"Chowdary\"\n            },\n            \"account_id\": 2342340\n        },\n        {\n            \"_id\": \"65faa7f4ffac2da4f26cbb96\",\n            \"account_id\": 2342340,\n            \"mobilephone\": \"8888866666\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65def82a5621313415fa7206\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\"\n                }\n            ],\n            \"email\": \"karthik@yopmail.com\",\n            \"name\": {\n                \"first\": \"kathik\",\n                \"last\": \"Raj\",\n                \"suffix\": \"Dr.\"\n            }\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Patients List",
+									"id": "ba9e3169-30ae-4c35-be9d-05df34d793ec",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&textSearch=2342340",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"admin",
+												"doctor-names"
+											],
+											"query": [
+												{
+													"key": "sort",
+													"value": "name.first|ASC"
+												},
+												{
+													"key": "filters",
+													"value": "speciality|65fc2640cd67bc8688aeab82",
+													"disabled": true
+												},
+												{
+													"key": "textSearch",
+													"value": "2342340",
+													"description": "doctorid,name,speciality value,email,phone"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "e6f76a55-c08e-43f1-9431-8b4993543aba",
+											"name": "Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASEURL}}/admin/doctor-names?sort=name.first|ASC&textSearch=2342340",
+													"host": [
+														"{{BASEURL}}"
+													],
+													"path": [
+														"admin",
+														"doctor-names"
+													],
+													"query": [
+														{
+															"key": "sort",
+															"value": "name.first|ASC"
+														},
+														{
+															"key": "filters",
+															"value": "speciality|65fc2640cd67bc8688aeab82",
+															"disabled": true
+														},
+														{
+															"key": "textSearch",
+															"value": "2342340",
+															"description": "doctorid,name,speciality value,email,phone"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1128"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"468-tNS+MSORl9qDDkFqeyQHJ4O7saE\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 04 Apr 2024 06:57:43 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"_id\": \"65e97e6da1a23763b9894835\",\n            \"name\": {\n                \"first\": \"Ajith\",\n                \"middle\": \"\",\n                \"last\": \"Kumar\"\n            },\n            \"email\": \"tharunkumar11@gem3s.in\",\n            \"mobilephone\": \"8888877777\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\",\n                    \"value\": \"Dentistry\"\n                }\n            ],\n            \"account_id\": 2342340\n        },\n        {\n            \"_id\": \"65faa8912613a80259f51694\",\n            \"account_id\": 2342340,\n            \"mobilephone\": \"6666688888\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\"\n                }\n            ],\n            \"email\": \"shalini@yopmail.com\",\n            \"name\": {\n                \"first\": \"Shalini\",\n                \"last\": \"S\",\n                \"suffix\": \"Dr.\"\n            }\n        },\n        {\n            \"_id\": \"65f407f942ae30615cd5d27f\",\n            \"mobilephone\": \"8888888888\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65def82a5621313415fa7206\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab81\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab83\"\n                }\n            ],\n            \"email\": \"test@gmail.com\",\n            \"name\": {\n                \"first\": \"Sudhir\",\n                \"middle\": \"\",\n                \"last\": \"Chowdary\"\n            },\n            \"account_id\": 2342340\n        },\n        {\n            \"_id\": \"65faa7f4ffac2da4f26cbb96\",\n            \"account_id\": 2342340,\n            \"mobilephone\": \"8888866666\",\n            \"country_code\": 91,\n            \"speciality\": [\n                {\n                    \"_id\": \"65def82a5621313415fa7206\"\n                },\n                {\n                    \"_id\": \"65fc2640cd67bc8688aeab82\"\n                }\n            ],\n            \"email\": \"karthik@yopmail.com\",\n            \"name\": {\n                \"first\": \"kathik\",\n                \"last\": \"Raj\",\n                \"suffix\": \"Dr.\"\n            }\n        }\n    ]\n}"
+										}
+									]
 								}
 							],
 							"id": "a710b264-6c93-4741-b813-8f19372e28e8"
