@@ -11901,7 +11901,7 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "Speciality List Without Pagenations",
 									"id": "fc9a8661-4e20-44c6-a8d4-ea820959a8d8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
