@@ -13604,7 +13604,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"660c13dddb547833cb828a2a\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
+							"raw": "{\r\n    \"doctor_id\": \"65da6358aa533cb4366988a9\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"65e4574d9c23c04ce8c81d5b\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
 						},
 						"url": "{{BASEURL}}/appointment"
 					},
