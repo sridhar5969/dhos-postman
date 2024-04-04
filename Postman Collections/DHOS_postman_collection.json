@@ -17825,6 +17825,497 @@
 					"id": "5b46bb62-720d-419b-a1e8-8f8d54ca15b8"
 				},
 				{
+					"name": "Diagnostics",
+					"item": [
+						{
+							"name": "Add Diagnostics",
+							"id": "5ed9d90f-8e70-4e5a-84c4-b8f9190a5ec7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Test Data1\",\r\n\t\"code\": \"TD1\",\r\n\t\"description\": \"Test Data1\",\r\n\t\"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/general/diagnostics"
+							},
+							"response": [
+								{
+									"id": "692a7d91-bd15-4b09-a7f3-2bebb85b1e63",
+									"name": "Add Diagnostics",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"name\": \"Test Data1\",\r\n\t\"code\": \"TD1\",\r\n\t\"description\": \"Test Data1\",\r\n\t\"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/diagnostics"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "452"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c4-CpDZs5T37ZmdDb8pfDYgi+86s9A\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 11:38:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Diagnostics added successfully.\",\n    \"data\": {\n        \"name\": \"Test Data1\",\n        \"code\": \"TD1\",\n        \"description\": \"Test Data1\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"_id\": \"660e9143d1b5391d65005568\",\n        \"created_at\": \"2024-04-04T11:38:43.376Z\",\n        \"updated_at\": \"2024-04-04T11:38:43.376Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit Diagnostics",
+							"id": "68cd86eb-3912-4d65-a9f6-9f1627dfa1ee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Test Data2\",\r\n    \"code\": \"TD2\",\r\n    \"description\": \"Test Data2\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/diagnostics/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"diagnostics",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660e9143d1b5391d65005568"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e508c3f0-d0d0-4e32-a52d-1b9562d410c1",
+									"name": "Edit Diagnostics",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Test Data2\",\r\n    \"code\": \"TD2\",\r\n    \"description\": \"Test Data2\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/diagnostics/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"diagnostics",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660e9143d1b5391d65005568"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "454"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c6-JEzHrfDgTRqK29aUxWQl7yHN8IE\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 11:40:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Diagnostics updated successfully.\",\n    \"data\": {\n        \"_id\": \"660e9143d1b5391d65005568\",\n        \"name\": \"Test Data2\",\n        \"code\": \"TD2\",\n        \"description\": \"Test Data2\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T11:38:43.376Z\",\n        \"updated_at\": \"2024-04-04T11:40:32.711Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Diagnostics detail",
+							"id": "c80a3583-f451-4f37-9cba-7077983e3985",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/language/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"language",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "f4d79dfb-1c53-4eba-8514-6ee3a1e72c77",
+											"key": "id",
+											"value": "660d759e1bda166b3d45243b"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "6bd58564-5369-466e-9865-861cf1fdf2bf",
+									"name": "Get Language detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/language/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"language",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d759e1bda166b3d45243b"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "434"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1b2-1Su0Tb1lYkpcG7yGx7OqJU4tN1c\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 15:31:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get language detail\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Language",
+							"id": "19e83074-e8e8-4f28-9a90-8df1fdde61e3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/language/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"language",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "e45210e1-1212-4feb-84bc-d82fde4e6de6",
+											"key": "id",
+											"value": "660d759e1bda166b3d45243b"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "574546c7-6cf2-4339-924f-09c8beaa4a6b",
+									"name": "Delete Language",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/language/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"language",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660d759e1bda166b3d45243b"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "80"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"50-MCZtnsqJjFNQBc6pDQpPfPY9iIU\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 15:32:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language deleted successfully.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Language list",
+							"id": "2c30e20e-ce47-438b-9d1b-5233764f6524",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/language"
+							},
+							"response": [
+								{
+									"id": "d86e23be-bc61-4739-a1cb-73e3143affd4",
+									"name": "Language list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general/language"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "451"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c3-+fxZUOsImQ7UHIN61MbAiq71Jkk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 03 Apr 2024 15:33:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Language list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"660d75851bda166b3d452438\",\n                \"name\": \"Arabic\",\n                \"code\": \"AR\",\n                \"description\": \"Arabic\",\n                \"status\": \"active\",\n                \"created_by\": {\n                    \"_id\": \"65f57093180f9f5575876409\",\n                    \"mobilephone\": \"7094715969\",\n                    \"country_code\": 91,\n                    \"email\": \"admin@yopmail.com\",\n                    \"name\": {\n                        \"first\": \"Admin\",\n                        \"last\": \"Sridhar\"\n                    }\n                },\n                \"created_at\": \"2024-04-03T15:28:05.491Z\",\n                \"updated_at\": \"2024-04-03T15:28:05.491Z\",\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						}
+					],
+					"id": "abd0ac1d-e843-4fdc-a83d-9bdf6625004b"
+				},
+				{
 					"name": "Relationship",
 					"item": [
 						{
