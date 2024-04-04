@@ -14772,7 +14772,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa12\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"code\": \"AS\",\r\n    \"name\": \"American Samoa5\",\r\n    \"symbol\": \"$\",\r\n    \"currency_prefix\": \"UT12\",\r\n    \"flag_ico\": \"\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
