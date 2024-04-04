@@ -12220,6 +12220,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"_id\": \"660e6fab7976750ae5bb9b1d\",\r\n\t\"patient\": {\r\n\t\t\"_id\": \"6603b965179d7fff492d2dcd\"\r\n\t},\r\n\t\"doctor\": {\r\n\t\t\"_id\": \"660e65a80b8b788a3d79d417\"\r\n\t},\r\n\t\"speciality\": {\r\n\t\t\"_id\": \"65def82a5621313415fa7206\",\r\n\t\t\"name\": \"Family Medicine\"\r\n\t},\r\n\t\"date\": \"2024-04-04T10:15:00.000Z\",\r\n\t\"section\": \"afternoon\",\r\n\t\"slot_time\": \"660e6f56db547833cbb03adb\",\r\n\t\"reason\": \"scan\",\r\n\t\"notify_me\": false,\r\n\t\"status\": \"completed\",\r\n\t\"end_time\": \"2024-04-04T09:36:07.395Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{BASEURL}}/appointment/detail/:id",
 									"host": [
@@ -12233,7 +12242,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": ""
+											"value": "660e6fab7976750ae5bb9b1d"
 										}
 									]
 								}
