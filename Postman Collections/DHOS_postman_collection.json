@@ -18040,100 +18040,24 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/language/:id",
+									"raw": "{{BASEURL}}/general/diagnotics/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"language",
+										"diagnotics",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "f4d79dfb-1c53-4eba-8514-6ee3a1e72c77",
 											"key": "id",
-											"value": "660d759e1bda166b3d45243b"
+											"value": "660e9143d1b5391d65005568"
 										}
 									]
 								}
 							},
-							"response": [
-								{
-									"id": "6bd58564-5369-466e-9865-861cf1fdf2bf",
-									"name": "Get Language detail",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{BASEURL}}/general/language/:id",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"general",
-												"language",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "660d759e1bda166b3d45243b"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "434"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"1b2-1Su0Tb1lYkpcG7yGx7OqJU4tN1c\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 03 Apr 2024 15:31:43 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get language detail\",\n    \"data\": {\n        \"_id\": \"660d759e1bda166b3d45243b\",\n        \"name\": \"English\",\n        \"code\": \"ENG\",\n        \"description\": \"English\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-03T15:28:30.309Z\",\n        \"updated_at\": \"2024-04-03T15:29:53.121Z\",\n        \"__v\": 0\n    }\n}"
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "Delete Language",
