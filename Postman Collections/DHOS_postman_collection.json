@@ -19067,10 +19067,69 @@
 								},
 								"url": "{{BASEURL}}/general/speciality"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "a0b8ee9c-3576-472b-a2b0-a02985b9a494",
+									"name": "Add Speciality",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Oncologist\",\r\n    \"description\": \"Oncologist\",\r\n    \"web_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/general/speciality"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "453"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1c5-XhD6BNQQvCR6sLR0O7Q8NsReueQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 10:16:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality added successfully.\",\n    \"data\": {\n        \"name\": \"Oncologist\",\n        \"description\": \"Oncologist\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"usageCount\": 0,\n        \"_id\": \"660e7df2b5f21e1bd45562e1\",\n        \"created_at\": \"2024-04-04T10:16:18.937Z\",\n        \"updated_at\": \"2024-04-04T10:16:18.937Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						},
 						{
-							"name": "Edit Role",
+							"name": "Edit Speciality",
 							"id": "e938ffb2-fd6d-4433-9d5f-cd07b0951018",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19080,7 +19139,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Test Admin\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -19088,34 +19147,33 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/general/role/:id",
+									"raw": "{{BASEURL}}/general/speciality/:id",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
 										"general",
-										"role",
+										"speciality",
 										":id"
 									],
 									"variable": [
 										{
-											"id": "6e31dbb3-e354-4f63-89b3-f22e491d7fa1",
 											"key": "id",
-											"value": "660e602a38b6f1c7290b2fee"
+											"value": "660e7df2b5f21e1bd45562e1"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "b53e108a-e0f2-40b1-b3ca-b7df1d7267bb",
-									"name": "Edit Role",
+									"id": "ba8dd093-db37-41f0-bd4b-69cd93c4cf4c",
+									"name": "Edit Speciality",
 									"originalRequest": {
 										"method": "PUT",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"Test Admin\",\r\n    \"status\": \"active\"\r\n}",
+											"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon_file\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -19123,19 +19181,19 @@
 											}
 										},
 										"url": {
-											"raw": "{{BASEURL}}/general/role/:id",
+											"raw": "{{BASEURL}}/general/speciality/:id",
 											"host": [
 												"{{BASEURL}}"
 											],
 											"path": [
 												"general",
-												"role",
+												"speciality",
 												":id"
 											],
 											"variable": [
 												{
 													"key": "id",
-													"value": "660e602a38b6f1c7290b2fee"
+													"value": "660e7df2b5f21e1bd45562e1"
 												}
 											]
 										}
@@ -19158,15 +19216,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "407"
+											"value": "457"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"197-CtkOHeKC+5LpFBmfH7qJqk7F2io\""
+											"value": "W/\"1c9-W6T8Xcr0mOGKGkT8jVsMDf/WqC4\""
 										},
 										{
 											"key": "Date",
-											"value": "Thu, 04 Apr 2024 08:10:14 GMT"
+											"value": "Thu, 04 Apr 2024 10:17:33 GMT"
 										},
 										{
 											"key": "Connection",
@@ -19179,7 +19237,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Role updated successfully.\",\n    \"data\": {\n        \"_id\": \"660e602a38b6f1c7290b2fee\",\n        \"name\": \"Test Admin\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T08:09:14.463Z\",\n        \"updated_at\": \"2024-04-04T08:10:14.815Z\",\n        \"__v\": 0\n    }\n}"
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Speciality updated successfully.\",\n    \"data\": {\n        \"_id\": \"660e7df2b5f21e1bd45562e1\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"usageCount\": 0,\n        \"created_at\": \"2024-04-04T10:16:18.937Z\",\n        \"updated_at\": \"2024-04-04T10:17:32.969Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
