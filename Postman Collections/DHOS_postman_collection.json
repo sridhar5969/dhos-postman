@@ -11680,6 +11680,25 @@
 					"name": "Consultations",
 					"item": [
 						{
+							"name": "Drop Down API",
+							"item": [
+								{
+									"name": "Dotors List With Speciality",
+									"id": "880a2905-0961-4dd7-bdcf-f55af4bc1ba6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/admin/doctor-names"
+									},
+									"response": []
+								}
+							],
+							"id": "a710b264-6c93-4741-b813-8f19372e28e8"
+						},
+						{
 							"name": "Appointments List",
 							"id": "af82cbb2-9d6d-4cd6-bb6a-04d9c44a6466",
 							"protocolProfileBehavior": {
