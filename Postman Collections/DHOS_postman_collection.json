@@ -18061,7 +18061,7 @@
 							]
 						},
 						{
-							"name": "Add Relationship",
+							"name": "Add Role",
 							"id": "987d0acb-5442-42ce-a0c2-849a01ec0e60",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -18071,19 +18071,19 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Cousins\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"Test Admin\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/general/relationship"
+								"url": "{{BASEURL}}/general/role"
 							},
 							"response": []
 						},
 						{
-							"name": "Edit Relationship",
+							"name": "Edit Role",
 							"id": "923bd357-bbf1-442a-915e-6840aa867f67",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -18122,7 +18122,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Relationship detail",
+							"name": "Get Role detail",
 							"id": "5678fb6e-b5c1-4c83-8582-ed20bebd4e30",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
