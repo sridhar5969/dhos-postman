@@ -12013,8 +12013,8 @@
 											],
 											"query": [
 												{
-													"key": "sort",
-													"value": "name.first|ASC",
+													"key": "status",
+													"value": "available",
 													"disabled": true
 												},
 												{
@@ -12032,7 +12032,84 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "5938d81b-2a13-475c-b845-4a0b9ac381fd",
+											"name": "Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASEURL}}/admin/doctors-slots?status=available&fromDate=2024-04-02T10:30:59.999Z&toDate=2024-05-02T10:30:59.999Z&doctor=65e97e6da1a23763b9894835",
+													"host": [
+														"{{BASEURL}}"
+													],
+													"path": [
+														"admin",
+														"doctors-slots"
+													],
+													"query": [
+														{
+															"key": "status",
+															"value": "available"
+														},
+														{
+															"key": "fromDate",
+															"value": "2024-04-02T10:30:59.999Z"
+														},
+														{
+															"key": "toDate",
+															"value": "2024-05-02T10:30:59.999Z"
+														},
+														{
+															"key": "doctor",
+															"value": "65e97e6da1a23763b9894835"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1410"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"582-vFlMLq7yNoHvABSJUT0Z8L9DpwY\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 04 Apr 2024 08:40:24 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"_id\": \"660d2b94db547833cb976ffa\",\n            \"from_time\": \"2024-04-03T05:00:00.000Z\",\n            \"to_time\": \"2024-04-03T05:15:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb976fff\",\n            \"from_time\": \"2024-04-03T05:15:00.000Z\",\n            \"to_time\": \"2024-04-03T05:30:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb97700b\",\n            \"from_time\": \"2024-04-03T05:30:00.000Z\",\n            \"to_time\": \"2024-04-03T05:45:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb977010\",\n            \"from_time\": \"2024-04-03T05:45:00.000Z\",\n            \"to_time\": \"2024-04-03T06:00:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb97701d\",\n            \"from_time\": \"2024-04-03T06:00:00.000Z\",\n            \"to_time\": \"2024-04-03T06:15:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb977024\",\n            \"from_time\": \"2024-04-03T06:15:00.000Z\",\n            \"to_time\": \"2024-04-03T06:30:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb97702c\",\n            \"from_time\": \"2024-04-03T06:30:00.000Z\",\n            \"to_time\": \"2024-04-03T06:45:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        },\n        {\n            \"_id\": \"660d2b94db547833cb977038\",\n            \"from_time\": \"2024-04-03T06:45:00.000Z\",\n            \"to_time\": \"2024-04-03T07:00:00.000Z\",\n            \"doctor\": \"65e97e6da1a23763b9894835\",\n            \"status\": \"available\"\n        }\n    ]\n}"
+										}
+									]
 								}
 							],
 							"id": "a710b264-6c93-4741-b813-8f19372e28e8"
