@@ -13517,7 +13517,23 @@
 										}
 									}
 								},
-								"url": "{{BASEURL}}/appointment/doctor-consultation/list"
+								"url": {
+									"raw": "{{BASEURL}}/appointment/doctor-consultation/list?patientID=65f436863e16223cb10086db",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"doctor-consultation",
+										"list"
+									],
+									"query": [
+										{
+											"key": "patientID",
+											"value": "65f436863e16223cb10086db"
+										}
+									]
+								}
 							},
 							"response": [
 								{
