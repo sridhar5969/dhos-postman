@@ -9096,7 +9096,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor",
+							"raw": "{{BASEURL}}/doctor?sort=name.first|ASC",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9108,6 +9108,10 @@
 									"key": "filters",
 									"value": "specialty_id|65fd70c9255c1a56436d5da7",
 									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "name.first|ASC"
 								}
 							]
 						}
