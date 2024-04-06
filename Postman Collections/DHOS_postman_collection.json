@@ -12372,7 +12372,25 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/appointment/admin/cancel/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"admin",
+										"cancel",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6610f9b2df24a1b865db5093"
+										}
+									]
+								}
 							},
 							"response": []
 						}
