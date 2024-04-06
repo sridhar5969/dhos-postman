@@ -12983,7 +12983,7 @@
 							"response": [
 								{
 									"id": "ab21e612-cec3-44cd-a0b6-ef92a6eb0190",
-									"name": "Appointment Detail View Copy",
+									"name": "Doctor Ratings",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -22176,7 +22176,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "65fc2817068267d94be41754"
+									"value": "66102605fb0f97dc8629dcea"
 								}
 							]
 						}
