@@ -22899,7 +22899,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BASEURL}}/user/my/stripe-billing-portal?redirect=http://redirect-link.com",
+					"raw": "{{BASEURL}}/user/my/stripe-billing-portal",
 					"host": [
 						"{{BASEURL}}"
 					],
@@ -22910,8 +22910,9 @@
 					],
 					"query": [
 						{
-							"key": "redirect",
-							"value": "http://redirect-link.com"
+							"key": "return_url",
+							"value": "http://redirect-link.com",
+							"disabled": true
 						}
 					]
 				}
