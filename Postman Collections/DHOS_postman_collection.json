@@ -12954,7 +12954,116 @@
 				},
 				{
 					"name": "Doctor",
-					"item": [],
+					"item": [
+						{
+							"name": "Appointment Detail View Copy",
+							"id": "ca9336f1-764a-476a-a9bb-2d50f96d02df",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
+								},
+								"url": "{{BASEURL}}/appointment/detail/66055d224aa75dbdc0fe8160"
+							},
+							"response": [
+								{
+									"id": "7012b5e2-0a83-44c1-bc6d-8b7de5242880",
+									"name": "Appointment Detail View",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "",
+												"value": "",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASEURL}}/appointment/detail/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"appointment",
+												"detail",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "3c3ceaf2-6933-499b-a1cf-ba0c83d19964",
+													"key": "id",
+													"value": "65e987cf6470c260ef2e265b"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1398"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"576-wxlw5b7SNt0iv1iksI8RJlZf/Zs\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 07 Mar 2024 13:47:31 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Appointment detail view.\",\n    \"data\": {\n        \"_id\": \"65e987cf6470c260ef2e265b\",\n        \"patient\": {\n            \"_id\": \"65dc54fd1727aab7e24ce534\",\n            \"mobilephone\": \"6374191180\",\n            \"country_code\": 91,\n            \"email\": \"viraj@yopmail.com\",\n            \"name\": {\n                \"first\": \"Viraj\",\n                \"middle\": \"\",\n                \"last\": \"Raghav\",\n                \"mani\": \"\"\n            }\n        },\n        \"doctor\": {\n            \"_id\": \"65e81c345ac73c9511d52e0f\",\n            \"name\": {\n                \"first\": \"Aswin\",\n                \"last\": \"kumar\",\n                \"title\": \"Dr.\"\n            },\n            \"email\": \"aswin@yopmail.com\",\n            \"mobilephone\": \"8888877777\",\n            \"country_code\": 91,\n            \"call_rates\": {\n                \"call_rate\": 100,\n                \"percentage\": 85.5\n            },\n            \"review\": {\n                \"ratings\": 4,\n                \"total_review\": 135\n            }\n        },\n        \"specialty\": {\n            \"_id\": \"65def82a5621313415fa7206\",\n            \"name\": \"Family Medicine\"\n        },\n        \"date\": \"2024-03-07T08:30:00.000Z\",\n        \"section\": \"afternoon\",\n        \"slot_time\": \"14:00\",\n        \"reason\": \"Fever\",\n        \"symptoms\": \"cough\",\n        \"status\": \"completed\",\n        \"medications\": [],\n        \"subjective\": {\n            \"chief_complaint\": \"Take rest\",\n            \"history_illness\": \"Asthma\",\n            \"past_history\": \"Take medicine for breathing pbm\",\n            \"social_history\": \"Take rest\",\n            \"family_history\": \"\",\n            \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\n            \"notes\": \"Take Rest Completely. Come again after 3 days\"\n        },\n        \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\n        \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\n    }\n}"
+								}
+							]
+						}
+					],
 					"id": "088c0945-34cb-443f-8628-d1d7cfa70b3b"
 				},
 				{
@@ -14398,114 +14507,6 @@
 					"response": [
 						{
 							"id": "e0475aac-54d8-4c2a-b24c-5de9035765c2",
-							"name": "Appointment Detail View",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "",
-										"value": "",
-										"disabled": true
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
-								},
-								"url": {
-									"raw": "{{BASEURL}}/appointment/detail/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"appointment",
-										"detail",
-										":id"
-									],
-									"variable": [
-										{
-											"id": "3c3ceaf2-6933-499b-a1cf-ba0c83d19964",
-											"key": "id",
-											"value": "65e987cf6470c260ef2e265b"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "X-Powered-By",
-									"value": "Express"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "1398"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"576-wxlw5b7SNt0iv1iksI8RJlZf/Zs\""
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 07 Mar 2024 13:47:31 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Appointment detail view.\",\n    \"data\": {\n        \"_id\": \"65e987cf6470c260ef2e265b\",\n        \"patient\": {\n            \"_id\": \"65dc54fd1727aab7e24ce534\",\n            \"mobilephone\": \"6374191180\",\n            \"country_code\": 91,\n            \"email\": \"viraj@yopmail.com\",\n            \"name\": {\n                \"first\": \"Viraj\",\n                \"middle\": \"\",\n                \"last\": \"Raghav\",\n                \"mani\": \"\"\n            }\n        },\n        \"doctor\": {\n            \"_id\": \"65e81c345ac73c9511d52e0f\",\n            \"name\": {\n                \"first\": \"Aswin\",\n                \"last\": \"kumar\",\n                \"title\": \"Dr.\"\n            },\n            \"email\": \"aswin@yopmail.com\",\n            \"mobilephone\": \"8888877777\",\n            \"country_code\": 91,\n            \"call_rates\": {\n                \"call_rate\": 100,\n                \"percentage\": 85.5\n            },\n            \"review\": {\n                \"ratings\": 4,\n                \"total_review\": 135\n            }\n        },\n        \"specialty\": {\n            \"_id\": \"65def82a5621313415fa7206\",\n            \"name\": \"Family Medicine\"\n        },\n        \"date\": \"2024-03-07T08:30:00.000Z\",\n        \"section\": \"afternoon\",\n        \"slot_time\": \"14:00\",\n        \"reason\": \"Fever\",\n        \"symptoms\": \"cough\",\n        \"status\": \"completed\",\n        \"medications\": [],\n        \"subjective\": {\n            \"chief_complaint\": \"Take rest\",\n            \"history_illness\": \"Asthma\",\n            \"past_history\": \"Take medicine for breathing pbm\",\n            \"social_history\": \"Take rest\",\n            \"family_history\": \"\",\n            \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\n            \"notes\": \"Take Rest Completely. Come again after 3 days\"\n        },\n        \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\n        \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\n    }\n}"
-						}
-					]
-				},
-				{
-					"name": "Appointment Detail View Copy",
-					"id": "ca9336f1-764a-476a-a9bb-2d50f96d02df",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "",
-								"value": "",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
-						},
-						"url": "{{BASEURL}}/appointment/detail/66055d224aa75dbdc0fe8160"
-					},
-					"response": [
-						{
-							"id": "7012b5e2-0a83-44c1-bc6d-8b7de5242880",
 							"name": "Appointment Detail View",
 							"originalRequest": {
 								"method": "GET",
@@ -22192,7 +22193,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "660fef2cae18bb285f40b9b2"
+									"value": "65fc2817068267d94be41754"
 								}
 							]
 						}
