@@ -13580,7 +13580,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/appointment?fromDate=2024-04-01T20:15:00.000Z",
+									"raw": "{{BASEURL}}/appointment?fromDate=2024-04-06T20:15:00.000Z",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -13590,7 +13590,7 @@
 									"query": [
 										{
 											"key": "fromDate",
-											"value": "2024-04-01T20:15:00.000Z"
+											"value": "2024-04-06T20:15:00.000Z"
 										}
 									]
 								}
