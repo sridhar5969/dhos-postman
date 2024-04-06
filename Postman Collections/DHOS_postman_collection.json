@@ -12303,7 +12303,66 @@
 								},
 								"url": "{{BASEURL}}/appointment/admin/book"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "7b6c87ae-a21f-4f30-8d5d-30e239c5f210",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"patient\": {\r\n\t\t\"_id\": \"65f6ffd81d2e853e66e5f944\"\r\n\t},\r\n\t\"doctor\": {\r\n\t\t\"_id\": \"65e97e6da1a23763b9894835\"\r\n\t},\r\n\t\"speciality\": {\r\n\t\t\"_id\": \"65def82a5621313415fa7206\",\r\n\t\t\"value\": \"Family Medicine\"\r\n\t},\r\n\t\"slot\": {\r\n\t\t\"_id\": \"65ec1eddf0b1646bb949bd10\"\r\n\t},\r\n\t\"reason\": \"appointment reason\",\r\n\t\"charge\": true //if charge is true charge patient or from subscription if false create free call\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/appointment/admin/book"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1631"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"65f-d2O/NOKCXtr35KgUw9wVMSpX6sA\""
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 06 Apr 2024 07:28:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"patient\": {\n            \"_id\": \"65f6ffd81d2e853e66e5f944\",\n            \"mobilephone\": \"9994003500\",\n            \"country_code\": 91,\n            \"birthdate\": \"2024-03-11T20:00:00.000Z\",\n            \"email\": \"asd@gmal.com\",\n            \"gender\": {\n                \"code\": \"f\",\n                \"system\": \"female\",\n                \"display\": \"Female\"\n            },\n            \"name\": {\n                \"first\": \"Sridhar\",\n                \"middle\": \"\",\n                \"last\": \"Re\"\n            },\n            \"photo\": \"\",\n            \"medical_records\": {\n                \"vitals\": {\n                    \"height\": \"1 cm\",\n                    \"weight\": \"52 kg\",\n                    \"bp\": \"100\",\n                    \"heart_rate\": \"70\",\n                    \"temperature\": \"35.6 c\",\n                    \"updated_at\": \"2024-04-04T11:20:12.708Z\"\n                }\n            },\n            \"account_id\": 2342340\n        },\n        \"doctor\": {\n            \"_id\": \"65e97e6da1a23763b9894835\",\n            \"name\": {\n                \"first\": \"Ajith\",\n                \"middle\": \"\",\n                \"last\": \"Kumar\"\n            },\n            \"email\": \"tharunkumar11@gem3s.in\",\n            \"mobilephone\": \"8888877777\",\n            \"country_code\": 91,\n            \"gender\": {\n                \"code\": \"f\",\n                \"system\": \"female\",\n                \"display\": \"Female\"\n            },\n            \"birthdate\": \"2024-03-11T20:00:00.000Z\",\n            \"about\": \"About Me\",\n            \"call_rates\": {\n                \"call_rate\": 100,\n                \"percentage\": 85.5\n            },\n            \"review\": {\n                \"ratings\": 4,\n                \"total_review\": 135\n            },\n            \"photo\": \"\",\n            \"video_call_provider\": {\n                \"host\": \"https://apidemo.staging.vidyoplatform.io\",\n                \"key\": \"jZjE6rNnUp\"\n            },\n            \"account_id\": 2342340\n        },\n        \"speciality\": {\n            \"_id\": \"65def82a5621313415fa7206\",\n            \"name\": \"Family Medicine\"\n        },\n        \"slot_time\": \"65ec1eddf0b1646bb949bd10\",\n        \"reason\": \"appointment reason\",\n        \"notify_me\": true,\n        \"status\": \"open\",\n        \"payment_status\": \"not-paid\",\n        \"payment_date\": \"2024-04-06T07:28:50.050Z\",\n        \"payment\": \"subscription\",\n        \"charge\": true,\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"medications\": [],\n        \"transfer_from\": [],\n        \"patient_consent\": false,\n        \"_id\": \"6610f9b2df24a1b865db5093\",\n        \"created_at\": \"2024-04-06T07:28:50.535Z\",\n        \"updated_at\": \"2024-04-06T07:28:50.535Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "b329cd90-334d-4d4a-8d71-8ebd0449dfdd"
