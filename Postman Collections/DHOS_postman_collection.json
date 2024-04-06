@@ -13204,6 +13204,132 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Availability list.\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"6603e1d597190289313c060d\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:00:00.000Z\",\n                \"from_time\": \"2024-03-29T10:45:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"booked\",\n                \"updated_at\": \"2024-03-29T05:50:24.764Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0613\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:15:00.000Z\",\n                \"from_time\": \"2024-03-29T11:00:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"cancel\",\n                \"updated_at\": \"2024-03-29T11:26:06.121Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0618\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:30:00.000Z\",\n                \"from_time\": \"2024-03-29T11:15:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"available\",\n                \"updated_at\": \"2024-03-27T09:07:33.249Z\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "delete availability",
+							"id": "e8386355-ca19-4f7e-809c-7ddb5acf301d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
+								},
+								"url": {
+									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"doctor",
+										"availability",
+										"time",
+										":doctorId"
+									],
+									"variable": [
+										{
+											"id": "2fdf83f2-7e1b-41ea-b680-9ae148e97c05",
+											"key": "doctorId",
+											"value": "65f57093180f9f5575876406"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "478894b8-e6ed-43f5-a1f7-28a4a04ce285",
+									"name": "doctor availability",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"from_time\": \"2024-03-29T10:30:59.999Z\",\r\n    \"to_time\": \"2024-03-29T20:00:00.000Z\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"availability",
+												"time",
+												":doctorId"
+											],
+											"variable": [
+												{
+													"key": "doctorId",
+													"value": "65f57093180f9f5575876406"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "863"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"35f-nXWy+AwWgUMZj0KNHf/kPWLdliA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 29 Mar 2024 12:32:06 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Availability list.\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"6603e1d597190289313c060d\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:00:00.000Z\",\n                \"from_time\": \"2024-03-29T10:45:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"booked\",\n                \"updated_at\": \"2024-03-29T05:50:24.764Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0613\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:15:00.000Z\",\n                \"from_time\": \"2024-03-29T11:00:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"cancel\",\n                \"updated_at\": \"2024-03-29T11:26:06.121Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0618\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:30:00.000Z\",\n                \"from_time\": \"2024-03-29T11:15:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"available\",\n                \"updated_at\": \"2024-03-27T09:07:33.249Z\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "9fb59c7c-d8c8-41e0-97d3-8bd3688525d4"
