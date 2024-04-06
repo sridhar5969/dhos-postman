@@ -8036,6 +8036,18 @@
 							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Account deactivated\",\n    \"data\": null\n}"
 						}
 					]
+				},
+				{
+					"name": "pay for a call",
+					"id": "8d864a5f-cf31-4ff4-96d1-094b1a0853a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "53e9e5be-2e11-48ac-b6c9-4bf81ab0fc87"
