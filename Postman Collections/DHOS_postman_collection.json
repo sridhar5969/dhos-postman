@@ -12292,7 +12292,16 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"patient\":{\r\n        \"_id\":\"\"\r\n    },\r\n    \"doctor\":{\r\n        \"_id\":\"\"\r\n    },\r\n    \"speciality\":{\r\n        \"_id\":\"\",\r\n        \"value\":\"\"\r\n    },\r\n    \"reason\":\"appointment reason\",\r\n    \"charge\":true//if charge is true charge patient or from subscription if false create free call\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/appointment/admin/book"
 							},
 							"response": []
 						}
