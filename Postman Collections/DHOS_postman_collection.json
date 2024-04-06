@@ -13050,7 +13050,7 @@
 					"id": "088c0945-34cb-443f-8628-d1d7cfa70b3b"
 				},
 				{
-					"name": "Set AVailability Copy",
+					"name": "Set AVailability",
 					"item": [
 						{
 							"name": "Create doctor availability",
@@ -13077,134 +13077,7 @@
 								},
 								"url": "{{BASEURL}}/doctor/set-availability"
 							},
-							"response": [
-								{
-									"id": "efc3f87b-0a63-42bd-896e-7bb2943d930f",
-									"name": "Example",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											},
-											{
-												"key": "Authorization",
-												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-												"disabled": true
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"date\" : \"2024-03-08\",\r\n    \"from_time\" : \"10:00\",\r\n    \"to_time\": \"15:00\"\r\n}"
-										},
-										"url": "{{BASEURL}}/doctor/set-availability"
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "2011"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"7db-zvO6hsjzM0bXw41Rr/3Rryw5cBc\""
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 09 Mar 2024 08:26:30 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Successfully Slot Created\",\n    \"data\": {\n        \"_id\": \"65ec1a480730d288514ba6be\",\n        \"doctor\": \"65e97e6da1a23763b9894835\",\n        \"date\": \"2024-03-08T00:00:00.000Z\",\n        \"slots\": [\n            {\n                \"from\": \"10:00\",\n                \"to\": \"10:15\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa647\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"10:15\",\n                \"to\": \"10:30\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa648\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"10:30\",\n                \"to\": \"10:45\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa649\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"10:45\",\n                \"to\": \"11:00\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64a\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"11:00\",\n                \"to\": \"11:15\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64b\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"11:15\",\n                \"to\": \"11:30\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64c\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"11:30\",\n                \"to\": \"11:45\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64d\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"11:45\",\n                \"to\": \"12:00\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64e\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"12:00\",\n                \"to\": \"12:15\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa64f\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"12:15\",\n                \"to\": \"12:30\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa650\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"12:30\",\n                \"to\": \"12:45\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa651\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"12:45\",\n                \"to\": \"13:00\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa652\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"13:00\",\n                \"to\": \"13:15\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa653\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"13:15\",\n                \"to\": \"13:30\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa654\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"13:30\",\n                \"to\": \"13:45\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa655\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"13:45\",\n                \"to\": \"14:00\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa656\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"14:00\",\n                \"to\": \"14:15\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa657\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"14:15\",\n                \"to\": \"14:30\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa658\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"14:30\",\n                \"to\": \"14:45\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa659\",\n                \"status\": \"available\"\n            },\n            {\n                \"from\": \"14:45\",\n                \"to\": \"15:00\",\n                \"_id\": \"65ec1d358a4c5d6ab2dfa65a\",\n                \"status\": \"available\"\n            }\n        ],\n        \"created_by\": {\n            \"_id\": \"65e97e6da1a23763b9894835\"\n        },\n        \"createdAt\": \"2024-03-09T08:14:00.346Z\",\n        \"updatedAt\": \"2024-03-09T08:26:29.946Z\",\n        \"__v\": 0\n    }\n}"
-								},
-								{
-									"id": "b4f2d4ad-71a9-41e0-82b9-872041af0377",
-									"name": "Err",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											},
-											{
-												"key": "Authorization",
-												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-												"disabled": true
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"date\" : \"2024-02-11\",\r\n    \"from_time\" : \"10:00\",\r\n    \"to_time\": \"15:00\"\r\n}"
-										},
-										"url": "{{BASEURL}}/doctor/set-availability"
-									},
-									"status": "Conflict",
-									"code": 409,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "84"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"54-jqFQwxyuk9qRJZNRPd42WNyV1ak\""
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 09 Mar 2024 08:38:03 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"message\": \"Cannot upload slots for past dates\",\n    \"error\": \"Conflict\",\n    \"statusCode\": 409\n}"
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "doctor availability",
