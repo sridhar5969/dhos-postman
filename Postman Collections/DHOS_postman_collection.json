@@ -8044,8 +8044,25 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/appointment/pay-for-call/:id",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"appointment",
+								"pay-for-call",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6610f9b2df24a1b865db5093"
+								}
+							]
+						}
 					},
 					"response": []
 				}
