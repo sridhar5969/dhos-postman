@@ -13073,9 +13073,9 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-03-30T01:00:00.000Z\",\r\n    \"to_time\": \"2024-03-30T23:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-06T21:00:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
 								},
-								"url": "{{BASEURL}}/doctor/set-availability"
+								"url": "{{BASEURL}}/doctor/set-availability/admin/65f57093180f9f5575876406"
 							},
 							"response": []
 						},
@@ -13100,7 +13100,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-06T21:30:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
