@@ -12978,7 +12978,7 @@
 									"mode": "raw",
 									"raw": "{\r\n    \"subjective\": {\r\n        \"chief_complaint\": \"Take rest\",\r\n        \"history_illness\": \"Asthma\",\r\n        \"past_history\": \"Take medicine for breathing pbm\",\r\n        \"social_history\": \"Take rest\",\r\n        \"family_history\": \"\",\r\n        \"icd_code\": \"2-part disp fx of surg nk of l humer, subs for fx w nonunion\",\r\n        \"notes\": \"Take Rest Completely. Come again after 3 days\"\r\n    },\r\n    \"assessments\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\",\r\n    \"plan\": \"Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.\"\r\n}"
 								},
-								"url": "{{BASEURL}}/appointment/detail/66055d224aa75dbdc0fe8160"
+								"url": "{{BASEURL}}/appointment/admin/doctor-ratings/65f57093180f9f5575876406"
 							},
 							"response": [
 								{
