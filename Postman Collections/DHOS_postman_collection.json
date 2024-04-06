@@ -12294,7 +12294,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"patient\":{\r\n        \"_id\":\"\"\r\n    },\r\n    \"doctor\":{\r\n        \"_id\":\"\"\r\n    },\r\n    \"speciality\":{\r\n        \"_id\":\"\",\r\n        \"value\":\"\"\r\n    },\r\n    \"reason\":\"appointment reason\",\r\n    \"charge\":true//if charge is true charge patient or from subscription if false create free call\r\n}",
+									"raw": "{\r\n\t\"patient\": {\r\n\t\t\"_id\": \"65f6ffd81d2e853e66e5f944\"\r\n\t},\r\n\t\"doctor\": {\r\n\t\t\"_id\": \"65e97e6da1a23763b9894835\"\r\n\t},\r\n\t\"speciality\": {\r\n\t\t\"_id\": \"65def82a5621313415fa7206\",\r\n\t\t\"value\": \"\"\r\n\t},\r\n\t\"slot\": {\r\n\t\t\"_id\": \"\"\r\n\t},\r\n\t\"reason\": \"appointment reason\",\r\n\t\"charge\": true //if charge is true charge patient or from subscription if false create free call\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
