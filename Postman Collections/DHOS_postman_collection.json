@@ -6977,7 +6977,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9994003500,\n    \"country_code\" : 91,\n    \"purpose\":\"login\"\n}",
+							"raw": "{\n    \"mobilephone\": 9994003500,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8250,7 +8250,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-05T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-05T20:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
@@ -13831,7 +13831,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"doctor_id\": \"65e455536714726e2f077187\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"evening\",\r\n    \"slot_time\": \"65e455536714726e2f077187\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
+							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"NULL\",\r\n    \"slot_time\": \"6610254edb547833cbd2fb98\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
 						},
 						"url": "{{BASEURL}}/appointment"
 					},
