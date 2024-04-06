@@ -22898,7 +22898,23 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{BASEURL}}/user/my/stripe-billing-portal"
+				"url": {
+					"raw": "{{BASEURL}}/user/my/stripe-billing-portal?redirect=http://redirect-link.com",
+					"host": [
+						"{{BASEURL}}"
+					],
+					"path": [
+						"user",
+						"my",
+						"stripe-billing-portal"
+					],
+					"query": [
+						{
+							"key": "redirect",
+							"value": "http://redirect-link.com"
+						}
+					]
+				}
 			},
 			"response": []
 		}
