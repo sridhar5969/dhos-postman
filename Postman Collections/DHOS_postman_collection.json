@@ -21450,6 +21450,18 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"method": "PUT",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Retrive By Id",
+							"id": "ed62b839-59a7-4424-920f-f17d6326a3ce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "GET",
 								"header": []
 							},
