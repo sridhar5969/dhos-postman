@@ -13059,7 +13059,22 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/doctor?sort=name.first|ASC",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"doctor"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "name.first|ASC"
+										}
+									]
+								}
 							},
 							"response": []
 						},
