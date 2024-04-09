@@ -9125,7 +9125,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor?filters=specialty_id|65fd70c9255c1a56436d5da7&sort=name.first|ASC",
+							"raw": "{{BASEURL}}/doctor?sort=call_rates.call_rate|ASC",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9135,11 +9135,12 @@
 							"query": [
 								{
 									"key": "filters",
-									"value": "specialty_id|65fd70c9255c1a56436d5da7"
+									"value": "specialty_id|65fd70c9255c1a56436d5da7",
+									"disabled": true
 								},
 								{
 									"key": "sort",
-									"value": "name.first|ASC"
+									"value": "call_rates.call_rate|ASC"
 								}
 							]
 						}
