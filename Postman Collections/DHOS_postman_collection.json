@@ -21559,9 +21559,92 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/user-subscription/products/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"user-subscription",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "prod_PtQVm1xX6k89Q3"
+										}
+									]
+								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "ba948e19-a87c-4c69-8ee6-5bcb640ddf98",
+									"name": "Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/user-subscription/products/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"user-subscription",
+												"products",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "prod_PtQVm1xX6k89Q3"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "575"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"23f-dStKBoNV8dkE3zyNdbwHJks02Vk\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 12:26:50 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": \"prod_PtQVm1xX6k89Q3\",\n        \"object\": \"product\",\n        \"active\": false,\n        \"attributes\": [],\n        \"created\": 1712665191,\n        \"default_price\": \"price_1P3deVSAaEVtFVxcj5adYaY2\",\n        \"description\": \"Description Of the Product\",\n        \"features\": [\n            {\n                \"name\": \"Feature 1\"\n            }\n        ],\n        \"images\": [\n            \"https://dhosblob.blob.core.windows.net/dhos-images/DHOS_bannerlogo.jpg\"\n        ],\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Product Name\",\n        \"package_dimensions\": null,\n        \"shippable\": false,\n        \"statement_descriptor\": null,\n        \"tax_code\": null,\n        \"type\": \"service\",\n        \"unit_label\": null,\n        \"updated\": 1712665610,\n        \"url\": \"v1/subscription\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "43456f31-ddeb-4a72-83ef-1a898f8ea900"
