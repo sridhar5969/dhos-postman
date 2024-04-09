@@ -13941,7 +13941,23 @@
 										}
 									}
 								},
-								"url": "{{BASEURL}}/appointment/consultation/list"
+								"url": {
+									"raw": "{{BASEURL}}/appointment/consultation/list?sort=doctor.name|ASC",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"consultation",
+										"list"
+									],
+									"query": [
+										{
+											"key": "sort",
+											"value": "doctor.name|ASC"
+										}
+									]
+								}
 							},
 							"response": [
 								{
