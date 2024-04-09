@@ -9125,7 +9125,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor?sort=call_rates.call_rate|ASC",
+							"raw": "{{BASEURL}}/doctor?sort=call_rates.call_rate|ASC&textSearch=Jegan",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9141,6 +9141,10 @@
 								{
 									"key": "sort",
 									"value": "call_rates.call_rate|ASC"
+								},
+								{
+									"key": "textSearch",
+									"value": "Jegan"
 								}
 							]
 						}
