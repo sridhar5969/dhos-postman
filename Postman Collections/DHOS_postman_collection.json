@@ -21478,12 +21478,78 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "prod_Pbsy6ELVLDrrpF"
+											"value": "prod_PtQVm1xX6k89Q3"
 										}
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "335c9900-7d82-4e15-853d-a091ca224ef8",
+									"name": "example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/user-subscription/products/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"user-subscription",
+												"products",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "prod_Pbsy6ELVLDrrpF"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "727"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2d7-lPIXrlircUeGUmRhy9bLYME3ekk\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 12:20:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"id\": \"prod_Pbsy6ELVLDrrpF\",\n        \"object\": \"product\",\n        \"active\": true,\n        \"attributes\": [],\n        \"created\": 1708619575,\n        \"default_price\": \"price_1OvQNtSAaEVtFVxcsIHWqxef\",\n        \"description\": \"Free to join and pay for each consult\",\n        \"features\": [\n            {\n                \"name\": \"Pay per Video consultation\"\n            },\n            {\n                \"name\": \"Three members are included\"\n            }\n        ],\n        \"images\": [\n            \"https://files.stripe.com/links/MDB8YWNjdF8xT2dhQlVTQWFFVnRGVnhjfGZsX3Rlc3RfMExHUUZWc2ZzZWF1YzlFSUZUa0hVUzFl006spaqron\"\n        ],\n        \"livemode\": false,\n        \"metadata\": {\n            \"allowed_members\": \"1\",\n            \"type\": \"plan\",\n            \"video_consult\": \"0\"\n        },\n        \"name\": \"Pay per use\",\n        \"package_dimensions\": null,\n        \"shippable\": null,\n        \"statement_descriptor\": null,\n        \"tax_code\": null,\n        \"type\": \"service\",\n        \"unit_label\": null,\n        \"updated\": 1710947610,\n        \"url\": null\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "Delete",
