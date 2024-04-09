@@ -21420,7 +21420,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "// reference https://www.postman.com/stripedev/workspace/stripe-developers/request/665823-b71e2e59-0e78-4300-bd4a-75de4a810c10?tab=body\r\n{\r\n\t\"name\": \"Product Name\",\r\n\t\"active\": true,\r\n\t\"default_price_data\": {\r\n\t\t\"currency\": \"inr\",\r\n\t\t\"currency_options\": \"\",\r\n\t\t\"recurring\": {\r\n\t\t\t\"interval\": \"month\",\r\n\t\t\t\"interval_count\": 2\r\n\t\t},\r\n\t\t\"tax_behavior\": \"\",\r\n\t\t\"unit_amount\": 12000, // *100\r\n\t\t\"unit_amount_decimal\": \"12000\"\r\n\t},\r\n\t\"description\": \"Description Of the Product\",\r\n\t\"expand\": [],\r\n\t\"features\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Feature 1\"\r\n\t\t}\r\n\t],\r\n\t\"images\":[\r\n\t\t\"https://dhosblob.blob.core.windows.net/dhos-images/DHOS_bannerlogo.jpg\"\r\n\t],\r\n\t\"shippable\":false,\r\n\t\"statement_descriptor\":\"\",\r\n\t\"tax_code\":\"\",\r\n\t\"unit_label\":\"\",\r\n\t\"url\":\"\"\r\n}",
+									"raw": "// reference https://www.postman.com/stripedev/workspace/stripe-developers/request/665823-b71e2e59-0e78-4300-bd4a-75de4a810c10?tab=body\r\n{\r\n\t\"name\": \"Product Name\",\r\n\t\"active\": true,\r\n\t\"default_price_data\": {\r\n\t\t\"currency\": \"inr\",\r\n\t\t// \"currency_options\": \"\",\r\n\t\t\"recurring\": {\r\n\t\t\t\"interval\": \"month\",\r\n\t\t\t\"interval_count\": 2\r\n\t\t},\r\n\t\t// \"tax_behavior\": \"\",\r\n\t\t// \"unit_amount\": 12000, // *100\r\n\t\t\"unit_amount_decimal\": \"12000\"\r\n\t},\r\n\t\"description\": \"Description Of the Product\",\r\n\t\"expand\": [],\r\n\t\"features\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Feature 1\"\r\n\t\t}\r\n\t],\r\n\t\"images\":[\r\n\t\t\"https://dhosblob.blob.core.windows.net/dhos-images/DHOS_bannerlogo.jpg\"\r\n\t],\r\n\t\"shippable\":false,\r\n\t\"statement_descriptor\":\"\",\r\n\t// \"tax_code\":\"\",\r\n\t// \"unit_label\":\"\",\r\n\t\"url\":\"v1/subscription\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21464,7 +21464,24 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/user-subscription/products/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"user-subscription",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "prod_Pbsy6ELVLDrrpF"
+										}
+									]
+								}
 							},
 							"response": []
 						},
