@@ -13847,7 +13847,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/appointment?sort",
+									"raw": "{{BASEURL}}/appointment?sort=doctor.name|ASC",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -13862,7 +13862,7 @@
 										},
 										{
 											"key": "sort",
-											"value": null
+											"value": "doctor.name|ASC"
 										}
 									]
 								}
