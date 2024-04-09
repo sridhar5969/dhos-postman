@@ -21418,7 +21418,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/general/"
+								"url": "{{BASEURL}}/general/products"
 							},
 							"response": []
 						}
