@@ -21417,7 +21417,8 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": "{{BASEURL}}/general/"
 							},
 							"response": []
 						}
