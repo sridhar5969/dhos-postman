@@ -21439,7 +21439,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{BASEURL}}/user-subscription/products"
 							},
 							"response": []
 						},
@@ -21463,6 +21464,18 @@
 							},
 							"request": {
 								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"id": "cf849f70-a4ca-4c64-b085-51d1d7ae367f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
 								"header": []
 							},
 							"response": []
