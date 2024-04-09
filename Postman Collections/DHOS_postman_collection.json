@@ -21405,6 +21405,24 @@
 						}
 					],
 					"id": "bd729ea9-5349-450d-8694-d45264b60bf4"
+				},
+				{
+					"name": "Subscription",
+					"item": [
+						{
+							"name": "Add Product",
+							"id": "82b3fceb-0d3a-44f0-bfe4-7a3ef76d53f6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "43456f31-ddeb-4a72-83ef-1a898f8ea900"
 				}
 			],
 			"id": "fbd08a3e-1bd2-4a3a-abbd-f69671328f2b"
