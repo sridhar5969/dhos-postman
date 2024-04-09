@@ -21418,7 +21418,40 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/general/products"
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/user-subscription/products"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"id": "992e24b9-8e68-4952-b7ff-19029988efdd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"id": "850bb951-2dc6-4d7c-b887-b071bd9ae49a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
