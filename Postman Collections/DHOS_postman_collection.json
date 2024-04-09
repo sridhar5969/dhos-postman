@@ -13331,7 +13331,16 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{BASEURL}}/a"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"qwertyu@gmail.com\",\r\n    \"moblilephone\":\"23456789043\",\r\n    \"country_code\":\"91\",\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/admin/doctor"
 							},
 							"response": []
 						}
