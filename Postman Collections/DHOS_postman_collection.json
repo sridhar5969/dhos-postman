@@ -21420,7 +21420,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n\t\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
