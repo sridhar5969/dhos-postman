@@ -13094,7 +13094,7 @@
 							"response": []
 						},
 						{
-							"name": "Edit Doctor",
+							"name": "Edit Doctor Profile Data",
 							"id": "d1faa98c-5360-45d3-80e0-c779bf0ef0f1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
