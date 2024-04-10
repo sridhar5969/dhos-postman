@@ -13741,6 +13741,24 @@
 					"id": "088c0945-34cb-443f-8628-d1d7cfa70b3b"
 				},
 				{
+					"name": "My Profile",
+					"item": [
+						{
+							"name": "My Proffile",
+							"id": "da9c4598-eed7-49bd-be57-009efc856209",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "5a75ec16-baa5-45f5-bb5d-af6dffe8e920"
+				},
+				{
 					"name": "Create a Admin(Any User)",
 					"id": "725faa90-96a3-4817-9a7a-84eb676baafe",
 					"protocolProfileBehavior": {
