@@ -13660,6 +13660,143 @@
 							]
 						},
 						{
+							"name": "Get call rates",
+							"id": "d401b0e6-6d1e-4da0-ac7f-9cdfe1f2eead",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{ACCESSTOKEN}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/doctor/call-rates/admin/:doctorId",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"doctor",
+										"call-rates",
+										"admin",
+										":doctorId"
+									],
+									"variable": [
+										{
+											"id": "05a67d12-befc-4fa4-bcf2-8a5dffaf7e80",
+											"key": "doctorId",
+											"value": "65f57093180f9f5575876406"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "3040693b-0d6a-4b56-93d6-f5586d089c8e",
+									"name": "Get call rates",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/doctor/call-rates/admin/:doctorId",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"call-rates",
+												"admin",
+												":doctorId"
+											],
+											"variable": [
+												{
+													"id": "05a67d12-befc-4fa4-bcf2-8a5dffaf7e80",
+													"key": "doctorId",
+													"value": "65f57093180f9f5575876406"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "201"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c9-MM8WkiEVJne0mAvz6w8EALdjjro\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 11:20:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get call rates Successfully\",\n    \"data\": {\n        \"_id\": \"65f57093180f9f5575876406\",\n        \"call_rates\": {\n            \"fixed_price\": 100,\n            \"call_price\": 250,\n            \"percentage\": 10,\n            \"call_rate\": 275\n        }\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "Add A Doctor",
 							"id": "f544fdce-a12b-4fb6-a549-e1b0b4a02b46",
 							"protocolProfileBehavior": {
