@@ -9125,7 +9125,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor?sort=name.first|ASC",
+							"raw": "{{BASEURL}}/doctor?filters=state|65fb0fa58cda209967abb763",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9136,16 +9136,36 @@
 								{
 									"key": "filters",
 									"value": "specialty_id|65fd70c9255c1a56436d5da7",
+									"description": "speciality filter",
 									"disabled": true
 								},
 								{
 									"key": "sort",
-									"value": "name.first|ASC"
+									"value": "name.first|ASC",
+									"disabled": true
 								},
 								{
 									"key": "textSearch",
 									"value": "Jegan",
 									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "usageCount|DESC",
+									"description": "top doctor",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "gender.system|male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "state|65fb0fa58cda209967abb763",
+									"type": "text"
 								}
 							]
 						}
@@ -21344,119 +21364,6 @@
 							]
 						},
 						{
-							"name": "Edit Insurance",
-							"id": "ace0a902-5926-4835-a09a-f5df0b990d18",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{BASEURL}}/general/insurance/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"general",
-										"insurance",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "660ec0e5a45494d78ee96c8e"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "d4a7406b-3363-473b-b95c-842600631761",
-									"name": "Edit Insurance",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{BASEURL}}/general/insurance/:id",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"general",
-												"insurance",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "660ec0e5a45494d78ee96c8e"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "441"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"1b9-5w2nKNsX/4nbVtImFhVnepSamuw\""
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 04 Apr 2024 15:02:51 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Insurance updated successfully.\",\n    \"data\": {\n        \"_id\": \"660ec0e5a45494d78ee96c8e\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T15:01:57.354Z\",\n        \"updated_at\": \"2024-04-04T15:02:51.068Z\",\n        \"__v\": 0\n    }\n}"
-								}
-							]
-						},
-						{
 							"name": "Get Insurance detail",
 							"id": "07e771e9-bb04-484f-9dd4-b31999b4c698",
 							"protocolProfileBehavior": {
@@ -21566,6 +21473,119 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Get insurance detail\",\n    \"data\": {\n        \"_id\": \"660ec0e5a45494d78ee96c8e\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T15:01:57.354Z\",\n        \"updated_at\": \"2024-04-04T15:02:51.068Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Edit Insurance",
+							"id": "ace0a902-5926-4835-a09a-f5df0b990d18",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/general/insurance/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"general",
+										"insurance",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "660ec0e5a45494d78ee96c8e"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d4a7406b-3363-473b-b95c-842600631761",
+									"name": "Edit Insurance",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Oncologistt\",\r\n    \"description\": \"Oncologistt\",\r\n    \"web_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"mobile_icon\": \"https://dhosblob.blob.core.windows.net/dhos-images/dhos-images/ef898f7f-43d7-4f7b-b3b7-903383ca32c0physiotherapy.png\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/general/insurance/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"general",
+												"insurance",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "660ec0e5a45494d78ee96c8e"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "441"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1b9-5w2nKNsX/4nbVtImFhVnepSamuw\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 04 Apr 2024 15:02:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Insurance updated successfully.\",\n    \"data\": {\n        \"_id\": \"660ec0e5a45494d78ee96c8e\",\n        \"name\": \"Oncologistt\",\n        \"description\": \"Oncologistt\",\n        \"status\": \"active\",\n        \"created_by\": {\n            \"_id\": \"65f57093180f9f5575876409\",\n            \"mobilephone\": \"7094715969\",\n            \"country_code\": 91,\n            \"email\": \"admin@yopmail.com\",\n            \"name\": {\n                \"first\": \"Admin\",\n                \"last\": \"Sridhar\"\n            }\n        },\n        \"created_at\": \"2024-04-04T15:01:57.354Z\",\n        \"updated_at\": \"2024-04-04T15:02:51.068Z\",\n        \"__v\": 0\n    }\n}"
 								}
 							]
 						},
