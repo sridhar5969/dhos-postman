@@ -14222,7 +14222,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/appointment/consultation/list?sort=doctor.name.first|ASC",
+									"raw": "{{BASEURL}}/appointment/consultation/list",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -14234,7 +14234,8 @@
 									"query": [
 										{
 											"key": "sort",
-											"value": "doctor.name.first|ASC"
+											"value": "doctor.name.first|ASC",
+											"disabled": true
 										}
 									]
 								}
