@@ -13744,7 +13744,7 @@
 					"name": "My Profile",
 					"item": [
 						{
-							"name": "My Proffile",
+							"name": "My Profile",
 							"id": "da9c4598-eed7-49bd-be57-009efc856209",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -13757,7 +13757,7 @@
 							"response": [
 								{
 									"id": "69106987-94d4-4d3b-a7d3-7edae047bba3",
-									"name": "New Request",
+									"name": "Example Of Admin's My Profile API",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
