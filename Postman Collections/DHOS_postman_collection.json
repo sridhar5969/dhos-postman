@@ -13751,7 +13751,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{BASEURL}}/admin/my/profile"
 							},
 							"response": []
 						}
