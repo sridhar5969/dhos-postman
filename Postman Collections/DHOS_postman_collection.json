@@ -13754,7 +13754,57 @@
 								"header": [],
 								"url": "{{BASEURL}}/admin/my/profile"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "69106987-94d4-4d3b-a7d3-7edae047bba3",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/admin/my/profile"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "323"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"143-tvZT0CF07zT4a3cLEKYBk5EuF2Y\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 10 Apr 2024 10:43:07 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Doctor detail\",\n    \"data\": {\n        \"_id\": \"65f57093180f9f5575876409\",\n        \"mobilephone\": \"7094715969\",\n        \"country_code\": 91,\n        \"status\": \"active\",\n        \"email\": \"admin@yopmail.com\",\n        \"gender\": {\n            \"code\": \"male\",\n            \"system\": \"http://example.com/gender-codes\",\n            \"display\": \"Male\"\n        },\n        \"name\": {\n            \"first\": \"Admin\",\n            \"last\": \"Sridhar\"\n        }\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "5a75ec16-baa5-45f5-bb5d-af6dffe8e920"
