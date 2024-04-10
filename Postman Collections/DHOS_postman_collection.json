@@ -12962,6 +12962,290 @@
 					"name": "Doctor",
 					"item": [
 						{
+							"name": "Set AVailability",
+							"item": [
+								{
+									"name": "Create doctor availability",
+									"id": "e8008df9-8a28-48cc-8d2f-8aabca6325db",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"from_time\": \"2024-04-06T21:00:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
+										},
+										"url": "{{BASEURL}}/doctor/set-availability/admin/65f57093180f9f5575876406"
+									},
+									"response": []
+								},
+								{
+									"name": "doctor availability",
+									"id": "417ce60a-014b-4f26-afea-6f05acbf74ac",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"from_time\": \"2024-04-06T21:30:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"availability",
+												"time",
+												":doctorId"
+											],
+											"variable": [
+												{
+													"id": "2fdf83f2-7e1b-41ea-b680-9ae148e97c05",
+													"key": "doctorId",
+													"value": "65f57093180f9f5575876406"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "1541d905-c118-4718-8fd5-e8126f031016",
+											"name": "doctor availability",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+														"disabled": true
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"from_time\": \"2024-03-29T10:30:59.999Z\",\r\n    \"to_time\": \"2024-03-29T20:00:00.000Z\"\r\n}"
+												},
+												"url": {
+													"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
+													"host": [
+														"{{BASEURL}}"
+													],
+													"path": [
+														"doctor",
+														"availability",
+														"time",
+														":doctorId"
+													],
+													"variable": [
+														{
+															"key": "doctorId",
+															"value": "65f57093180f9f5575876406"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "863"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"35f-nXWy+AwWgUMZj0KNHf/kPWLdliA\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 29 Mar 2024 12:32:06 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Availability list.\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"6603e1d597190289313c060d\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:00:00.000Z\",\n                \"from_time\": \"2024-03-29T10:45:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"booked\",\n                \"updated_at\": \"2024-03-29T05:50:24.764Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0613\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:15:00.000Z\",\n                \"from_time\": \"2024-03-29T11:00:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"cancel\",\n                \"updated_at\": \"2024-03-29T11:26:06.121Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0618\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:30:00.000Z\",\n                \"from_time\": \"2024-03-29T11:15:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"available\",\n                \"updated_at\": \"2024-03-27T09:07:33.249Z\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "delete availability",
+									"id": "e8386355-ca19-4f7e-809c-7ddb5acf301d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
+										},
+										"url": {
+											"raw": "{{BASEURL}}/doctor/delete-availability/admin/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"delete-availability",
+												"admin",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "66063dcd97190289316b2130"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "48457bad-6bd7-4bf9-82c0-b83dca9e87b5",
+											"name": "delete availability",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
+														"disabled": true
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
+												},
+												"url": {
+													"raw": "{{BASEURL}}/doctor/delete-availability/admin/:id",
+													"host": [
+														"{{BASEURL}}"
+													],
+													"path": [
+														"doctor",
+														"delete-availability",
+														"admin",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "66063dcd97190289316b2130"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Powered-By",
+													"value": "Express"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "335"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"14f-ORNT90mIfhzE8ZXM6l2TYPXOWd4\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 06 Apr 2024 15:08:38 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Slot deleted Successfully\",\n    \"data\": {\n        \"_id\": \"66063dcd97190289316b2130\",\n        \"from_time\": \"2024-04-06T21:30:00.000Z\",\n        \"to_time\": \"2024-04-06T21:45:00.000Z\",\n        \"doctor\": \"65f57093180f9f5575876406\",\n        \"__v\": 0,\n        \"created_at\": \"2024-03-29T04:04:29.736Z\",\n        \"status\": \"delete\",\n        \"updated_at\": \"2024-04-06T15:08:38.778Z\"\n    }\n}"
+										}
+									]
+								}
+							],
+							"id": "9fb59c7c-d8c8-41e0-97d3-8bd3688525d4"
+						},
+						{
 							"name": "Doctor Ratings",
 							"id": "ca9336f1-764a-476a-a9bb-2d50f96d02df",
 							"protocolProfileBehavior": {
@@ -13241,6 +13525,138 @@
 							]
 						},
 						{
+							"name": "Add call rates",
+							"id": "94dfecac-1cfb-4419-aa95-e40232d781ac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{ACCESSTOKEN}}"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"qwertyu124@gmail.com\",\n    \"mobilephone\": \"23456789044\",\n    \"country_code\": \"91\",\n    \"password\":\"Test@123\",\n    \"name\": {\n        \"prefix\": \"Dr.\",\n        \"first\": \"Si\",\n        \"last\": \"Song\"\n    },\n    \"gender\": {\n        \"code\": \"f\",\n        \"system\": \"female\",\n        \"display\": \"Female\"\n    },\n    \"birthdate\": \"2000-03-02\",\n    \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n    \"signature\": \"https://images.squarespace-cdn.com/content/v1/602065399c6bdd6741ed57e1/1629220813691-0VVAXP466C0AJWI81DSS/phony+signature.png\",\n    //contact info\n    \"addresses\": [\n        {\n            \"type\": \"primary\",\n            \"address1\": \"123 Main St\",\n            \"city\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"state\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"country\": {\n                \"_id\": \"65d2edb0f595f2482812e41c\",\n                \"value\": \"value\"\n            },\n            \"pincode\": \"10001\"\n        },\n        {\n            \"type\": \"verification\", // clinical address,\n            \"hospital\": \"Hospital 123\",\n            \"address1\": \"123 Main St\", //postal address\n            \"city\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"state\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"country\": {\n                \"_id\": \"65d2edb0f595f2482812e41c\",\n                \"value\": \"value\"\n            },\n            \"pincode\": \"10001\"\n        }\n    ],\n    \"emergency\": {\n        \"mobilephone\": \"0522998797\",\n        \"country_code\": \"+91\",\n        \"name\": \"Anantharaj Nagarajan\"\n    },\n    \"husband_or_father\": \"Anantharaj Nagarajan\",\n    \"education\": [\n        {\n            \"qualification\": {\n                \"code\": \"mbbs\",\n                \"system\": \"mbbs\",\n                \"display\": \"MBBS\"\n            },\n            \"college\": \"Anna University\",\n            \"start_year\": \"BE\",\n            \"passing_year\": \"2011\"\n        },\n        {\n            \"qualification\": {\n                \"code\": \"m.phil\",\n                \"system\": \"m.phil\",\n                \"display\": \"M.Phil\"\n            },\n            \"college\": \"2021\",\n            \"start_year\": \"2017\",\n            \"passing_year\": \"2021\"\n        },\n        {\n            \"college\": \"Test\" //other\n        }\n    ],\n    \"awards\": [\n        \"best\"\n    ],\n    \"medical_council\": {\n        \"number\": \"8478347\",\n        \"document\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcM8zGOy55rg4oQ8-OYZ8t4UGEASO9lIxXnG-tbmQng&s\"\n    },\n    \"member_ship\": \"Medical Assosiation Membership\",\n    \"speciality\": [\n        {\n            \"_id\": \"65fc2640cd67bc8688aeab82\",\n            \"value\": \"Dentistry\"\n        }\n    ],\n    \"payment_info\": {\n        \"acc_holder_name\": \"tharun\",\n        \"acc_no\": 21221233223,\n        \"acc_ifc\": \"JJJSDKSD434\",\n        \"bank_address\": \"ICICI BANK\",\n        \"branch\": \"Velachery\",\n        \"pan\": \"MXQPS9578A\",\n        \"canceled_cheque\": \"http://example.com/canceled_cheque.jpg\",\n        \"aadhar\": \"212112121233\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASEURL}}/admin/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"admin",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "002f388c-74c8-460d-8a3e-81c5fd5089e2",
+											"key": "id",
+											"value": "6615218909ac3ed7e262fc75"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "214e7fe5-a195-46bc-afb2-3b3b2d55ff50",
+									"name": "Edit Doctor Profile Data",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"qwertyu124@gmail.com\",\n    \"mobilephone\": \"23456789044\",\n    \"country_code\": \"91\",\n    \"password\":\"Test@123\",\n    \"name\": {\n        \"prefix\": \"Dr.\",\n        \"first\": \"Si\",\n        \"last\": \"Song\"\n    },\n    \"gender\": {\n        \"code\": \"f\",\n        \"system\": \"female\",\n        \"display\": \"Female\"\n    },\n    \"birthdate\": \"2000-03-02\",\n    \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n    \"signature\": \"https://images.squarespace-cdn.com/content/v1/602065399c6bdd6741ed57e1/1629220813691-0VVAXP466C0AJWI81DSS/phony+signature.png\",\n    //contact info\n    \"addresses\": [\n        {\n            \"type\": \"primary\",\n            \"address1\": \"123 Main St\",\n            \"city\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"state\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"country\": {\n                \"_id\": \"65d2edb0f595f2482812e41c\",\n                \"value\": \"value\"\n            },\n            \"pincode\": \"10001\"\n        },\n        {\n            \"type\": \"verification\", // clinical address,\n            \"hospital\": \"Hospital 123\",\n            \"address1\": \"123 Main St\", //postal address\n            \"city\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"state\": {\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                \"value\": \"value\"\n            },\n            \"country\": {\n                \"_id\": \"65d2edb0f595f2482812e41c\",\n                \"value\": \"value\"\n            },\n            \"pincode\": \"10001\"\n        }\n    ],\n    \"emergency\": {\n        \"mobilephone\": \"0522998797\",\n        \"country_code\": \"+91\",\n        \"name\": \"Anantharaj Nagarajan\"\n    },\n    \"husband_or_father\": \"Anantharaj Nagarajan\",\n    \"education\": [\n        {\n            \"qualification\": {\n                \"code\": \"mbbs\",\n                \"system\": \"mbbs\",\n                \"display\": \"MBBS\"\n            },\n            \"college\": \"Anna University\",\n            \"start_year\": \"BE\",\n            \"passing_year\": \"2011\"\n        },\n        {\n            \"qualification\": {\n                \"code\": \"m.phil\",\n                \"system\": \"m.phil\",\n                \"display\": \"M.Phil\"\n            },\n            \"college\": \"2021\",\n            \"start_year\": \"2017\",\n            \"passing_year\": \"2021\"\n        },\n        {\n            \"college\": \"Test\" //other\n        }\n    ],\n    \"awards\": [\n        \"best\"\n    ],\n    \"medical_council\": {\n        \"number\": \"8478347\",\n        \"document\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcM8zGOy55rg4oQ8-OYZ8t4UGEASO9lIxXnG-tbmQng&s\"\n    },\n    \"member_ship\": \"Medical Assosiation Membership\",\n    \"speciality\": [\n        {\n            \"_id\": \"65fc2640cd67bc8688aeab82\",\n            \"value\": \"Dentistry\"\n        }\n    ],\n    \"payment_info\": {\n        \"acc_holder_name\": \"tharun\",\n        \"acc_no\": 21221233223,\n        \"acc_ifc\": \"JJJSDKSD434\",\n        \"bank_address\": \"ICICI BANK\",\n        \"branch\": \"Velachery\",\n        \"pan\": \"MXQPS9578A\",\n        \"canceled_cheque\": \"http://example.com/canceled_cheque.jpg\",\n        \"aadhar\": \"212112121233\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/admin/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"admin",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "6615218909ac3ed7e262fc75"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2699"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a8b-fsVrCrwoCG/Q/IIsIVnHEA1PFlA\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 09 Apr 2024 11:25:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"User updated\",\n    \"data\": {\n        \"_id\": \"6615218909ac3ed7e262fc75\",\n        \"account_id\": 2342375,\n        \"name\": {\n            \"prefix\": \"Dr.\",\n            \"first\": \"Si\",\n            \"last\": \"Song\"\n        },\n        \"email\": \"qwertyu124@gmail.com\",\n        \"mobilephone\": \"23456789044\",\n        \"insurance\": [],\n        \"country_code\": 91,\n        \"password\": \"$2b$10$RoidTObDCZnKgg4s9P.3wOE7/0Wh65HCHo67fcfCRs9OdUSVo2Oj6\",\n        \"gender\": {\n            \"code\": \"f\",\n            \"system\": \"female\",\n            \"display\": \"Female\"\n        },\n        \"signature\": \"https://images.squarespace-cdn.com/content/v1/602065399c6bdd6741ed57e1/1629220813691-0VVAXP466C0AJWI81DSS/phony+signature.png\",\n        \"birthdate\": \"2000-03-02T00:00:00.000Z\",\n        \"photo\": \"https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png\",\n        \"role\": \"65da3aaf039fb60eb4ffd4ed\",\n        \"user_type\": \"doctor\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"type\": \"primary\",\n                \"address1\": \"123 Main St\",\n                \"city\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"state\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"country\": {\n                    \"_id\": \"65d2edb0f595f2482812e41c\",\n                    \"value\": \"value\"\n                },\n                \"pincode\": \"10001\",\n                \"_id\": \"661525a67021fc354b81709e\"\n            },\n            {\n                \"type\": \"verification\",\n                \"hospital\": \"Hospital 123\",\n                \"address1\": \"123 Main St\",\n                \"city\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"state\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"country\": {\n                    \"_id\": \"65d2edb0f595f2482812e41c\",\n                    \"value\": \"value\"\n                },\n                \"pincode\": \"10001\",\n                \"_id\": \"661525a67021fc354b81709f\"\n            }\n        ],\n        \"cards\": [],\n        \"payment_info\": {\n            \"acc_holder_name\": \"tharun\",\n            \"acc_no\": 21221233223,\n            \"acc_ifc\": \"JJJSDKSD434\",\n            \"bank_address\": \"ICICI BANK\",\n            \"branch\": \"Velachery\",\n            \"pan\": \"MXQPS9578A\",\n            \"canceled_cheque\": \"http://example.com/canceled_cheque.jpg\",\n            \"aadhar\": \"212112121233\"\n        },\n        \"education\": [\n            {\n                \"qualification\": {\n                    \"code\": \"mbbs\",\n                    \"system\": \"mbbs\",\n                    \"display\": \"MBBS\"\n                },\n                \"college\": \"Anna University\",\n                \"start_year\": \"BE\",\n                \"passing_year\": \"2011\"\n            },\n            {\n                \"qualification\": {\n                    \"code\": \"m.phil\",\n                    \"system\": \"m.phil\",\n                    \"display\": \"M.Phil\"\n                },\n                \"college\": \"2021\",\n                \"start_year\": \"2017\",\n                \"passing_year\": \"2021\"\n            },\n            {\n                \"college\": \"Test\"\n            }\n        ],\n        \"speciality\": [\n            {\n                \"_id\": \"65fc2640cd67bc8688aeab82\",\n                \"value\": \"Dentistry\"\n            }\n        ],\n        \"awards\": [\n            \"best\"\n        ],\n        \"husband_or_father\": \"Anantharaj Nagarajan\",\n        \"family\": [],\n        \"emergency\": {\n            \"mobilephone\": \"0522998797\",\n            \"country_code\": \"+91\",\n            \"name\": \"Anantharaj Nagarajan\"\n        },\n        \"immunizations\": [],\n        \"total_patient_attend\": 0,\n        \"biometric_ids\": [],\n        \"online_status\": \"offline\",\n        \"video_call_provider\": {\n            \"host\": \"https://apidemo.staging.vidyoplatform.io\",\n            \"key\": \"LhxuwglsMo\"\n        },\n        \"member_ship\": \"Medical Assosiation Membership\",\n        \"medical_council\": {\n            \"number\": \"8478347\",\n            \"document\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcM8zGOy55rg4oQ8-OYZ8t4UGEASO9lIxXnG-tbmQng&s\"\n        },\n        \"assistant\": false,\n        \"face\": false,\n        \"finger\": false,\n        \"assign_assitant\": false,\n        \"favDoctors\": [],\n        \"usageCount\": 0,\n        \"created_at\": \"2024-04-09T11:07:53.303Z\",\n        \"updated_at\": \"2024-04-09T11:25:26.580Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "Add A Doctor",
 							"id": "f544fdce-a12b-4fb6-a549-e1b0b4a02b46",
 							"protocolProfileBehavior": {
@@ -13323,290 +13739,6 @@
 						}
 					],
 					"id": "088c0945-34cb-443f-8628-d1d7cfa70b3b"
-				},
-				{
-					"name": "Set AVailability",
-					"item": [
-						{
-							"name": "Create doctor availability",
-							"id": "e8008df9-8a28-48cc-8d2f-8aabca6325db",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-										"disabled": true
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-06T21:00:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
-								},
-								"url": "{{BASEURL}}/doctor/set-availability/admin/65f57093180f9f5575876406"
-							},
-							"response": []
-						},
-						{
-							"name": "doctor availability",
-							"id": "417ce60a-014b-4f26-afea-6f05acbf74ac",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-										"disabled": true
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-06T21:30:00.000Z\",\r\n    \"to_time\": \"2024-04-06T23:00:00.000Z\"\r\n}"
-								},
-								"url": {
-									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"doctor",
-										"availability",
-										"time",
-										":doctorId"
-									],
-									"variable": [
-										{
-											"id": "2fdf83f2-7e1b-41ea-b680-9ae148e97c05",
-											"key": "doctorId",
-											"value": "65f57093180f9f5575876406"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "1541d905-c118-4718-8fd5-e8126f031016",
-									"name": "doctor availability",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											},
-											{
-												"key": "Authorization",
-												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-												"disabled": true
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"from_time\": \"2024-03-29T10:30:59.999Z\",\r\n    \"to_time\": \"2024-03-29T20:00:00.000Z\"\r\n}"
-										},
-										"url": {
-											"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"doctor",
-												"availability",
-												"time",
-												":doctorId"
-											],
-											"variable": [
-												{
-													"key": "doctorId",
-													"value": "65f57093180f9f5575876406"
-												}
-											]
-										}
-									},
-									"status": "Created",
-									"code": 201,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "863"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"35f-nXWy+AwWgUMZj0KNHf/kPWLdliA\""
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 29 Mar 2024 12:32:06 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Availability list.\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"6603e1d597190289313c060d\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:00:00.000Z\",\n                \"from_time\": \"2024-03-29T10:45:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"booked\",\n                \"updated_at\": \"2024-03-29T05:50:24.764Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0613\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:15:00.000Z\",\n                \"from_time\": \"2024-03-29T11:00:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"cancel\",\n                \"updated_at\": \"2024-03-29T11:26:06.121Z\"\n            },\n            {\n                \"_id\": \"6603e1d597190289313c0618\",\n                \"doctor\": \"65f57093180f9f5575876406\",\n                \"to_time\": \"2024-03-29T11:30:00.000Z\",\n                \"from_time\": \"2024-03-29T11:15:00.000Z\",\n                \"__v\": 0,\n                \"created_at\": \"2024-03-27T09:07:33.249Z\",\n                \"status\": \"available\",\n                \"updated_at\": \"2024-03-27T09:07:33.249Z\"\n            }\n        ],\n        \"totalCount\": 3\n    }\n}"
-								}
-							]
-						},
-						{
-							"name": "delete availability",
-							"id": "e8386355-ca19-4f7e-809c-7ddb5acf301d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-										"disabled": true
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
-								},
-								"url": {
-									"raw": "{{BASEURL}}/doctor/delete-availability/admin/:id",
-									"host": [
-										"{{BASEURL}}"
-									],
-									"path": [
-										"doctor",
-										"delete-availability",
-										"admin",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "66063dcd97190289316b2130"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "48457bad-6bd7-4bf9-82c0-b83dca9e87b5",
-									"name": "delete availability",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											},
-											{
-												"key": "Authorization",
-												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjNTRmZDE3MjdhYWI3ZTI0Y2U1MzQiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjYzNzQxOTExODAsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjFkIiwiaWF0IjoxNzA5Mjg1NTU2LCJleHAiOjE3MDkzNzE5NTZ9.ZGEUNx6nXaKpaxASiMLVZCPbrXPfwfxWxZ7V74rwV_A",
-												"disabled": true
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
-										},
-										"url": {
-											"raw": "{{BASEURL}}/doctor/delete-availability/admin/:id",
-											"host": [
-												"{{BASEURL}}"
-											],
-											"path": [
-												"doctor",
-												"delete-availability",
-												"admin",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "66063dcd97190289316b2130"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "X-Powered-By",
-											"value": "Express"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "335"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"14f-ORNT90mIfhzE8ZXM6l2TYPXOWd4\""
-										},
-										{
-											"key": "Date",
-											"value": "Sat, 06 Apr 2024 15:08:38 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Slot deleted Successfully\",\n    \"data\": {\n        \"_id\": \"66063dcd97190289316b2130\",\n        \"from_time\": \"2024-04-06T21:30:00.000Z\",\n        \"to_time\": \"2024-04-06T21:45:00.000Z\",\n        \"doctor\": \"65f57093180f9f5575876406\",\n        \"__v\": 0,\n        \"created_at\": \"2024-03-29T04:04:29.736Z\",\n        \"status\": \"delete\",\n        \"updated_at\": \"2024-04-06T15:08:38.778Z\"\n    }\n}"
-								}
-							]
-						}
-					],
-					"id": "9fb59c7c-d8c8-41e0-97d3-8bd3688525d4"
 				},
 				{
 					"name": "Create a Admin(Any User)",
