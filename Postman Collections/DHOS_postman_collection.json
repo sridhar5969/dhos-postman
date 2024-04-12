@@ -14621,7 +14621,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/appointment?sort=doctor.name|ASC",
+									"raw": "{{BASEURL}}/appointment?fromDate=2024-04-12T20:15:00.000Z",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -14631,12 +14631,12 @@
 									"query": [
 										{
 											"key": "fromDate",
-											"value": "2024-04-06T20:15:00.000Z",
-											"disabled": true
+											"value": "2024-04-12T20:15:00.000Z"
 										},
 										{
 											"key": "sort",
-											"value": "doctor.name|ASC"
+											"value": "doctor.name|ASC",
+											"disabled": true
 										}
 									]
 								}
