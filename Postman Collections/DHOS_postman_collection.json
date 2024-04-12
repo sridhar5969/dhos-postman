@@ -6858,7 +6858,7 @@
 											"variable": [
 												{
 													"key": "doctor",
-													"value": "65e97e6da1a23763b9894835"
+													"value": "65f57093180f9f5575876406"
 												}
 											]
 										}
@@ -6888,7 +6888,7 @@
 											"variable": [
 												{
 													"key": "doctor",
-													"value": "65e97e6da1a23763b9894835"
+													"value": "65f57093180f9f5575876406"
 												}
 											]
 										}
@@ -6918,6 +6918,11 @@
 												{
 													"key": "favDoctors",
 													"value": "1"
+												},
+												{
+													"key": "state",
+													"value": "65fb0fa88cda209967abbdb9",
+													"disabled": true
 												}
 											]
 										}
