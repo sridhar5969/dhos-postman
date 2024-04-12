@@ -8255,7 +8255,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-04-06T10:30:59.999Z\",\r\n    \"to_time\": \"2024-04-06T20:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-11T18:30:00.000Z\",\r\n    \"to_time\": \"2024-04-12T18:29:59.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
@@ -9139,11 +9139,6 @@
 							],
 							"query": [
 								{
-									"key": "filters",
-									"value": "specialty_id|65def82a5621313415fa7206",
-									"description": "speciality filter"
-								},
-								{
 									"key": "sort",
 									"value": "name.first|ASC",
 									"disabled": true
@@ -9170,6 +9165,10 @@
 									"key": "filters",
 									"value": "state|65fb0fa58cda209967abb763",
 									"disabled": true
+								},
+								{
+									"key": "filters",
+									"value": "specialty_id|65def82a5621313415fa7206"
 								}
 							]
 						}
@@ -13833,7 +13832,7 @@
 										"token": "{{ACCESSTOKEN}}"
 									}
 								},
-								"method": "GET",
+								"method": "POST",
 								"header": [
 									{
 										"key": "Authorization",
@@ -13844,7 +13843,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n\t\"from_time\": \"2024-04-11T18:30:00.000Z\",\r\n\t\"to_time\": \"2024-04-12T18:29:59.000Z\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13852,14 +13851,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/doctor/call-rates/admin/:doctorId",
+									"raw": "{{BASEURL}}/appointment/count/:doctorId",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
-										"doctor",
-										"call-rates",
-										"admin",
+										"appointment",
+										"count",
 										":doctorId"
 									],
 									"variable": [
@@ -13871,7 +13869,90 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "1597788e-981f-49af-93a8-5e18cff2e098",
+									"name": "Get appointment count",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"from_time\": \"2024-04-11T18:30:00.000Z\",\r\n\t\"to_time\": \"2024-04-12T18:29:59.000Z\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASEURL}}/appointment/count/:doctorId",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"appointment",
+												"count",
+												":doctorId"
+											],
+											"variable": [
+												{
+													"id": "05a67d12-befc-4fa4-bcf2-8a5dffaf7e80",
+													"key": "doctorId",
+													"value": "65f57093180f9f5575876406"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "107"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6b-//YsTSaCwsnPtLZZVlXSAhpQtMA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 12 Apr 2024 11:08:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Appointment count\",\n    \"data\": {\n        \"totalCount\": 67,\n        \"todayCount\": 0\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "Add A Doctor",
