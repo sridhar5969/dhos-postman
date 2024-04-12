@@ -13369,7 +13369,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/admin/doctors?sort=name.first|ASC",
+									"raw": "{{BASEURL}}/admin/doctors?sort=name.first|ASC&limit=1",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -13381,6 +13381,11 @@
 										{
 											"key": "sort",
 											"value": "name.first|ASC"
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"type": "text"
 										}
 									]
 								}
