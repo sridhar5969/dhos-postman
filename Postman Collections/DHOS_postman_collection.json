@@ -9130,7 +9130,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor?filters=state|65fb0fa58cda209967abb763",
+							"raw": "{{BASEURL}}/doctor",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9170,7 +9170,7 @@
 								{
 									"key": "filters",
 									"value": "state|65fb0fa58cda209967abb763",
-									"type": "text"
+									"disabled": true
 								}
 							]
 						}
