@@ -13369,12 +13369,13 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/doctor?sort=name.first|ASC",
+									"raw": "{{BASEURL}}/admin/doctors?sort=name.first|ASC",
 									"host": [
 										"{{BASEURL}}"
 									],
 									"path": [
-										"doctor"
+										"admin",
+										"doctors"
 									],
 									"query": [
 										{
