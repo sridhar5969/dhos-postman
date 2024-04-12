@@ -6982,7 +6982,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\": 9994003500,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
+							"raw": "{\n    \"mobilephone\": 9999999999,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7288,7 +7288,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9994003500,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
+							"raw": "{\n    \"mobilephone\" : 9999999999,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9130,7 +9130,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BASEURL}}/doctor",
+							"raw": "{{BASEURL}}/doctor?filters=specialty_id|65def82a5621313415fa7206",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -9140,9 +9140,8 @@
 							"query": [
 								{
 									"key": "filters",
-									"value": "specialty_id|65fd70c9255c1a56436d5da7",
-									"description": "speciality filter",
-									"disabled": true
+									"value": "specialty_id|65def82a5621313415fa7206",
+									"description": "speciality filter"
 								},
 								{
 									"key": "sort",
