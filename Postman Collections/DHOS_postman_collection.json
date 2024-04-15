@@ -9779,7 +9779,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    // \"mobilephone\" : 8888877777,\n    // \"country_code\" : 91,\n    \"email\":\"sudheer@gmail.com\",\n    \"password\" : \"Test@123\",\n    \"user_type\" : \"doctor\"\n}",
+							"raw": "{\n    // \"mobilephone\" : 8888877777,\n    // \"country_code\" : 91,\n    \"email\":\"harini@yopmail.com\",\n    \"password\" : \"Test@123\",\n    \"user_type\" : \"doctor\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
