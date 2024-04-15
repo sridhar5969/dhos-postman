@@ -24522,7 +24522,66 @@
 								},
 								"url": "{{BASEURL}}/support-staff/sent-otp"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "fd561d1a-40c5-4dab-a4c9-3a3ff23ef435",
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/support-staff/sent-otp"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "83"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"53-VgJx6YqDDr41fZzWq+k6VHtvBh8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:35:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Otp Sent Successfully\",\n    \"data\": null\n}"
+								}
+							]
 						},
 						{
 							"name": "Verify OTP",
@@ -24569,7 +24628,66 @@
 								},
 								"url": "{{BASEURL}}/support-staff/verify-otp"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "a74b0966-63b9-464b-a184-e2ab5442c7fc",
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23,\r\n    \"otp\":1234\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/support-staff/verify-otp"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1335"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"537-e5VB3EBoCYqOEV0RZl4fAbyrgCU\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:35:45 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjFkMGRiYzBjOTc5Mzk3MWVlYmJmZmYiLCJ1c2VyX3R5cGUiOiJzdXBwb3J0LXN0YWZmIiwibW9iaWxlcGhvbmUiOiIzNDU2Nzg5MDg3IiwiY291bnRyeV9jb2RlIjoyMywiZXhwaXJlc0luIjoiMSBob3VyIiwiaWF0IjoxNzEzMTg0NTQ1LCJleHAiOjE3MTMxODgxNDV9.UjQ9W8u6g55F8Iitj-Yv6-iNFY5ZMT2hmuttt-IsmFw\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjFkMGRiYzBjOTc5Mzk3MWVlYmJmZmYiLCJ1c2VyX3R5cGUiOiJzdXBwb3J0LXN0YWZmIiwibW9iaWxlcGhvbmUiOiIzNDU2Nzg5MDg3IiwiY291bnRyeV9jb2RlIjoyMywiZXhwaXJlc0luIjoiMTRkIiwidHlwZSI6InJlZnJlc2hfdG9rZW4iLCJpYXQiOjE3MTMxODQ1NDUsImV4cCI6MTcxNDM5NDE0NX0.8GMzOuZ4q2NkmkwWsBv7hDjd4ZvnxOJul2k9ZWOqkf8\",\n        \"userProfile\": {\n            \"_id\": \"661d0dbc0c9793971eebbfff\",\n            \"mobilephone\": \"3456789087\",\n            \"insurance\": [],\n            \"country_code\": 23,\n            \"role\": \"661d0d0d03fa27d666674a1b\",\n            \"user_type\": \"support-staff\",\n            \"status\": \"pending\",\n            \"addresses\": [],\n            \"otp_expiry_at\": \"2024-04-15T12:38:43.807Z\",\n            \"cards\": [],\n            \"education\": [],\n            \"speciality\": [],\n            \"awards\": [],\n            \"family\": [],\n            \"immunizations\": [],\n            \"total_patient_attend\": 0,\n            \"biometric_ids\": [],\n            \"online_status\": \"offline\",\n            \"assistant\": false,\n            \"face\": false,\n            \"finger\": false,\n            \"assign_assitant\": false,\n            \"favDoctors\": [],\n            \"usageCount\": 0,\n            \"created_at\": \"2024-04-15T11:21:32.491Z\",\n            \"updated_at\": \"2024-04-15T12:35:43.808Z\",\n            \"__v\": 0,\n            \"otp\": 1234\n        }\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "Complete Registration",
@@ -24591,7 +24709,66 @@
 								},
 								"url": "{{BASEURL}}/support-staff/complete-registration"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "5123a602-3b24-483a-ae9a-e59dce01bc49",
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    //Please Dont Edit this -- sridhar\r\n    \"name\": {\r\n        \"first\": \"Ajith\",\r\n        \"middle\": \"\",\r\n        \"last\": \"Kumar\"\r\n    },\r\n    \"photo\": \"\",\r\n    \"about\": \"About Me\",\r\n    \"addresses\": [\r\n        {\r\n            \"type\": \"primary\",\r\n            \"address1\": \"123 Main St\",\r\n            \"city\": {\r\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65d2edb0f595f2482812e41c\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"pincode\": \"10001\"\r\n        },\r\n        {\r\n            \"type\": \"verification\",\r\n            \"address1\": \"123 Main St\", //postal address\r\n            \"city\": {\r\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65d5f01ccf9f5d014274a5f5\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65d2edb0f595f2482812e41c\",\r\n                \"value\": \"value\"\r\n            },\r\n            \"pincode\": \"10001\"\r\n        }\r\n    ],\r\n    \"education\": [\r\n        {\r\n            \"qualification\": {\r\n                \"code\": \"mbbs\",\r\n                \"system\": \"mbbs\",\r\n                \"display\": \"MBBS\"\r\n            },\r\n            \"college\": \"Anna University\",\r\n            \"start_year\": \"BE\",\r\n            \"passing_year\": \"2011\"\r\n        },\r\n        {\r\n            \"qualification\": {\r\n                \"code\": \"m.phil\",\r\n                \"system\": \"m.phil\",\r\n                \"display\": \"M.Phil\"\r\n            },\r\n            \"college\": \"2021\",\r\n            \"start_year\": \"2017\",\r\n            \"passing_year\": \"2021\"\r\n        },\r\n        {\r\n            \"college\": \"Test\" //other\r\n        }\r\n    ],\r\n    \"speciality\": [\r\n        {\r\n            \"_id\": \"65fc2640cd67bc8688aeab82\",\r\n            \"name\": \"\",\r\n            \"value\": \"Dentistry\",\r\n            \"code\": \"\",\r\n            \"system\": \"040783ab-06f7-4ee7-8161-cdc6d1ebc3c7unnamed (5).png\",\r\n            \"display\": \"\"\r\n        }\r\n    ],\r\n    \"awards\": [\r\n        \"best\"\r\n    ],\r\n    \"birthdate\": \"2024-03-11T20:00:00.000Z\",\r\n    // \"email\": \"asd@gmal.com\",\r\n    \"emergency\": {\r\n        \"mobilephone\": \"0522998797\",\r\n        \"country_code\": \"+91\",\r\n        \"name\": \"Anantharaj Nagarajan\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"f\",\r\n        \"system\": \"female\",\r\n        \"display\": \"Female\"\r\n    },\r\n    \"husband_or_father\": \"Anantharaj Nagarajan\",\r\n    \"medical_council\":{\r\n        \"number\":\"\",\r\n        \"document\":\"\"\r\n    },\r\n    \"payment_info\": {\r\n        \"acc_holder_name\": \"tharun\",\r\n        \"acc_no\": 21221233223,\r\n        \"acc_ifc\": \"JJJSDKSD434\",\r\n        \"bank_address\": \"ICICI BANK\",\r\n        \"branch\": \"Velachery\",\r\n        \"pan\": \"MXQPS9578A\",\r\n        \"canceled_cheque\": \"http://example.com/canceled_cheque.jpg\",\r\n        \"aadhar\": \"212112121233\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/support-staff/complete-registration"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2167"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"877-nGc0HCmS+k7xM5h6jtRueOInta4\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 15 Apr 2024 12:37:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": {\n        \"_id\": \"661d0dbc0c9793971eebbfff\",\n        \"mobilephone\": \"3456789087\",\n        \"insurance\": [],\n        \"country_code\": 23,\n        \"role\": \"661d0d0d03fa27d666674a1b\",\n        \"user_type\": \"support-staff\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"type\": \"primary\",\n                \"address1\": \"123 Main St\",\n                \"city\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"state\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"country\": {\n                    \"_id\": \"65d2edb0f595f2482812e41c\",\n                    \"value\": \"value\"\n                },\n                \"pincode\": \"10001\"\n            },\n            {\n                \"type\": \"verification\",\n                \"address1\": \"123 Main St\",\n                \"city\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"state\": {\n                    \"_id\": \"65d5f01ccf9f5d014274a5f5\",\n                    \"value\": \"value\"\n                },\n                \"country\": {\n                    \"_id\": \"65d2edb0f595f2482812e41c\",\n                    \"value\": \"value\"\n                },\n                \"pincode\": \"10001\"\n            }\n        ],\n        \"otp_expiry_at\": \"2024-04-15T12:38:43.807Z\",\n        \"cards\": [],\n        \"education\": [\n            {\n                \"qualification\": {\n                    \"code\": \"mbbs\",\n                    \"system\": \"mbbs\",\n                    \"display\": \"MBBS\"\n                },\n                \"college\": \"Anna University\",\n                \"start_year\": \"BE\",\n                \"passing_year\": \"2011\"\n            },\n            {\n                \"qualification\": {\n                    \"code\": \"m.phil\",\n                    \"system\": \"m.phil\",\n                    \"display\": \"M.Phil\"\n                },\n                \"college\": \"2021\",\n                \"start_year\": \"2017\",\n                \"passing_year\": \"2021\"\n            },\n            {\n                \"college\": \"Test\"\n            }\n        ],\n        \"speciality\": [\n            {\n                \"_id\": \"65fc2640cd67bc8688aeab82\",\n                \"name\": \"\",\n                \"value\": \"Dentistry\",\n                \"code\": \"\",\n                \"system\": \"040783ab-06f7-4ee7-8161-cdc6d1ebc3c7unnamed (5).png\",\n                \"display\": \"\"\n            }\n        ],\n        \"awards\": [\n            \"best\"\n        ],\n        \"family\": [],\n        \"immunizations\": [],\n        \"total_patient_attend\": 0,\n        \"biometric_ids\": [],\n        \"online_status\": \"offline\",\n        \"assistant\": false,\n        \"face\": false,\n        \"finger\": false,\n        \"assign_assitant\": false,\n        \"favDoctors\": [],\n        \"usageCount\": 0,\n        \"created_at\": \"2024-04-15T11:21:32.491Z\",\n        \"updated_at\": \"2024-04-15T12:37:39.432Z\",\n        \"__v\": 0,\n        \"about\": \"About Me\",\n        \"birthdate\": \"2024-03-11T20:00:00.000Z\",\n        \"emergency\": {\n            \"mobilephone\": \"0522998797\",\n            \"country_code\": \"+91\",\n            \"name\": \"Anantharaj Nagarajan\"\n        },\n        \"gender\": {\n            \"code\": \"f\",\n            \"system\": \"female\",\n            \"display\": \"Female\"\n        },\n        \"husband_or_father\": \"Anantharaj Nagarajan\",\n        \"medical_council\": {\n            \"number\": \"\",\n            \"document\": \"\"\n        },\n        \"name\": {\n            \"first\": \"Ajith\",\n            \"middle\": \"\",\n            \"last\": \"Kumar\"\n        },\n        \"payment_info\": {\n            \"acc_holder_name\": \"tharun\",\n            \"acc_no\": 21221233223,\n            \"acc_ifc\": \"JJJSDKSD434\",\n            \"bank_address\": \"ICICI BANK\",\n            \"branch\": \"Velachery\",\n            \"pan\": \"MXQPS9578A\",\n            \"canceled_cheque\": \"http://example.com/canceled_cheque.jpg\",\n            \"aadhar\": \"212112121233\"\n        },\n        \"photo\": \"\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "f4e6538a-0b8d-42b2-aa3d-df22919fa02a"
