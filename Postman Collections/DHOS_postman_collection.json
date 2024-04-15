@@ -24506,6 +24506,56 @@
 								"disableBodyPruning": true
 							},
 							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/support-staff/sent-otp"
+							},
+							"response": []
+						},
+						{
+							"name": "Verify OTP",
+							"id": "56d0281a-89f0-4ded-a4b6-583582b839cf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/support-staff/sent-otp"
+							},
+							"response": []
+						},
+						{
+							"name": "Complete Registration",
+							"id": "79c62761-1e28-467f-b57c-ff2a6d498af0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "GET",
 								"header": []
 							},
