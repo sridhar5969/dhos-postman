@@ -16443,7 +16443,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"symbol\": \"ALO\",\r\n    \"country\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American12\",\r\n    \"symbol\": \"ALO\",\r\n    \"country_id\": \"660be5794b2cbd8aeaf75db8\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
