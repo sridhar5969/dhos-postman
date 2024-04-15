@@ -24538,14 +24538,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23\r\n}",
+									"raw": "{\r\n    \"mobilephone\":3456789087,\r\n    \"country_code\":23,\r\n    \"otp\":1234\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{BASEURL}}/support-staff/sent-otp"
+								"url": "{{BASEURL}}/support-staff/verify-otp"
 							},
 							"response": []
 						},
