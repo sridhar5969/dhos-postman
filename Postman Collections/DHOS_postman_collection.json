@@ -12351,7 +12351,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"patient\": {\r\n        \"_id\": \"660be65f601a16487f2af0d2\"\r\n    },\r\n    \"doctor\": {\r\n        \"_id\": \"65f407f942ae30615cd5d27f\"\r\n    },\r\n    \"speciality\": {\r\n        \"_id\": \"65def82a5621313415fa7206\",\r\n        \"value\": \"Family Medicine\"\r\n    },\r\n    \"slot\": {\r\n        \"_id\": \"660baa7cdb547833cb7a0128\"\r\n    },\r\n    \"reason\": \"Cold\",\r\n    \"charge\": false\r\n}",
+									"raw": "{\r\n    \"patient\": {\r\n        \"_id\": \"660be65f601a16487f2af0d2\"\r\n    },\r\n    \"doctor\": {\r\n        \"_id\": \"65f407f942ae30615cd5d27f\"\r\n    },\r\n    \"speciality\": {\r\n        \"_id\": \"65def82a5621313415fa7206\",\r\n        \"value\": \"Family Medicine\"\r\n    },\r\n    \"slot\": {\r\n        \"_id\": \"660baa7cdb547833cb7a0128\"\r\n    },\r\n    \"reason\": \"Cold\",\r\n    \"charge\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
