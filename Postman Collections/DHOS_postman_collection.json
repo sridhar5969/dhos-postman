@@ -9111,12 +9111,6 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY0MzY4NjNlMTYyMjNjYjEwMDg2ZGIiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOiI5OTk5OTk5OTk5IiwiY291bnRyeV9jb2RlIjo5MSwiZXhwaXJlc0luIjoiMSBob3VyIiwiaWF0IjoxNzEyOTQyMDQxLCJleHAiOjE3MTI5NDU2NDF9.j5E5sZDbyWBYgmfs49T6rJySzu07UET4M8UWfr4ojJo"
-							}
-						},
 						"method": "GET",
 						"header": [
 							{
@@ -9157,8 +9151,7 @@
 								{
 									"key": "sort",
 									"value": "usageCount|DESC",
-									"description": "top doctor",
-									"type": "text"
+									"description": "top doctor"
 								},
 								{
 									"key": "filters",
