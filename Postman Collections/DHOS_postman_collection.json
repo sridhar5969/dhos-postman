@@ -14911,7 +14911,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/appointment/doctor-consultation/list?patientID=65f436863e16223cb10086db",
+									"raw": "{{BASEURL}}/appointment/doctor-consultation/list",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -14923,7 +14923,8 @@
 									"query": [
 										{
 											"key": "patientID",
-											"value": "65f436863e16223cb10086db"
+											"value": "65f436863e16223cb10086db",
+											"disabled": true
 										}
 									]
 								}
