@@ -9779,7 +9779,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    // \"mobilephone\" : 8888877777,\n    // \"country_code\" : 91,\n    \"email\":\"harini@yopmail.com\",\n    \"password\" : \"Test@123\",\n    \"user_type\" : \"doctor\"\n}",
+							"raw": "{\n    // \"mobilephone\" : 8888877777,\n    // \"country_code\" : 91,\n    \"email\":\"sudheer@gmail.com\",\n    \"password\" : \"DHOs@12345\",\n    \"user_type\" : \"doctor\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -22396,7 +22396,7 @@
 									"variable": [
 										{
 											"key": "appointmentId",
-											"value": "66055d224aa75dbdc0fe8160"
+											"value": "661cf8fe93a1f97c2b911d35"
 										}
 									]
 								}
@@ -22545,7 +22545,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    // \"_id\":\"65d34539abbec727dc70d30c\",\r\n    \"name\":\"Drug Name\",\r\n    \"dosage\":\"full\",\r\n    \"frequency\":\"3\",\r\n    \"unit\":\"tablet\",\r\n    \"side_effects\":\"\",\r\n    \"validity\":\"60 days\"\r\n}",
+									"raw": "{\r\n    // \"_id\":\"65d34539abbec727dc70d30c\",\r\n    \"name\":\"Drug Name\",\r\n    \"dosage\":\"full\",\r\n    \"frequency\":\"3\",\r\n    \"unit\":\"tablet\",\r\n    \"side_effects\":\"\",\r\n    \"validity\":\"60 days\",\r\n    \"days\": 3\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -22553,7 +22553,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{BASEURL}}/patient/medication/?appointment=65f91466aa74325267abb15b",
+									"raw": "{{BASEURL}}/patient/medication/?appointment=661cf8fe93a1f97c2b911d35",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -22565,7 +22565,7 @@
 									"query": [
 										{
 											"key": "appointment",
-											"value": "65f91466aa74325267abb15b"
+											"value": "661cf8fe93a1f97c2b911d35"
 										}
 									]
 								}
