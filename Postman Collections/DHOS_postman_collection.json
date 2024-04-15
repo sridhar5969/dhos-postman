@@ -8101,7 +8101,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"from_time\": \"2024-03-30T01:00:00.000Z\",\r\n    \"to_time\": \"2024-03-30T23:00:00.000Z\"\r\n}"
+									"raw": "{\r\n    \"from_time\": \"2024-04-15T01:00:00.000Z\",\r\n    \"to_time\": \"2024-04-15T23:00:00.000Z\"\r\n}"
 								},
 								"url": "{{BASEURL}}/doctor/set-availability"
 							},
@@ -17010,7 +17010,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American\",\r\n    \"state_id\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -17091,7 +17091,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"American1\",\r\n    \"state\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
+									"raw": "{\r\n    \"name\": \"American1\",\r\n    \"state_id\": \"660d1aaa1dbd9c5c2a3f4763\",\r\n    \"status\": \"active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
