@@ -24526,6 +24526,28 @@
 						},
 						{
 							"name": "Verify OTP",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ba68e5fc-a080-4e3e-ab51-4bbbb8217015",
+										"exec": [
+											"if (pm.response.json().data.access_token)\r",
+											"    pm.environment.set(\"ACCESSTOKEN\", pm.response.json().data.access_token);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "8f2fc7b3-1add-4d78-ba7a-aaa9098c6c4a",
+										"exec": [],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "56d0281a-89f0-4ded-a4b6-583582b839cf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
