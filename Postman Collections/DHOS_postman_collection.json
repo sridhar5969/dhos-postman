@@ -24578,7 +24578,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -24588,7 +24588,8 @@
 											"language": "json"
 										}
 									}
-								}
+								},
+								"url": "{{BASEURL}}/support-staff/complete-registration"
 							},
 							"response": []
 						}
