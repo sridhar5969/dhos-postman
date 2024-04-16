@@ -8761,6 +8761,183 @@
 					"id": "fc9a781c-095c-428a-836d-9648669d6262"
 				},
 				{
+					"name": "Supporting Staff",
+					"item": [
+						{
+							"name": "Get My Supporting Staff",
+							"id": "d770465d-1bcb-4e2d-97d2-83bb477019aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/doctor/my/supporting-staffs"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Available Supporting Staff",
+							"id": "c7795aaa-d8f0-4243-acf0-c8ffe347c130",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/doctor/supporting-staffs"
+							},
+							"response": [
+								{
+									"id": "944df6d4-c74f-4bd9-b3f7-341df13da581",
+									"name": "Get My Avail Supporting Staff Copy",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/doctor/supporting-staffs"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "533"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"215-0uPgRsxq2tI85A2QjmcQx+XzugQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 16 Apr 2024 09:54:39 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"661d0dbc0c9793971eebbfff\",\n                \"education\": [\n                    {\n                        \"qualification\": {\n                            \"code\": \"mbbs\",\n                            \"system\": \"mbbs\",\n                            \"display\": \"MBBS\"\n                        },\n                        \"college\": \"Anna University\",\n                        \"start_year\": \"BE\",\n                        \"passing_year\": \"2011\"\n                    },\n                    {\n                        \"qualification\": {\n                            \"code\": \"m.phil\",\n                            \"system\": \"m.phil\",\n                            \"display\": \"M.Phil\"\n                        },\n                        \"college\": \"2021\",\n                        \"start_year\": \"2017\",\n                        \"passing_year\": \"2021\"\n                    },\n                    {\n                        \"college\": \"Test\"\n                    }\n                ],\n                \"online_status\": \"offline\",\n                \"about\": \"About Me\",\n                \"name\": {\n                    \"first\": \"Ajith\",\n                    \"middle\": \"\",\n                    \"last\": \"Kumar\"\n                },\n                \"photo\": \"\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Add Supporting Doctor Against Doctor",
+							"id": "f681c030-0be8-4241-bd14-e6e30993bdc4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/doctor/supporting-staffs/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"doctor",
+										"supporting-staffs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "661d0dbc0c9793971eebbfff"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "abd20d74-c19a-4a02-968a-e52e77512aa0",
+									"name": "Add Suprt staff",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/doctor/supporting-staffs/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"supporting-staffs",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "661d0dbc0c9793971eebbfff"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"39-eF5xgHcLYReYeFaci6HleIWZEqo\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 16 Apr 2024 09:55:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\"\n}"
+								}
+							]
+						}
+					],
+					"id": "30321c36-f091-4949-acd8-fe8f3b2c2160"
+				},
+				{
 					"name": "Register Doctor",
 					"id": "4f918298-03ae-4436-9aac-fba4345b6096",
 					"protocolProfileBehavior": {
