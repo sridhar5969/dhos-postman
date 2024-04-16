@@ -25108,7 +25108,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{BASEURL}}/support-staff/my/appointments?fromDate",
+							"raw": "{{BASEURL}}/support-staff/my/appointments?fromDate=2022-03-01T00:00:00",
 							"host": [
 								"{{BASEURL}}"
 							],
@@ -25120,8 +25120,7 @@
 							"query": [
 								{
 									"key": "fromDate",
-									"value": null,
-									"type": "text"
+									"value": "2022-03-01T00:00:00"
 								}
 							]
 						}
