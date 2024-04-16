@@ -7107,6 +7107,64 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"message\": \"Can not re-send the OTP within 3 minutes\",\n    \"error\": \"Conflict\",\n    \"statusCode\": 409\n}"
+						},
+						{
+							"id": "c50fc098-ba80-44b6-bf25-872a236810cb",
+							"name": "Login Sent OTP",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"mobilephone\": 9999999999,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/patient"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "114"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"72-MlCT/0DU/gOJc9e3zFeWKAUUGeA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Apr 2024 12:39:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Otp Sent Successfully\",\n    \"data\": {\n        \"message\": \"OTP sent successfully\"\n    }\n}"
 						}
 					]
 				},
@@ -8098,7 +8156,73 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "7627d9a3-0037-4cef-bf00-c4243e7c7f6e",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/appointment/cancel-payment-intent/:intentId",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"appointment",
+										"cancel-payment-intent",
+										":intentId"
+									],
+									"variable": [
+										{
+											"key": "intentId",
+											"value": "pi_3P6BIeSAaEVtFVxc0wmTvkUk"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1353"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"549-TCN6uqRtpgpOAN2eGR7+jSXdcQE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 16 Apr 2024 12:40:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Appointment Cancelled successfully\",\n    \"data\": {\n        \"id\": \"pi_3P6BIeSAaEVtFVxc0wmTvkUk\",\n        \"object\": \"payment_intent\",\n        \"amount\": 100,\n        \"amount_capturable\": 0,\n        \"amount_details\": {\n            \"tip\": {}\n        },\n        \"amount_received\": 0,\n        \"application\": null,\n        \"application_fee_amount\": null,\n        \"automatic_payment_methods\": {\n            \"allow_redirects\": \"always\",\n            \"enabled\": true\n        },\n        \"canceled_at\": 1713271200,\n        \"cancellation_reason\": null,\n        \"capture_method\": \"automatic\",\n        \"client_secret\": \"pi_3P6BIeSAaEVtFVxc0wmTvkUk_secret_5MmPIaEodoo0fI2GUe26WJTrT\",\n        \"confirmation_method\": \"automatic\",\n        \"created\": 1713271188,\n        \"currency\": \"inr\",\n        \"customer\": \"cus_Pk3QwOt77J3970\",\n        \"description\": \"undefined \",\n        \"invoice\": null,\n        \"last_payment_error\": null,\n        \"latest_charge\": null,\n        \"livemode\": false,\n        \"metadata\": {\n            \"appointment\": \"6610f9b2df24a1b865db5093\",\n            \"type\": \"appointment\"\n        },\n        \"next_action\": null,\n        \"on_behalf_of\": null,\n        \"payment_method\": null,\n        \"payment_method_configuration_details\": {\n            \"id\": \"pmc_1OpbmeSAaEVtFVxcF5hXHojL\",\n            \"parent\": null\n        },\n        \"payment_method_options\": {\n            \"card\": {\n                \"installments\": null,\n                \"mandate_options\": null,\n                \"network\": null,\n                \"request_three_d_secure\": \"automatic\"\n            }\n        },\n        \"payment_method_types\": [\n            \"card\"\n        ],\n        \"processing\": null,\n        \"receipt_email\": null,\n        \"review\": null,\n        \"setup_future_usage\": null,\n        \"shipping\": null,\n        \"source\": null,\n        \"statement_descriptor\": null,\n        \"statement_descriptor_suffix\": null,\n        \"status\": \"canceled\",\n        \"transfer_data\": null,\n        \"transfer_group\": null\n    }\n}"
+						}
+					]
 				}
 			],
 			"id": "53e9e5be-2e11-48ac-b6c9-4bf81ab0fc87"
