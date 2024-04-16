@@ -25094,6 +25094,67 @@
 						}
 					],
 					"id": "f4e6538a-0b8d-42b2-aa3d-df22919fa02a"
+				},
+				{
+					"name": "Appointments",
+					"id": "14450d4b-3eb7-4c17-b946-a0287e3b5cdd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BASEURL}}/support-staff/my/appointments"
+					},
+					"response": []
+				},
+				{
+					"name": "Password Login Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8aae113a-bf07-4512-8588-45f8f6dc30ea",
+								"exec": [
+									"if (pm.response.json().data.access_token)\r",
+									"    pm.environment.set(\"ACCESSTOKEN\", pm.response.json().data.access_token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6eb9a328-b6e6-468a-ac1f-fe80709cd12f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "9417d403-298f-493b-bd3c-b5d3281c8aac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"mobilephone\" : 8888877777,\n    // \"country_code\" : 91,\n    \"email\":\"harini@yopmail.com\",\n    \"password\" : \"Test@123\",\n    \"user_type\" : \"support-staff\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASEURL}}/admin/login",
+						"description": "\n### Admin Login\n\nThis endpoint is used to authenticate an admin user.\n\n#### Request Body\n- `mobilephone` (number) - The mobile phone number of the admin.\n- `country_code` (number) - The country code of the admin's phone number.\n- `password` (string) - The password of the admin user.\n- `user_type` (string) - The type of user.\n\nExample:\n```json\n{\n    \"mobilephone\": 0,\n    \"country_code\": 0,\n    \"password\": \"\",\n    \"user_type\": \"\"\n}\n```\n\n#### Response\n- Status: 400\n- Content-Type: application/json\n- `message` (string) - Details about the response.\n- `error` (string) - Error message, if any.\n- `statusCode` (number) - The status code of the response.\n\nExample:\n```json\n{\n    \"message\": \"\",\n    \"error\": \"\",\n    \"statusCode\": 0\n}\n"
+					},
+					"response": []
 				}
 			],
 			"id": "489dab2f-5fc0-4e39-be91-6fd24cc594c9"
