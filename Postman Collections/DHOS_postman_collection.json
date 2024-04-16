@@ -17242,6 +17242,69 @@
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e217b448926552543c123d\",\n                \"name\": \"Alabama\",\n                \"symbol\": \"$\",\n                \"country\": \"65e213d948926552543c123b\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "State list-dropdown",
+							"id": "33c3fdee-8f40-47af-a62b-9147d29677b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{BASEURL}}/general/state-list"
+							},
+							"response": [
+								{
+									"id": "ca87c0e9-71de-4ee7-b59a-c008f3497845",
+									"name": "State list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/general-public/state"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "330"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"14a-iG54Far6YsbWlnFvcFlNusIpRmM\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 01 Mar 2024 18:11:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"State list\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"65e217b448926552543c123d\",\n                \"name\": \"Alabama\",\n                \"symbol\": \"$\",\n                \"country\": \"65e213d948926552543c123b\",\n                \"status\": \"active\",\n                \"createdAt\": \"2024-02-27T08:37:54.073Z\",\n                \"updatedAt\": \"2024-02-27T08:37:54.073Z\",\n                \"createdBy\": \"65dc38b5d23a655911af9b10\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "006951b8-76ec-45af-851c-bb0ea9934234"
