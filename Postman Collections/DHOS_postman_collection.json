@@ -8255,7 +8255,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\t\"from_time\": \"2024-04-11T18:30:00.000Z\",\r\n\t\"to_time\": \"2024-04-12T18:29:59.000Z\"\r\n}"
+									"raw": "{\r\n\t\"from_time\": \"2024-04-15T18:30:00.000Z\",\r\n\t\"to_time\": \"2024-04-16T18:29:59.000Z\"\r\n}"
 								},
 								"url": {
 									"raw": "{{BASEURL}}/doctor/availability/time/:doctorId",
@@ -8271,7 +8271,7 @@
 									"variable": [
 										{
 											"key": "doctorId",
-											"value": "6619072827a718f93bdf242a"
+											"value": "65f57093180f9f5575876406"
 										}
 									]
 								}
