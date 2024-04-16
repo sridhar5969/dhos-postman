@@ -8774,7 +8774,57 @@
 								"header": [],
 								"url": "{{BASEURL}}/doctor/my/supporting-staffs"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "dbf33ad1-eb0e-4e2b-a633-14c1444fa75a",
+									"name": "Added Staffs",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "{{BASEURL}}/doctor/my/supporting-staffs"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "533"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"215-0uPgRsxq2tI85A2QjmcQx+XzugQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 16 Apr 2024 10:00:13 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"_id\": \"661d0dbc0c9793971eebbfff\",\n                \"education\": [\n                    {\n                        \"qualification\": {\n                            \"code\": \"mbbs\",\n                            \"system\": \"mbbs\",\n                            \"display\": \"MBBS\"\n                        },\n                        \"college\": \"Anna University\",\n                        \"start_year\": \"BE\",\n                        \"passing_year\": \"2011\"\n                    },\n                    {\n                        \"qualification\": {\n                            \"code\": \"m.phil\",\n                            \"system\": \"m.phil\",\n                            \"display\": \"M.Phil\"\n                        },\n                        \"college\": \"2021\",\n                        \"start_year\": \"2017\",\n                        \"passing_year\": \"2021\"\n                    },\n                    {\n                        \"college\": \"Test\"\n                    }\n                ],\n                \"online_status\": \"offline\",\n                \"about\": \"About Me\",\n                \"name\": {\n                    \"first\": \"Ajith\",\n                    \"middle\": \"\",\n                    \"last\": \"Kumar\"\n                },\n                \"photo\": \"\"\n            }\n        ],\n        \"totalCount\": 1\n    }\n}"
+								}
+							]
 						},
 						{
 							"name": "Get Available Supporting Staff",
@@ -8931,6 +8981,101 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Success\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Remove Supporting Staffs From Doctor List",
+							"id": "7c849cc4-4a0d-4113-990f-dfd9e69363e5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASEURL}}/doctor/supporting-staffs/:id",
+									"host": [
+										"{{BASEURL}}"
+									],
+									"path": [
+										"doctor",
+										"supporting-staffs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "661d0dbc0c9793971eebbfff"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "34672ba9-1b3a-4de6-ba48-0db71be4f58f",
+									"name": "Removed staff",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASEURL}}/doctor/supporting-staffs/:id",
+											"host": [
+												"{{BASEURL}}"
+											],
+											"path": [
+												"doctor",
+												"supporting-staffs",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "661d0dbc0c9793971eebbfff"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "84"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"54-j3RRRhNef0VLdOZZ8tgKpFKT/3E\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 16 Apr 2024 10:01:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Support staff removed Successfully\"\n}"
 								}
 							]
 						}
