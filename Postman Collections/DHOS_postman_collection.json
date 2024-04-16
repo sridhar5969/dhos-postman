@@ -8070,6 +8070,35 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Cancel Appointment Payment",
+					"id": "24cb7799-82e3-426a-8ae6-d64dc7b21bab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASEURL}}/appointment/cancel-payment-intent/:intentId",
+							"host": [
+								"{{BASEURL}}"
+							],
+							"path": [
+								"appointment",
+								"cancel-payment-intent",
+								":intentId"
+							],
+							"variable": [
+								{
+									"key": "intentId",
+									"value": "pi_3P6BIeSAaEVtFVxc0wmTvkUk"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "53e9e5be-2e11-48ac-b6c9-4bf81ab0fc87"
