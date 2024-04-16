@@ -8159,7 +8159,7 @@
 					"response": [
 						{
 							"id": "7627d9a3-0037-4cef-bf00-c4243e7c7f6e",
-							"name": "New Request",
+							"name": "Example",
 							"originalRequest": {
 								"method": "DELETE",
 								"header": [],
@@ -15489,7 +15489,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"NULL\",\r\n    \"slot_time\": \"6610254edb547833cbd2fb98\",\r\n    \"reason\": \"fever\",\r\n    \"notify_me\": \"false\",\r\n    \"payment_ui_mode\": \"embedded\"\r\n}\r\n"
+							"raw": "{\r\n    \"doctor_id\": \"65f57093180f9f5575876406\",\r\n    \"speciality_id\": \"65def82a5621313415fa7206\",\r\n    \"patient_id\": \"\",\r\n    \"date\": \"2024-03-29\",\r\n    \"section\": \"NULL\",\r\n    \"slot_time\": \"6610254edb547833cbd2fb98\",\r\n    \"reason\": \"fever\",\r\n    // \"payment_ui_mode\": \"embedded\",\r\n    \"notify_me\": \"false\"\r\n}\r\n"
 						},
 						"url": "{{BASEURL}}/appointment"
 					},
