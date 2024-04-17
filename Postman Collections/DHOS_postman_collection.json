@@ -6982,7 +6982,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\": 9999999999,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
+							"raw": "{\n    \"mobilephone\": 9999999991,\n    \"country_code\": 91,\n    \"purpose\": \"login\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7179,7 +7179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 898989898889,\n    \"country_code\" : 91,\n    \"purpose\":\"sign_up\"\n}",
+							"raw": "{\n    \"mobilephone\" : 9999999991,\n    \"country_code\" : 91,\n    \"purpose\":\"sign_up\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7652,7 +7652,8 @@
 									"if (pm.response.json().data.access_token)\r",
 									"    pm.environment.set(\"ACCESSTOKEN\", pm.response.json().data.access_token);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -7662,7 +7663,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -7678,7 +7680,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9394003500,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
+							"raw": "{\n    \"mobilephone\" : 9999999991,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8221,6 +8223,107 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Appointment Cancelled successfully\",\n    \"data\": {\n        \"id\": \"pi_3P6BIeSAaEVtFVxc0wmTvkUk\",\n        \"object\": \"payment_intent\",\n        \"amount\": 100,\n        \"amount_capturable\": 0,\n        \"amount_details\": {\n            \"tip\": {}\n        },\n        \"amount_received\": 0,\n        \"application\": null,\n        \"application_fee_amount\": null,\n        \"automatic_payment_methods\": {\n            \"allow_redirects\": \"always\",\n            \"enabled\": true\n        },\n        \"canceled_at\": 1713271200,\n        \"cancellation_reason\": null,\n        \"capture_method\": \"automatic\",\n        \"client_secret\": \"pi_3P6BIeSAaEVtFVxc0wmTvkUk_secret_5MmPIaEodoo0fI2GUe26WJTrT\",\n        \"confirmation_method\": \"automatic\",\n        \"created\": 1713271188,\n        \"currency\": \"inr\",\n        \"customer\": \"cus_Pk3QwOt77J3970\",\n        \"description\": \"undefined \",\n        \"invoice\": null,\n        \"last_payment_error\": null,\n        \"latest_charge\": null,\n        \"livemode\": false,\n        \"metadata\": {\n            \"appointment\": \"6610f9b2df24a1b865db5093\",\n            \"type\": \"appointment\"\n        },\n        \"next_action\": null,\n        \"on_behalf_of\": null,\n        \"payment_method\": null,\n        \"payment_method_configuration_details\": {\n            \"id\": \"pmc_1OpbmeSAaEVtFVxcF5hXHojL\",\n            \"parent\": null\n        },\n        \"payment_method_options\": {\n            \"card\": {\n                \"installments\": null,\n                \"mandate_options\": null,\n                \"network\": null,\n                \"request_three_d_secure\": \"automatic\"\n            }\n        },\n        \"payment_method_types\": [\n            \"card\"\n        ],\n        \"processing\": null,\n        \"receipt_email\": null,\n        \"review\": null,\n        \"setup_future_usage\": null,\n        \"shipping\": null,\n        \"source\": null,\n        \"statement_descriptor\": null,\n        \"statement_descriptor_suffix\": null,\n        \"status\": \"canceled\",\n        \"transfer_data\": null,\n        \"transfer_group\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Complete Registration",
+					"id": "3b8a23dd-7845-4293-9e20-e2895ee348b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{ACCESSTOKEN}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"assistant\": false,\n        \"assign_assitant\": false,\n        \"usageCount\": 0,\n        \"_id\": \"65f6ffd81d2e853e66e5f944\",\n        \"stripe_cus_id\": \"cus_PkqVusRHaDy7tt\",\n        \"mobilephone\": \"9994003500\",\n        \"country_code\": 91,\n        \"role\": \"65da3a13039fb60eb4ffd4ec\",\n        \"user_type\": \"patient\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"asddd\",\n                \"city\": {\n                    \"_id\": \"65fad97a8cda209967aa13db\",\n                    \"value\": \"Vijayawada\"\n                },\n                \"state\": {\n                    \"_id\": \"65fb0fa88cda209967abbd9c\",\n                    \"value\": \"Andhra Pradesh\"\n                },\n                \"country\": {\n                    \"_id\": \"65fac2468cda209967a95110\",\n                    \"value\": \"India\"\n                },\n                \"pincode\": \"123345\"\n            }\n        ],\n        \"cards\": [],\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"family\": [\n            {\n                \"_id\": \"65f7e71d94b88c2fff7ab80c\",\n                \"country_code\": 91,\n                \"email\": \"mahesh@yopmail.com\",\n                \"mobilephone\": \"2332232323\",\n                \"name\": {\n                    \"first\": \"mahesh\",\n                    \"middle\": \"v\",\n                    \"last\": \"sara\"\n                },\n                \"relationship\": {\n                    \"_id\": \"65e56434dcfe225fd6528f5c\",\n                    \"value\": \"Mother\"\n                },\n                \"birthdate\": \"2024-03-03T18:30:00.000Z\"\n            }\n        ],\n        \"immunizations\": [\n            {\n                \"vaccine\": \"covid\",\n                \"date\": \"2024-03-06T18:30:00.000Z\",\n                \"dosage\": \"23\",\n                \"location\": \"chennai\",\n                \"_id\": \"65fa881ffa5dd3f0a33bccc1\"\n            },\n            {\n                \"vaccine\": \"kalara vaccine\",\n                \"date\": \"2024-03-18T18:30:00.000Z\",\n                \"dosage\": \"23\",\n                \"location\": \"madurai\",\n                \"_id\": \"65fa954f254e663e1143ec68\"\n            }\n        ],\n        \"online_status\": \"offline\",\n        \"created_at\": \"2024-03-17T14:36:08.361Z\",\n        \"updated_at\": \"2024-03-27T05:12:47.257Z\",\n        \"__v\": 0,\n        \"birthdate\": \"2024-03-11T20:00:00.000Z\",\n        \"email\": \"asd@gmal.com\",\n        \"emergency\": {\n            \"mobilephone\": \"0522998797\",\n            \"country_code\": \"+91\",\n            \"name\": \"Anantharaj Nagarajan\"\n        },\n        \"gender\": {\n            \"code\": \"f\",\n            \"system\": \"female\",\n            \"display\": \"Female\"\n        },\n        \"husband_or_father\": \"Anantharaj Nagarajan\",\n        \"insurance\": [\n            {\n                \"expire\": \"2024-03-24T18:30:00.000Z\",\n                \"insurance_id\": \"EE232323\",\n                \"name\": \"hero\"\n            }\n        ],\n        \"name\": {\n            \"first\": \"Test\",\n            \"middle\": \"M\",\n            \"last\": \"Patient\"\n        },\n        \"photo\": \"\",\n        \"subscription\": {\n            \"id\": \"sub_1OvZWhSAaEVtFVxchP4so2AG\",\n            \"name\": \"Group Plan\",\n            \"remaining_call\": 0,\n            \"allowed_members\": 3\n        },\n        \"biometric_ids\": [\n            \"1710826486\"\n        ],\n        \"face\": true,\n        \"finger\": false,\n        \"favDoctors\": [\n            {\n                \"_id\": \"65f414d97173e8684faf07f1\",\n                \"name\": {\n                    \"first\": \"John\",\n                    \"last\": \"Doe\"\n                },\n                \"hospital\": \"General Hospital\",\n                \"photo\": null,\n                \"speciality\": []\n            },\n            {\n                \"_id\": \"65e97e6da1a23763b9894835\",\n                \"name\": {\n                    \"first\": \"Tharun\",\n                    \"middle\": \"K\",\n                    \"last\": \"Kumar\",\n                    \"mani\": \"\"\n                },\n                \"hospital\": null,\n                \"photo\": null,\n                \"speciality\": [\n                    null\n                ]\n            }\n        ],\n        \"medical_records\": {\n            \"vitals\": {\n                \"height\": \"90\",\n                \"weight\": \"71\",\n                \"bp\": \"120/80\",\n                \"heart_rate\": \"120/80\",\n                \"temperature\": \"73\"\n            }\n        },\n        \"notification\": {\n            \"general\": {\n                \"email\": false,\n                \"sms\": true,\n                \"push\": true\n            },\n            \"appointment\": {\n                \"email\": true,\n                \"sms\": true,\n                \"push\": true\n            },\n            \"payment\": {\n                \"email\": true,\n                \"sms\": true,\n                \"push\": true\n            }\n        },\n        \"aadhar\": \"123123123123\",\n        \"account_id\": 2342340,\n        \"medical_recoords\": {\n            \"vitals\": {\n                \"updated_at\": \"2024-03-22T12:05:25.366Z\"\n            }\n        },\n        \"profile_percentage\": 80\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASEURL}}/patient/complete-registration"
+					},
+					"response": [
+						{
+							"id": "1590ef9e-2ede-44a9-a7a7-54a10500a7f3",
+							"name": "SUCCESS",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWRjMzhiNWQyM2E2NTU5MTFhZjliMTAiLCJ1c2VyX3R5cGUiOiJwYXRpZW50IiwibW9iaWxlcGhvbmUiOjkxNTkwNDE0MjEsImNvdW50cnlfY29kZSI6OTEsImV4cGlyZXNJbiI6IjEgaG91ciIsImlhdCI6MTcwODkzMTY5MSwiZXhwIjoxNzA4OTM1MjkxfQ.St3ne1IgXuS4G-4klG2fukZ_bOrjsDBcAtTtEn5kmZ0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": {\n    \"first\": \"John\",\n    \"middle\": \"\",\n    \"last\": \"Cena\"\n  },\n  \"gender\": {\n    \"code\": \"m\",\n    \"system\": \"male\",\n    \"display\": \"Male\"\n  },\n  \"birthdate\": \"2001-02-01\",\n  \"addresses\": [\n    {\n      \"address1\": \"10th Cross street\",\n      \"city\": {\n        \"_id\": \"city-id\"\n      },\n      \"state\": {\n        \"_id\": \"state-id\"\n      },\n      \"country\": {\n        \"_id\": \"country-id\"\n      },\n      \"pincode\": \"622301\"\n    }\n  ],\n  \"mobilephone\": \"123456789\",\n  \"email\": \"example@gmail.com\",\n  \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n  \"insurance\": [\n    {\n      \"expire\": \"2030-01-01\",\n      \"insurance_id\": \"3747D7YD37ND\",\n      \"name\": \"Bajaj Allianz\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/patient"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "695"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b7-M0NxBJie3Q8gNNYUdJn2NNnVOZM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Feb 2024 07:28:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"message\": \"Patient updated\",\n    \"data\": {\n        \"_id\": \"65dc38b5d23a655911af9b10\",\n        \"mobilephone\": \"9159041421\",\n        \"country_code\": 91,\n        \"role\": \"65d34539abbec727dc70d30c\",\n        \"user_type\": \"patient\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"city-id\"\n                },\n                \"state\": {\n                    \"_id\": \"state-id\"\n                },\n                \"country\": {\n                    \"_id\": \"country-id\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"createdAt\": \"2024-02-26T07:07:33.213Z\",\n        \"updatedAt\": \"2024-02-26T07:28:00.095Z\",\n        \"__v\": 0,\n        \"birthdate\": \"2001-02-01T00:00:00.000Z\",\n        \"email\": \"example@gmail.com\",\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"name\": {\n            \"first\": \"John\",\n            \"middle\": \"\",\n            \"last\": \"Cena\"\n        },\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\"\n    }\n}"
 						}
 					]
 				}
