@@ -12216,17 +12216,20 @@
 									{
 										"key": "patient.account_id",
 										"value": "",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									},
 									{
 										"key": "doctor._id",
 										"value": "",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									},
 									{
 										"key": "patient._id",
 										"value": "",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"url": {
