@@ -12212,7 +12212,23 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "patient.account_id",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "doctor._id",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "patient._id",
+										"value": "",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
 									"host": [
