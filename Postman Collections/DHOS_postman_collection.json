@@ -12212,33 +12212,9 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "patient.account_id",
-										"value": "6603b965179d7fff492d2dcd",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "doctor._id",
-										"value": "65f57093180f9f5575876406",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "patient._id",
-										"value": "65f57093180f9f5575876406",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "filters",
-										"value": "doctor._id|65f57093180f9f5575876406",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": {
-									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata",
+									"raw": "{{BASEURL}}/appointment/admin/todays-appointments?timezone=Asia/Kolkata&filters=doctor._id|65f57093180f9f5575876406,patient._id|65f6ffd81d2e853e66e5f944,patient.account_id|2342360,status|open,payment_status|paid",
 									"host": [
 										"{{BASEURL}}"
 									],
@@ -12257,6 +12233,11 @@
 										{
 											"key": "timezone",
 											"value": "Asia/Kolkata"
+										},
+										{
+											"key": "filters",
+											"value": "doctor._id|65f57093180f9f5575876406,patient._id|65f6ffd81d2e853e66e5f944,patient.account_id|2342360,status|open,payment_status|paid",
+											"description": "doctor object id , patient object id , patient account id , appointment payment status , appointment status"
 										}
 									]
 								}
