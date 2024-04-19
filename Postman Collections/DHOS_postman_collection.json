@@ -11486,7 +11486,7 @@
 										}
 									}
 								},
-								"url": "{{BASEURL}}/patient/add-new"
+								"url": "{{BASEURL}}/patient/admin/upload-patient"
 							},
 							"response": []
 						},
