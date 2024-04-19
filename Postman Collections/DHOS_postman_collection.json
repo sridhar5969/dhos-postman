@@ -7179,7 +7179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9999999991,\n    \"country_code\" : 91,\n    \"purpose\":\"sign_up\"\n}",
+							"raw": "{\n    \"mobilephone\" : 2121212123,\n    \"country_code\" : 91,\n    \"purpose\":\"sign_up\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7680,7 +7680,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"mobilephone\" : 9999999991,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
+							"raw": "{\n    \"mobilephone\" : 2121212123,\n    \"country_code\" : 91,\n    \"otp\" : 1234\n}",
 							"options": {
 								"raw": {
 									"language": "json"
