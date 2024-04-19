@@ -11469,6 +11469,87 @@
 							]
 						},
 						{
+							"name": "Add New Patient Copy",
+							"id": "3534df79-37e0-4212-8369-ff40c05cb93f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"patients_list\": [\r\n        {\r\n            \"first_name\": \"Ragu\",\r\n            \"last_name\": \"Ram\",\r\n            \"gender\": \"Male\",\r\n            \"dob\": \"27-06-1996\",\r\n            \"email\": \"ragu@yopmail.com\",\r\n            \"mobile_no\": 8899889988,\r\n            \"country_code\": 91\r\n        },\r\n        {\r\n            \"first_name\": \"Siva\",\r\n            \"last_name\": \"Mani\",\r\n            \"gender\": \"Male\",\r\n            \"dob\": \"09-04-1992\",\r\n            \"email\": \"siva@yopmail.com\",\r\n            \"mobile_no\": 8574859685,\r\n            \"country_code\": 91\r\n        },\r\n        {\r\n            \"first_name\": \"Sugi\",\r\n            \"last_name\": \"Raj\",\r\n            \"gender\": \"Female\",\r\n            \"dob\": \"20-05-2000\",\r\n            \"email\": \"sugi@yopmail.com\",\r\n            \"mobile_no\": 8574253625,\r\n            \"country_code\": 91\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASEURL}}/patient/add-new"
+							},
+							"response": [
+								{
+									"id": "f3ffacfd-e4d8-4b68-b791-47867eef6296",
+									"name": "Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": {\r\n        \"first\": \"Viraj\",\r\n        \"middle\": \"s\",\r\n        \"last\": \"Raghav\"\r\n    },\r\n    \"gender\": {\r\n        \"code\": \"m\",\r\n        \"system\": \"male\",\r\n        \"display\": \"Male\"\r\n    },\r\n    \"mobilephone\": \"1234512344\",\r\n    \"email\": \"ananth4@dhos.in\",\r\n    \"country_code\": 91,\r\n    \"birthdate\": \"1995-03-19T05:00:00.000Z\",\r\n    \"addresses\": [\r\n        {\r\n            \"type\":\"primary\",\r\n            \"address1\": \"10th Cross street\",\r\n            \"city\": {\r\n                \"_id\": \"65f3f02551a5b6774a0c991a\",\r\n                \"value\": \"Chennai\"\r\n            },\r\n            \"state\": {\r\n                \"_id\": \"65e217b448926552543c123c\",\r\n                \"value\": \"Tamil Nadu\"\r\n            },\r\n            \"country\": {\r\n                \"_id\": \"65e213d948926552543c123f\",\r\n                \"value\": \"India\"\r\n            },\r\n            \"pincode\": \"622301\"\r\n        }\r\n    ],\r\n    \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\r\n    \"insurance\": [\r\n        {\r\n            \"expire\": \"2024-03-18\",\r\n            \"insurance_id\": \"\",\r\n            \"name\": \"\"\r\n        }\r\n    ],\r\n    \"emergency\": {\r\n        \"mobilephone\": \"2486133233\",\r\n        \"country_code\": \"+1\",\r\n        \"name\": \"Vashu\"\r\n    },\r\n    \"husband_or_father\": \"Father's Name\",\r\n    \"status\": \"active\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{BASEURL}}/patient/add-new"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1426"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"592-zy2uN/qq5iSSD91f/1PoXGKdO98\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 27 Mar 2024 05:50:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"statusCode\": 200,\n    \"status\": \"success\",\n    \"data\": {\n        \"account_id\": 2342359,\n        \"name\": {\n            \"first\": \"Viraj\",\n            \"middle\": \"s\",\n            \"last\": \"Raghav\"\n        },\n        \"email\": \"ananth4@dhos.in\",\n        \"stripe_cus_id\": \"cus_PoSHhdPjA5dbbk\",\n        \"mobilephone\": \"1234512344\",\n        \"insurance\": [\n            {\n                \"expire\": \"2024-03-18\",\n                \"insurance_id\": \"\",\n                \"name\": \"\"\n            }\n        ],\n        \"country_code\": 91,\n        \"gender\": {\n            \"code\": \"m\",\n            \"system\": \"male\",\n            \"display\": \"Male\"\n        },\n        \"birthdate\": \"1995-03-19T05:00:00.000Z\",\n        \"photo\": \"https://www.dhos-blob.storage.com/exampleimage.jpeg\",\n        \"role\": \"65da3a13039fb60eb4ffd4ec\",\n        \"user_type\": \"patient\",\n        \"status\": \"active\",\n        \"addresses\": [\n            {\n                \"type\": \"primary\",\n                \"address1\": \"10th Cross street\",\n                \"city\": {\n                    \"_id\": \"65f3f02551a5b6774a0c991a\",\n                    \"value\": \"Chennai\"\n                },\n                \"state\": {\n                    \"_id\": \"65e217b448926552543c123c\",\n                    \"value\": \"Tamil Nadu\"\n                },\n                \"country\": {\n                    \"_id\": \"65e213d948926552543c123f\",\n                    \"value\": \"India\"\n                },\n                \"pincode\": \"622301\"\n            }\n        ],\n        \"cards\": [],\n        \"createdBy\": {\n            \"_id\": \"65f6ffd81d2e853e66e5f944\",\n            \"mobilephone\": \"9994003500\",\n            \"country_code\": 91,\n            \"email\": \"asd@gmal.com\",\n            \"name\": {\n                \"first\": \"Test\",\n                \"middle\": \"M\",\n                \"last\": \"Patient\"\n            }\n        },\n        \"education\": [],\n        \"speciality\": [],\n        \"awards\": [],\n        \"husband_or_father\": \"Father's Name\",\n        \"family\": [],\n        \"emergency\": {\n            \"mobilephone\": \"2486133233\",\n            \"country_code\": \"+1\",\n            \"name\": \"Vashu\"\n        },\n        \"immunizations\": [],\n        \"biometric_ids\": [],\n        \"online_status\": \"offline\",\n        \"assistant\": false,\n        \"face\": false,\n        \"finger\": false,\n        \"assign_assitant\": false,\n        \"favDoctors\": [],\n        \"usageCount\": 0,\n        \"_id\": \"6603b392c2c94fa087c5c05c\",\n        \"created_at\": \"2024-03-27T05:50:10.898Z\",\n        \"updated_at\": \"2024-03-27T05:50:10.898Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
 							"name": "Get Patient List",
 							"id": "0468e08d-7e04-49ed-8a65-ce0f4d6b7310",
 							"protocolProfileBehavior": {
